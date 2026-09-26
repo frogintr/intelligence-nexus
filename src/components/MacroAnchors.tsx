@@ -15,7 +15,7 @@ export function MacroAnchors({ oneLiner, anchors }: Props) {
       value: anchors.us10yYield,
       sub: "无风险基准利率",
       icon: TrendingUp,
-      accent: "text-amber-400",
+      accent: "text-amber-600 dark:text-amber-400",
       bgGlow: "from-amber-500/10 to-transparent",
     },
     {
@@ -24,7 +24,7 @@ export function MacroAnchors({ oneLiner, anchors }: Props) {
       value: anchors.dxyIndex,
       sub: "美元跨国强弱",
       icon: DollarSign,
-      accent: "text-sky-400",
+      accent: "text-sky-600 dark:text-sky-400",
       bgGlow: "from-sky-500/10 to-transparent",
     },
     {
@@ -33,7 +33,7 @@ export function MacroAnchors({ oneLiner, anchors }: Props) {
       value: anchors.usdcnh,
       sub: "离岸人民币汇率",
       icon: Activity,
-      accent: "text-emerald-400",
+      accent: "text-emerald-600 dark:text-emerald-400",
       bgGlow: "from-emerald-500/10 to-transparent",
     },
     {
@@ -42,27 +42,27 @@ export function MacroAnchors({ oneLiner, anchors }: Props) {
       value: anchors.brentOil,
       sub: "国际原油定价",
       icon: Flame,
-      accent: "text-rose-400",
+      accent: "text-rose-600 dark:text-rose-400",
       bgGlow: "from-rose-500/10 to-transparent",
     },
   ];
 
   return (
     <section className="my-8">
-      {/* Editorial One-Liner Vision */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#131722] via-[#0f121a] to-[#131722] border border-white/[0.08] p-6 sm:p-8 mb-6 shadow-2xl">
-        <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-[#e5c378] to-[#8c6d32]" />
+      {/* Editorial One-Liner Vision (Day/Night Adaptive) */}
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#f4f1ea] via-[#fbfaf8] to-[#f4f1ea] dark:from-[#131722] dark:via-[#0f121a] dark:to-[#131722] border border-amber-900/10 dark:border-white/[0.08] p-6 sm:p-8 mb-6 shadow-sm dark:shadow-2xl transition-colors">
+        <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-[#997328] to-[#c5a059] dark:from-[#e5c378] dark:to-[#8c6d32]" />
         <div className="flex items-start space-x-4">
-          <div className="p-2.5 rounded-xl bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#e5c378] hidden sm:block">
+          <div className="p-2.5 rounded-xl bg-[#997328]/10 dark:bg-[#c5a059]/10 border border-[#997328]/25 dark:border-[#c5a059]/30 text-[#997328] dark:text-[#e5c378] hidden sm:block">
             <Compass className="w-6 h-6 animate-spin-slow" />
           </div>
           <div className="space-y-2">
             <div className="flex items-center space-x-3">
-              <span className="text-[11px] font-mono uppercase tracking-widest text-[#e5c378] font-bold">
+              <span className="text-[11px] font-mono uppercase tracking-widest text-[#997328] dark:text-[#e5c378] font-bold">
                 EXECUTIVE VISION // 每日宏观主线定调
               </span>
             </div>
-            <p className="font-serif text-lg sm:text-2xl text-slate-100 font-medium leading-relaxed italic">
+            <p className="font-serif text-lg sm:text-2xl text-slate-900 dark:text-slate-100 font-medium leading-relaxed italic">
               &ldquo;{oneLiner}&rdquo;
             </p>
           </div>
@@ -76,23 +76,23 @@ export function MacroAnchors({ oneLiner, anchors }: Props) {
           return (
             <div
               key={idx}
-              className="relative overflow-hidden rounded-xl bg-[#11141d]/90 border border-white/[0.06] p-4 sm:p-5 hover:border-white/[0.15] transition-all group"
+              className="relative overflow-hidden rounded-xl bg-white dark:bg-[#11141d]/90 border border-slate-200/80 dark:border-white/[0.06] p-4 sm:p-5 hover:border-slate-300 dark:hover:border-white/[0.15] shadow-card-light dark:shadow-none transition-all group"
             >
               <div
-                className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl ${item.bgGlow} rounded-bl-full pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity`}
+                className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl ${item.bgGlow} rounded-bl-full pointer-events-none opacity-40 dark:opacity-60 group-hover:opacity-100 transition-opacity`}
               />
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[11px] font-mono text-slate-400 font-bold tracking-wider">
+                <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400 font-bold tracking-wider">
                   {item.title}
                 </span>
                 <Icon className={`w-4 h-4 ${item.accent}`} />
               </div>
-              <div className="text-2xl sm:text-3xl font-mono font-bold text-white tracking-tight my-1">
+              <div className="text-2xl sm:text-3xl font-mono font-bold text-slate-900 dark:text-white tracking-tight my-1">
                 {item.value}
               </div>
-              <div className="flex items-center justify-between text-[11px] text-slate-400 mt-2 pt-2 border-t border-white/[0.05]">
+              <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 mt-2 pt-2 border-t border-slate-100 dark:border-white/[0.05]">
                 <span>{item.label}</span>
-                <span className="text-slate-500 font-serif italic hidden sm:inline">
+                <span className="text-slate-400 dark:text-slate-500 font-serif italic hidden sm:inline">
                   {item.sub}
                 </span>
               </div>

@@ -33,7 +33,7 @@ export default function Home() {
   const dossier = getLatestDossier();
 
   return (
-    <div className="min-h-screen bg-[#090b10] flex flex-col justify-between selection:bg-[#c5a059]/30 selection:text-white">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col justify-between selection:bg-[#c5a059]/30 selection:text-slate-900 dark:selection:text-white transition-colors duration-200">
       <div>
         <Header date={dossier.date} />
 
