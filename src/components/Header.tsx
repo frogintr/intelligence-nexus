@@ -72,23 +72,23 @@ export function Header({
   ];
 
   return (
-    <header className="border-b border-stone-200/90 dark:border-white/[0.08] bg-[#fbf9f5] dark:bg-[#0d0f14] transition-colors duration-200 sticky top-0 z-50 shadow-xs">
+    <header className="border-b border-stone-200/90 dark:border-white/[0.08] bg-[#fbf9f5]/95 dark:bg-[#0c0e14]/95 backdrop-blur-md transition-colors duration-200 sticky top-0 z-50 shadow-xs">
       {/* 1. DailyArt Gazette Top Meta Rail */}
-      <div className="border-b border-stone-200/80 dark:border-white/[0.06] bg-stone-100/60 dark:bg-black/40 py-2 px-4 sm:px-8 text-xs font-mono tracking-wider text-stone-600 dark:text-stone-300">
-        <div className="max-w-[1520px] mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div className="border-b border-stone-200/80 dark:border-white/[0.06] bg-stone-100/70 dark:bg-black/50 py-2.5 px-4 sm:px-8 text-xs font-mono tracking-wider text-stone-600 dark:text-stone-300">
+        <div className="max-w-[1720px] mx-auto flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center space-x-3">
             <span className="font-bold text-[#9e2a2b] dark:text-[#e5c378]">
               VOL. XII // ISSUE NO. 042
             </span>
             <span className="text-stone-300 dark:text-stone-700">|</span>
             <span className="hidden sm:inline font-serif italic text-stone-700 dark:text-stone-300">
-              An Independent Journal of Macro Liquidity &amp; Systematic Quantitative Intelligence
+              An Independent Sovereign Journal of Macro Liquidity &amp; Systematic Quantitative Intelligence
             </span>
           </div>
 
           <div className="flex items-center space-x-4 sm:space-x-6">
             {/* Live Clock */}
-            <div className="flex items-center space-x-1.5 text-stone-700 dark:text-stone-200 font-bold">
+            <div className="flex items-center space-x-1.5 text-stone-800 dark:text-stone-200 font-bold">
               <Clock className="w-3.5 h-3.5 text-[#9e2a2b] dark:text-[#c5a059]" />
               <span>{timeStr || "07:00:00 CST"}</span>
             </div>
@@ -144,14 +144,14 @@ export function Header({
       </div>
 
       {/* 2. Main DailyArt Monumental Editorial Masthead (大幅古典刊头) */}
-      <div className="max-w-[1520px] mx-auto px-4 sm:px-8 lg:px-12 py-6 sm:py-8 text-center">
+      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 py-6 sm:py-9 text-center">
         {/* Decorative Top Accent Kicker */}
         <div className="flex items-center justify-center space-x-4 mb-2">
-          <div className="h-[1px] w-16 bg-stone-300 dark:bg-stone-700" />
+          <div className="h-[1px] w-20 bg-stone-300 dark:bg-stone-700" />
           <span className="text-xs font-mono tracking-[0.35em] uppercase text-[#9e2a2b] dark:text-[#e5c378] font-bold">
             THE DAILYART EDITORIAL GAZETTE
           </span>
-          <div className="h-[1px] w-16 bg-stone-300 dark:bg-stone-700" />
+          <div className="h-[1px] w-20 bg-stone-300 dark:bg-stone-700" />
         </div>
 
         {/* Monumental Serif Magazine Title */}
@@ -159,18 +159,18 @@ export function Header({
           onClick={() => handleDeptSelect("cover")}
           className="inline-block group text-center focus:outline-none"
         >
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 uppercase leading-none transition-transform group-hover:scale-[1.008]">
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 uppercase leading-none transition-transform group-hover:scale-[1.008]">
             Intelligence Nexus
           </h1>
         </button>
 
         {/* Subtitle & Mission Statement */}
-        <p className="mt-3 text-sm sm:text-base font-serif italic text-stone-600 dark:text-stone-300 max-w-3xl mx-auto leading-relaxed">
-          A Daily Gazette on Global Macro Liquidity Anchors, Multi-Agent Frontier Systems &amp; Systematic Alpha
+        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-600 dark:text-stone-300 max-w-4xl mx-auto leading-relaxed">
+          A Sovereign Daily Journal of Global Macro Liquidity Anchors, Multi-Agent Frontier Systems &amp; Systematic Alpha
         </p>
 
         {/* Print Metadata Row */}
-        <div className="mt-3 pt-3 border-t border-stone-200/80 dark:border-white/[0.06] max-w-2xl mx-auto flex items-center justify-between text-xs font-mono text-stone-500 dark:text-stone-400 uppercase tracking-widest">
+        <div className="mt-4 pt-3 border-t border-stone-200/80 dark:border-white/[0.06] max-w-3xl mx-auto flex items-center justify-between text-xs font-mono text-stone-500 dark:text-stone-400 uppercase tracking-widest">
           <span>{date}</span>
           <span className="text-stone-300 dark:text-stone-700">•</span>
           <span>SHANGHAI &amp; NEW YORK</span>
@@ -180,28 +180,28 @@ export function Header({
       </div>
 
       {/* 3. DailyArt Double-Hairline Department Navigation Bar (双线古典栏目切换器) */}
-      <div className="border-t-2 border-b-2 border-double border-stone-800/90 dark:border-stone-400/90 bg-[#f7f5ed] dark:bg-[#0f121a]">
-        <div className="max-w-[1520px] mx-auto px-4 sm:px-8">
-          <nav className="flex items-center justify-between overflow-x-auto no-scrollbar py-2.5 text-sm font-serif">
+      <div className="border-t-2 border-b-2 border-double border-stone-800/90 dark:border-stone-400/90 bg-[#f7f5ed] dark:bg-[#0e1017]">
+        <div className="max-w-[1720px] mx-auto px-4 sm:px-8">
+          <nav className="flex items-center justify-between overflow-x-auto no-scrollbar py-2 text-sm sm:text-base font-serif">
             {navLinks.map((link) => {
               const isActive = activeDepartment === link.id;
               return (
                 <button
                   key={link.id}
                   onClick={() => handleDeptSelect(link.id)}
-                  className={`whitespace-nowrap px-4 py-1.5 transition-all flex items-center space-x-2 text-sm sm:text-base ${
+                  className={`whitespace-nowrap px-4 py-2 transition-all flex items-center space-x-2 rounded-sm ${
                     isActive
-                      ? "text-[#9e2a2b] dark:text-[#e5c378] font-black underline decoration-2 underline-offset-8"
-                      : "text-stone-700 dark:text-stone-300 hover:text-[#9e2a2b] dark:hover:text-[#e5c378] font-medium"
+                      ? "text-[#9e2a2b] dark:text-[#e5c378] font-black bg-stone-200/70 dark:bg-white/[0.08] underline decoration-2 underline-offset-8"
+                      : "text-stone-700 dark:text-stone-300 hover:text-[#9e2a2b] dark:hover:text-[#e5c378] font-medium hover:bg-stone-200/40 dark:hover:bg-white/[0.04]"
                   }`}
                 >
-                  <span>{link.label}</span>
+                  <span className="tracking-wide">{link.label}</span>
                   {link.badge && (
                     <span
-                      className={`text-[10px] font-mono px-1.5 py-0.2 rounded font-bold uppercase ${
+                      className={`text-[10px] font-mono px-2 py-0.5 rounded font-bold uppercase ${
                         isActive
                           ? "bg-[#9e2a2b] text-white dark:bg-[#e5c378] dark:text-stone-950"
-                          : "bg-stone-200/80 dark:bg-white/[0.06] text-stone-600 dark:text-stone-400"
+                          : "bg-stone-300/60 dark:bg-white/[0.06] text-stone-600 dark:text-stone-400"
                       }`}
                     >
                       {link.badge}

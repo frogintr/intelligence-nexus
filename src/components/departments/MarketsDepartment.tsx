@@ -32,13 +32,13 @@ export function MarketsDepartment({ stocks, commodities, onBackToCover }: Props)
 
       {/* Monumental Department Header */}
       <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6">
-        <div className="text-xs font-mono tracking-widest text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold mb-2">
+        <div className="text-xs font-mono tracking-widest text-[#166534] dark:text-[#4ade80] uppercase font-bold mb-2">
           DEPARTMENT VI · CROSS-ASSET FINANCIAL TAPE &amp; COMMODITIES
         </div>
-        <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase">
+        <h2 className="text-4xl sm:text-6xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase leading-tight">
           中美股票主线与大宗商品全景复盘
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-600 dark:text-stone-300 max-w-3xl leading-relaxed">
+        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
           全球云厂商与半导体资本开支博弈 · A/H股红利出清与高能商品供需测算，以华尔街与金融时报传统报纸宽幅版面呈现。
         </p>
       </div>
@@ -46,13 +46,13 @@ export function MarketsDepartment({ stocks, commodities, onBackToCover }: Props)
       {/* Stocks Panoramic Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* US Equities */}
-        <div className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-8 shadow-xs space-y-6">
-          <div className="flex items-center justify-between border-b border-stone-100 dark:border-white/[0.04] pb-4">
-            <span className="font-serif font-bold text-lg text-stone-900 dark:text-white flex items-center space-x-2">
-              <span className="text-xl">🇺🇸</span>
+        <div className="bg-white dark:bg-[#1a1622] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 shadow-sm space-y-6">
+          <div className="flex items-center justify-between border-b border-stone-200/80 dark:border-white/[0.06] pb-4">
+            <span className="font-serif font-black text-xl text-stone-900 dark:text-white flex items-center space-x-2">
+              <span className="text-2xl">🇺🇸</span>
               <span>美股主线板块及龙头博弈</span>
             </span>
-            <span className="text-xs font-mono text-stone-400 uppercase">
+            <span className="text-xs font-mono text-stone-400 font-bold uppercase">
               S&amp;P 500 / NASDAQ 100
             </span>
           </div>

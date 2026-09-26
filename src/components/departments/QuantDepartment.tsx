@@ -72,12 +72,12 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
             </div>
 
             {/* Title */}
-            <h3 className="text-2xl sm:text-4xl font-serif font-bold text-white leading-snug">
+            <h3 className="text-3xl sm:text-5xl font-serif font-black text-white leading-tight">
               {item.title}
             </h3>
 
-            {/* Core Hypothesis */}
-            <p className="font-serif text-base sm:text-lg text-stone-300 leading-relaxed">
+            {/* Core Hypothesis with Drop-Cap */}
+            <p className="drop-cap font-serif text-lg sm:text-xl text-stone-200 leading-relaxed">
               {item.coreHypothesis}
             </p>
 

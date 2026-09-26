@@ -23,7 +23,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        serif: ["'Newsreader'", "'Cinzel'", "'Didot'", "'Bodoni MT'", "Georgia", "Cambria", "serif"],
+        serif: ["'Newsreader'", "'Playfair Display'", "'Cinzel'", "'Didot'", "'Bodoni MT'", "Georgia", "Cambria", "serif"],
         sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "sans-serif"],
         mono: ["'JetBrains Mono'", "Fira Code", "monospace"],
       },

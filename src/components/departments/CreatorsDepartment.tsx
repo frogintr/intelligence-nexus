@@ -178,93 +178,104 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
       </div>
 
       {/* Creators Cards Grid (Spacious & Readable) */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {filteredCreators.map((creator) => (
-          <article
-            key={creator.id}
-            className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between hover:border-[#9e2a2b]/50 dark:hover:border-[#c5a059]/50 transition-all shadow-xs group"
-          >
-            <div>
-              {/* Card Top: Channel Identity & Links */}
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex items-center space-x-3.5">
-                  <div className="w-12 h-12 border border-stone-300 dark:border-white/10 bg-[#fbf9f5] dark:bg-[#0c0f16] flex items-center justify-center font-mono font-bold text-base text-[#9e2a2b] dark:text-[#e5c378] group-hover:scale-105 transition-transform shrink-0">
-                    {creator.name.slice(0, 2).toUpperCase()}
-                  </div>
-                  <div>
-                    <div className="flex items-center space-x-2">
-                      <h3 className="text-xl font-serif font-bold text-stone-900 dark:text-white group-hover:text-[#9e2a2b] dark:group-hover:text-[#e5c378] transition-colors">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {filteredCreators.map((creator) => {
+          const tierBadgeStyle =
+            creator.tierLabel === "头部权威"
+              ? "bg-[#9e2a2b] text-white"
+              : creator.tierLabel === "新锐先锋"
+              ? "bg-[#b88e39] text-stone-950 font-bold"
+              : creator.tierLabel === "代码基建"
+              ? "bg-[#1e3a8a] text-white"
+              : "bg-[#059669] text-white";
+
+          return (
+            <article
+              key={creator.id}
+              className="bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 flex flex-col justify-between hover:border-[#9e2a2b] dark:hover:border-[#c5a059] transition-all shadow-sm hover:shadow-md group"
+            >
+              <div>
+                {/* Card Top: Channel Identity & Links */}
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-14 h-14 border-2 border-stone-300 dark:border-white/20 bg-[#fbf9f5] dark:bg-[#0c0f16] flex items-center justify-center font-mono font-black text-xl text-[#9e2a2b] dark:text-[#e5c378] group-hover:scale-105 transition-transform shrink-0 shadow-xs">
+                      {creator.name.slice(0, 2).toUpperCase()}
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-serif font-black text-stone-900 dark:text-white group-hover:text-[#9e2a2b] dark:group-hover:text-[#e5c378] transition-colors leading-tight">
                         {creator.name}
                       </h3>
-                    </div>
-                    <span className="text-xs font-mono text-stone-400">
-                      {creator.handle}
-                    </span>
-                    <div className="flex flex-wrap items-center gap-2 mt-1">
-                      <span className="text-[11px] font-mono px-2 py-0.5 bg-[#9e2a2b]/10 text-[#9e2a2b] dark:bg-[#c5a059]/15 dark:text-[#e5c378] font-bold">
-                        {creator.track}
+                      <span className="text-xs font-mono text-stone-400 block mt-0.5">
+                        {creator.handle}
                       </span>
-                      <span className="text-[11px] font-mono px-2 py-0.5 bg-stone-100 dark:bg-white/[0.04] text-stone-600 dark:text-stone-300">
-                        {creator.tier}
-                      </span>
+                      <div className="flex flex-wrap items-center gap-2 mt-2">
+                        <span className="text-[11px] font-mono px-2.5 py-0.5 bg-[#9e2a2b]/10 text-[#9e2a2b] dark:bg-[#c5a059]/15 dark:text-[#e5c378] font-bold">
+                          {creator.track}
+                        </span>
+                        <span
+                          className={`text-[11px] font-mono px-2.5 py-0.5 font-bold uppercase tracking-wider ${tierBadgeStyle}`}
+                        >
+                          {creator.tierLabel}
+                        </span>
+                      </div>
                     </div>
                   </div>
+
+                  <a
+                    href={creator.channelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 border border-stone-200 dark:border-white/[0.1] text-stone-400 hover:text-red-600 hover:border-red-500/30 transition-all shrink-0 bg-stone-50 dark:bg-white/[0.02]"
+                    title="访问 YouTube 频道"
+                  >
+                    <Youtube className="w-5 h-5 text-red-600" />
+                  </a>
                 </div>
 
-                <a
-                  href={creator.channelUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 border border-stone-200 dark:border-white/[0.08] text-stone-400 hover:text-red-600 transition-colors shrink-0"
-                  title="访问 YouTube 频道"
-                >
-                  <Youtube className="w-4 h-4 text-red-600" />
-                </a>
+                {/* Tagline */}
+                {creator.tagline && (
+                  <div className="mt-5 text-base font-serif italic font-bold text-[#9e2a2b] dark:text-[#e5c378] leading-snug">
+                    “{creator.tagline}”
+                  </div>
+                )}
+
+                {/* Bio Summary */}
+                <p className="mt-3 text-base font-serif text-stone-700 dark:text-stone-300 leading-relaxed line-clamp-3">
+                  {creator.profile}
+                </p>
+
+                {/* Tags */}
+                {creator.tags && creator.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mt-5">
+                    {creator.tags.map((t, idx) => (
+                      <span
+                        key={idx}
+                        className="text-xs font-mono px-2.5 py-0.5 bg-stone-100 dark:bg-white/[0.04] text-stone-600 dark:text-stone-400 border border-stone-200/60 dark:border-white/[0.04]"
+                      >
+                        #{t}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              {/* Tagline */}
-              {creator.tagline && (
-                <div className="mt-4 text-sm font-serif italic font-bold text-[#9e2a2b] dark:text-[#e5c378]">
-                  “{creator.tagline}”
-                </div>
-              )}
-
-              {/* Bio Summary */}
-              <p className="mt-2 text-sm sm:text-base font-serif text-stone-600 dark:text-stone-300 leading-relaxed line-clamp-3">
-                {creator.profile}
-              </p>
-
-              {/* Tags */}
-              {creator.tags && creator.tags.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 mt-4">
-                  {creator.tags.map((t, idx) => (
-                    <span
-                      key={idx}
-                      className="text-xs font-mono px-2 py-0.5 bg-stone-100 dark:bg-white/[0.04] text-stone-600 dark:text-stone-400"
-                    >
-                      #{t}
-                    </span>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Card Action */}
-            <div className="mt-6 pt-4 border-t border-stone-100 dark:border-white/[0.04] flex items-center justify-between">
-              <span className="text-xs font-mono text-stone-400">
-                收录 {creator.videos ? creator.videos.length : 3} 篇核心代表作
-              </span>
-              <button
-                onClick={() => setSelectedCreator(creator)}
-                className="inline-flex items-center space-x-1.5 px-4 py-2 bg-[#9e2a2b]/10 dark:bg-[#c5a059]/10 hover:bg-[#9e2a2b] hover:text-white dark:hover:bg-[#c5a059] dark:hover:text-stone-950 text-[#9e2a2b] dark:text-[#e5c378] text-xs font-serif font-bold transition-all"
-              >
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>查看学术详析档案</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
-          </article>
-        ))}
+              {/* Card Action */}
+              <div className="mt-8 pt-5 border-t border-stone-200/80 dark:border-white/[0.06] flex items-center justify-between">
+                <span className="text-xs font-mono text-stone-500 dark:text-stone-400 font-bold">
+                  收录 {creator.videos ? creator.videos.length : 3} 篇核心代表作拆解
+                </span>
+                <button
+                  onClick={() => setSelectedCreator(creator)}
+                  className="inline-flex items-center space-x-2 px-5 py-2.5 bg-[#9e2a2b] hover:bg-[#852223] text-white dark:bg-[#c5a059] dark:hover:bg-[#b88e39] dark:text-stone-950 text-xs font-serif font-bold uppercase tracking-wider transition-all shadow-xs group/btn"
+                >
+                  <BookOpen className="w-4 h-4" />
+                  <span>查阅学术详析档案</span>
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+                </button>
+              </div>
+            </article>
+          );
+        })}
       </div>
 
       {filteredCreators.length === 0 && (
@@ -276,135 +287,206 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
       )}
 
       {/* ========================================================================= */}
-      {/* CREATOR DEEP DOSSIER MODAL (学术专刊详析大抽屉)                           */}
+      {/* CREATOR DEEP DOSSIER SLIDE-OVER DRAWER (学术专刊右侧滑出详析大抽屉)         */}
       {/* ========================================================================= */}
       {selectedCreator && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-8 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
+        <div className="fixed inset-0 z-50 overflow-hidden">
+          {/* Backdrop Blur Overlay */}
           <div
-            className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-300 dark:border-white/[0.15] p-6 sm:p-12 shadow-2xl space-y-8"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Modal Header */}
-            <div className="flex items-start justify-between gap-4 border-b-2 border-stone-800 dark:border-stone-400 pb-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 border border-stone-300 dark:border-white/10 bg-white dark:bg-[#12151e] flex items-center justify-center font-mono font-bold text-2xl text-[#9e2a2b] dark:text-[#e5c378]">
-                  {selectedCreator.name.slice(0, 2).toUpperCase()}
-                </div>
-                <div>
-                  <div className="flex items-center space-x-3">
-                    <h2 className="text-2xl sm:text-3xl font-serif font-black text-stone-900 dark:text-white">
-                      {selectedCreator.name}
-                    </h2>
-                    <span className="text-xs font-mono text-stone-400">
-                      {selectedCreator.handle}
-                    </span>
+            className="fixed inset-0 bg-stone-950/70 backdrop-blur-md transition-opacity animate-in fade-in duration-200"
+            onClick={() => setSelectedCreator(null)}
+          />
+
+          <div className="fixed inset-y-0 right-0 max-w-full flex pl-6 sm:pl-10">
+            <div
+              className="w-screen max-w-4xl bg-[#fbf9f5] dark:bg-[#0c0f16] border-l-2 border-stone-300 dark:border-white/10 shadow-2xl flex flex-col justify-between overflow-y-auto animate-in slide-in-from-right duration-300"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Sticky Drawer Header */}
+              <div className="sticky top-0 z-20 bg-[#fbf9f5]/95 dark:bg-[#0c0f16]/95 backdrop-blur-md border-b-2 border-stone-800 dark:border-stone-400 p-6 sm:p-8 flex items-center justify-between gap-4">
+                <div className="flex items-center space-x-4">
+                  <div className="w-14 h-14 border-2 border-stone-300 dark:border-white/20 bg-white dark:bg-[#12151e] flex items-center justify-center font-mono font-black text-xl text-[#9e2a2b] dark:text-[#e5c378] shadow-xs">
+                    {selectedCreator.name.slice(0, 2).toUpperCase()}
                   </div>
-                  <p className="text-sm sm:text-base font-serif italic text-[#9e2a2b] dark:text-[#e5c378] mt-1">
-                    “{selectedCreator.tagline}”
-                  </p>
+                  <div>
+                    <div className="flex items-center space-x-3">
+                      <h2 className="text-2xl sm:text-3xl font-serif font-black text-stone-900 dark:text-white">
+                        {selectedCreator.name}
+                      </h2>
+                      <span className="text-xs font-mono text-stone-400">
+                        {selectedCreator.handle}
+                      </span>
+                    </div>
+                    <div className="flex items-center space-x-2 mt-1">
+                      <span className="text-[11px] font-mono px-2 py-0.5 bg-[#9e2a2b] text-white font-bold">
+                        {selectedCreator.tierLabel}
+                      </span>
+                      <span className="text-[11px] font-mono px-2 py-0.5 bg-stone-200 dark:bg-white/[0.08] text-stone-700 dark:text-stone-300 font-bold">
+                        {selectedCreator.track}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3">
+                  <a
+                    href={selectedCreator.channelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 border border-stone-200 dark:border-white/[0.1] text-stone-500 hover:text-red-600 transition-colors bg-white dark:bg-stone-900"
+                    title="访问 YouTube 频道"
+                  >
+                    <Youtube className="w-5 h-5 text-red-600" />
+                  </a>
+                  <button
+                    onClick={() => setSelectedCreator(null)}
+                    className="p-2.5 border border-stone-300 dark:border-white/[0.1] text-stone-600 hover:text-stone-950 dark:text-stone-300 dark:hover:text-white transition-colors bg-white dark:bg-stone-900"
+                    title="关闭档案"
+                  >
+                    <X className="w-6 h-6" />
+                  </button>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-2">
-                <a
-                  href={selectedCreator.channelUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 border border-stone-200 dark:border-white/[0.08] text-stone-500 hover:text-red-600 transition-colors"
-                  title="访问 YouTube 频道"
-                >
-                  <Youtube className="w-5 h-5 text-red-600" />
-                </a>
-                <button
-                  onClick={() => setSelectedCreator(null)}
-                  className="p-2 border border-stone-200 dark:border-white/[0.08] text-stone-500 hover:text-stone-900 dark:hover:text-white transition-colors"
-                >
-                  <X className="w-6 h-6" />
-                </button>
-              </div>
-            </div>
+              {/* Drawer Scrollable Body */}
+              <div className="p-6 sm:p-10 space-y-10">
+                {/* Tagline Callout */}
+                {selectedCreator.tagline && (
+                  <div className="p-6 bg-white dark:bg-[#12151e] border-l-4 border-[#9e2a2b] dark:border-[#c5a059] shadow-xs">
+                    <p className="text-xl sm:text-2xl font-serif italic font-bold text-[#9e2a2b] dark:text-[#e5c378] leading-relaxed">
+                      “{selectedCreator.tagline}”
+                    </p>
+                  </div>
+                )}
 
-            {/* Profile Bio */}
-            <div className="p-6 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08]">
-              <div className="text-xs font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold mb-2">
-                ACADEMIC POSITIONING // 学术定位与履历
-              </div>
-              <p className="font-serif text-base text-stone-700 dark:text-stone-300 leading-relaxed">
-                {selectedCreator.profile}
-              </p>
-            </div>
+                {/* Section 0: Academic Positioning & Bio */}
+                <div className="space-y-3">
+                  <div className="text-xs font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold tracking-wider">
+                    01 // ACADEMIC POSITIONING &amp; BACKGROUND (学术定位与背景履历)
+                  </div>
+                  <div className="p-6 sm:p-8 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] shadow-xs">
+                    <p className="drop-cap font-serif text-base sm:text-lg text-stone-800 dark:text-stone-200 leading-relaxed">
+                      {selectedCreator.profile}
+                    </p>
+                  </div>
+                </div>
 
-            {/* Section 1: Three Signature Works */}
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2 text-sm font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold">
-                <PlayCircle className="w-4 h-4" />
-                <span>THREE SIGNATURE MASTERPIECES // 三大代表作深度拆解</span>
-              </div>
+                {/* Section 1: Three Signature Masterpieces */}
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-2 text-xs font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold tracking-wider">
+                    <PlayCircle className="w-4 h-4" />
+                    <span>02 // THREE SIGNATURE MASTERPIECES (三大代表作深度拆解)</span>
+                  </div>
 
-              <div className="space-y-4">
-                {selectedCreator.videos &&
-                  selectedCreator.videos.map((vid, vIdx) => (
-                    <div
-                      key={vIdx}
-                      className="p-6 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] space-y-2"
-                    >
-                      <div className="flex items-baseline justify-between">
-                        <h4 className="text-base sm:text-lg font-serif font-bold text-stone-900 dark:text-white">
-                          [{String(vIdx + 1).padStart(2, "0")}] {vid.title}
-                        </h4>
-                        <span className="text-xs font-mono text-stone-400">
-                          {vid.theme}
-                        </span>
+                  <div className="space-y-4">
+                    {selectedCreator.videos &&
+                      selectedCreator.videos.map((vid, vIdx) => (
+                        <div
+                          key={vIdx}
+                          className="p-6 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] space-y-3 shadow-xs"
+                        >
+                          <div className="flex flex-wrap items-baseline justify-between gap-2">
+                            <h4 className="text-lg sm:text-xl font-serif font-black text-stone-900 dark:text-white">
+                              [{String(vIdx + 1).padStart(2, "0")}] {vid.title}
+                            </h4>
+                            <span className="text-xs font-mono px-2 py-0.5 bg-stone-100 dark:bg-white/[0.04] text-stone-500 dark:text-stone-400 font-bold">
+                              {vid.theme}
+                            </span>
+                          </div>
+                          <p className="text-sm sm:text-base font-serif text-stone-700 dark:text-stone-300 leading-relaxed pt-2 border-t border-stone-100 dark:border-white/[0.04]">
+                            {vid.keyInsights}
+                          </p>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+
+                {/* Section 2: 30-Second Retention Hook Blueprint */}
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 uppercase font-bold tracking-wider">
+                    <Lightbulb className="w-4 h-4" />
+                    <span>03 // FIRST 30-SECOND RETENTION HOOK (前 30 秒黄金抓手公式)</span>
+                  </div>
+
+                  <div className="p-6 sm:p-8 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] shadow-xs space-y-4">
+                    {/* Visual Timeline Rhythm Indicators */}
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+                      <div className="p-3 bg-stone-50 dark:bg-[#0c0f16] border border-stone-200/70 dark:border-white/[0.06]">
+                        <span className="text-[#9e2a2b] dark:text-[#e5c378] font-bold">0:00 - 0:06</span>
+                        <div className="font-serif font-bold text-stone-800 dark:text-stone-200 mt-1">
+                          视觉奇观与逆常识反差
+                        </div>
                       </div>
-                      <p className="text-sm font-serif text-stone-600 dark:text-stone-300 leading-relaxed pt-2 border-t border-stone-100 dark:border-white/[0.04]">
-                        {vid.keyInsights}
-                      </p>
+                      <div className="p-3 bg-stone-50 dark:bg-[#0c0f16] border border-stone-200/70 dark:border-white/[0.06]">
+                        <span className="text-sky-700 dark:text-sky-400 font-bold">0:06 - 0:16</span>
+                        <div className="font-serif font-bold text-stone-800 dark:text-stone-200 mt-1">
+                          痛点共鸣与悬念铺垫
+                        </div>
+                      </div>
+                      <div className="p-3 bg-stone-50 dark:bg-[#0c0f16] border border-stone-200/70 dark:border-white/[0.06]">
+                        <span className="text-emerald-700 dark:text-emerald-400 font-bold">0:16 - 0:30</span>
+                        <div className="font-serif font-bold text-stone-800 dark:text-stone-200 mt-1">
+                          核心解法交付与实盘佐证
+                        </div>
+                      </div>
                     </div>
-                  ))}
-              </div>
-            </div>
 
-            {/* Section 2: 30s Hook Secret */}
-            <div className="p-6 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] space-y-3">
-              <div className="flex items-center space-x-2 text-sm font-mono text-emerald-700 dark:text-emerald-400 uppercase font-bold">
-                <Lightbulb className="w-4 h-4" />
-                <span>FIRST 30-SECOND RETENTION HOOK // 前 30 秒黄金抓手</span>
-              </div>
-              <p className="font-serif text-sm sm:text-base text-stone-700 dark:text-stone-300 leading-relaxed">
-                {selectedCreator.hookAnalysis}
-              </p>
-            </div>
+                    <p className="font-serif text-base sm:text-lg text-stone-800 dark:text-stone-200 leading-relaxed pt-2">
+                      {selectedCreator.hookAnalysis}
+                    </p>
+                  </div>
+                </div>
 
-            {/* Section 3: Script Architecture */}
-            <div className="p-6 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] space-y-3">
-              <div className="flex items-center space-x-2 text-sm font-mono text-sky-700 dark:text-sky-400 uppercase font-bold">
-                <BookOpen className="w-4 h-4" />
-                <span>VIDEO SCRIPT ARCHITECTURE // 文案剧本架构</span>
-              </div>
-              <p className="font-serif text-sm sm:text-base text-stone-700 dark:text-stone-300 leading-relaxed">
-                {selectedCreator.scriptFramework}
-              </p>
-            </div>
+                {/* Section 3: Video Script Architecture */}
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2 text-xs font-mono text-sky-700 dark:text-sky-400 uppercase font-bold tracking-wider">
+                    <BookOpen className="w-4 h-4" />
+                    <span>04 // VIDEO SCRIPT ARCHITECTURE (文案剧本架构与完播率节奏)</span>
+                  </div>
+                  <div className="p-6 sm:p-8 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] shadow-xs">
+                    <p className="font-serif text-base sm:text-lg text-stone-800 dark:text-stone-200 leading-relaxed">
+                      {selectedCreator.scriptFramework}
+                    </p>
+                  </div>
+                </div>
 
-            {/* Section 4: Quantitative Trading Insight */}
-            <div className="p-6 bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-200/90 dark:border-white/[0.08] space-y-3">
-              <div className="flex items-center space-x-2 text-sm font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold">
-                <CheckCircle2 className="w-4 h-4" />
-                <span>QUANTITATIVE TRADING INSIGHT // 量化投研启示</span>
+                {/* Section 4: Quantitative Trading Insight */}
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2 text-xs font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold tracking-wider">
+                    <CheckCircle2 className="w-4 h-4" />
+                    <span>05 // QUANTITATIVE TRADING INSIGHT (量化投研启示与开源交付法则)</span>
+                  </div>
+                  <div className="p-6 sm:p-8 bg-[#fbf9f5] dark:bg-[#080d18] border-2 border-[#9e2a2b]/30 dark:border-[#c5a059]/30 shadow-xs">
+                    <p className="font-serif text-base sm:text-lg text-stone-900 dark:text-stone-100 leading-relaxed font-medium">
+                      {selectedCreator.actionableTakeaways?.forTrading || selectedCreator.positioning}
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p className="font-serif text-sm sm:text-base text-stone-800 dark:text-stone-200 leading-relaxed font-medium">
-                {selectedCreator.actionableTakeaways?.forTrading || selectedCreator.positioning}
-              </p>
-            </div>
 
-            {/* Modal Footer */}
-            <div className="pt-4 border-t border-stone-200 dark:border-white/[0.08] flex justify-end">
-              <button
-                onClick={() => setSelectedCreator(null)}
-                className="px-6 py-2.5 bg-[#9e2a2b] text-white text-xs font-serif font-bold uppercase tracking-wider"
-              >
-                关闭学术档案 (Close)
-              </button>
+              {/* Drawer Footer Actions */}
+              <div className="sticky bottom-0 z-20 bg-stone-100 dark:bg-black/90 border-t border-stone-200 dark:border-white/[0.1] p-6 flex flex-wrap items-center justify-between gap-4">
+                <span className="text-xs font-mono text-stone-500 dark:text-stone-400">
+                  DOSSIER ARCHIVE ID // {selectedCreator.id.toUpperCase()} · 100% VERIFIED
+                </span>
+                <div className="flex items-center space-x-3">
+                  <a
+                    href={selectedCreator.channelUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-xs font-serif font-bold uppercase tracking-wider transition-colors inline-flex items-center space-x-2"
+                  >
+                    <Youtube className="w-4 h-4" />
+                    <span>访问频道</span>
+                  </a>
+                  <button
+                    onClick={() => setSelectedCreator(null)}
+                    className="px-6 py-2.5 bg-[#9e2a2b] hover:bg-[#852223] text-white dark:bg-[#c5a059] dark:hover:bg-[#b88e39] dark:text-stone-950 text-xs font-serif font-bold uppercase tracking-wider transition-colors"
+                  >
+                    关闭档案 (Close)
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

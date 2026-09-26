@@ -49,8 +49,21 @@ export function MagazineShell({ dossier }: Props) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const departmentClass =
+    {
+      cover: "dept-cover",
+      ai: "dept-ai",
+      quant: "dept-quant",
+      creators: "dept-creators",
+      playbook: "dept-playbook",
+      markets: "dept-markets",
+      gazette: "dept-gazette",
+    }[activeDepartment] || "dept-cover";
+
   return (
-    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col justify-between selection:bg-[#9e2a2b]/20 selection:text-stone-900 dark:selection:text-white transition-colors duration-200">
+    <div
+      className={`min-h-screen ${departmentClass} text-[var(--foreground)] flex flex-col justify-between selection:bg-[#9e2a2b]/20 selection:text-stone-900 dark:selection:text-white transition-colors duration-300`}
+    >
       <div>
         {/* DailyArt Gazette Masthead with Interactive Department Switcher */}
         <Header
@@ -59,8 +72,8 @@ export function MagazineShell({ dossier }: Props) {
           onSelectDepartment={handleSelectDepartment}
         />
 
-        {/* Spacious, Breathable Department Container */}
-        <main className="max-w-[1520px] mx-auto px-4 sm:px-8 lg:px-12 py-10">
+        {/* Expansive, Breathable DailyArt Department Canvas (max-w-[1720px]) */}
+        <main className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 py-8 sm:py-12">
           {activeDepartment === "cover" && (
             <CoverDepartment
               dossier={dossier}

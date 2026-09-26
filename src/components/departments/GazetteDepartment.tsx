@@ -39,28 +39,28 @@ export function GazetteDepartment({ onBackToCover }: Props) {
 
       {/* Monumental Department Header */}
       <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6">
-        <div className="text-xs font-mono tracking-widest text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold mb-2">
+        <div className="text-xs font-mono tracking-widest text-[#78350f] dark:text-[#d97706] uppercase font-bold mb-2">
           DEPARTMENT VII · DAILY DISPATCH GAZETTE &amp; RESEARCH PRIVILEGES
         </div>
-        <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase">
+        <h2 className="text-4xl sm:text-6xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase leading-tight">
           晨报速递与投研内参订约
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-600 dark:text-stone-300 max-w-3xl leading-relaxed">
+        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
           每日北京时间 07:00（美东 19:00），将全球宏观流动性突变、前沿 AI 范式演进与装裱级量化策略代码准时呈递。剔除浮夸噪音，坚持学术级真实信噪比与完全开源交付。
         </p>
       </div>
 
       {/* DailyArt Magazine Split Editorial Box */}
-      <div className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-14 shadow-xs">
+      <div className="bg-white dark:bg-[#18181d] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-14 shadow-sm">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left Column: Editorial Proposition */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center space-x-2 px-3 py-1 border border-[#9e2a2b]/30 dark:border-[#c5a059]/30 bg-[#9e2a2b]/10 dark:bg-[#c5a059]/10 text-[#9e2a2b] dark:text-[#e5c378] text-xs font-mono font-bold uppercase tracking-widest">
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1 border border-[#78350f]/30 dark:border-[#d97706]/30 bg-[#78350f]/10 dark:bg-[#d97706]/10 text-[#78350f] dark:text-[#d97706] text-xs font-mono font-bold uppercase tracking-widest">
               <Sparkles className="w-3.5 h-3.5" />
               <span>THE DAILY DISPATCH // 每日清晨推送</span>
             </div>
 
-            <h3 className="text-2xl sm:text-4xl font-serif font-black text-stone-900 dark:text-white leading-tight">
+            <h3 className="text-3xl sm:text-5xl font-serif font-black text-stone-900 dark:text-white leading-tight">
               订阅 Intelligence Nexus 每日投研内参
             </h3>
 

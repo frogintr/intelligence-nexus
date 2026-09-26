@@ -1,31 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,400;1,700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #fbf9f5;
+  --background: #faf8f3;
   --foreground: #1c1917;
   --paper-cream: #f6f3eb;
   --editorial-crimson: #9e2a2b;
   --editorial-gold: #b88e39;
-  --hairline-border: rgba(0, 0, 0, 0.1);
+  --hairline-border: rgba(0, 0, 0, 0.08);
 }
 
 .dark {
-  --background: #0d0f14;
+  --background: #0d0f15;
   --foreground: #f5f5f4;
-  --paper-cream: #141720;
-  --editorial-crimson: #d94a56;
+  --paper-cream: #131620;
+  --editorial-crimson: #e55353;
   --editorial-gold: #e5c378;
   --hairline-border: rgba(255, 255, 255, 0.08);
+}
+
+/* ------------------------------------------------------------- */
+/* Per-Department Distinct Atmospheric Backgrounds & Styling     */
+/* ------------------------------------------------------------- */
+
+/* Department 01: Cover Dispatch (Warm Imperial Museum Parchment) */
+.dept-cover {
+  --dept-bg: #faf7ee;
+  --dept-card-bg: #ffffff;
+  --dept-border: rgba(0, 0, 0, 0.08);
+  --dept-accent: #9e2a2b;
+  background-color: var(--dept-bg);
+}
+.dark .dept-cover {
+  --dept-bg: #0c0e14;
+  --dept-card-bg: #12151e;
+  --dept-border: rgba(255, 255, 255, 0.08);
+  --dept-accent: #e55353;
+  background-color: var(--dept-bg);
+}
+
+/* Department 02: AI Frontiers (Oxford Archive Blue / Slate) */
+.dept-ai {
+  --dept-bg: #f4f7fb;
+  --dept-card-bg: #ffffff;
+  --dept-border: rgba(30, 58, 138, 0.1);
+  --dept-accent: #1e3a8a;
+  background-color: var(--dept-bg);
+}
+.dark .dept-ai {
+  --dept-bg: #090d18;
+  --dept-card-bg: #0e1424;
+  --dept-border: rgba(96, 165, 250, 0.1);
+  --dept-accent: #60a5fa;
+  background-color: var(--dept-bg);
+}
+
+/* Department 03: Quant Alpha Gallery (Gilded Museum Exhibition Hall) */
+.dept-quant {
+  --dept-bg: #f5f2eb;
+  --dept-card-bg: #ffffff;
+  --dept-border: rgba(184, 142, 57, 0.15);
+  --dept-accent: #b88e39;
+  background-color: var(--dept-bg);
+}
+.dark .dept-quant {
+  --dept-bg: #08090c;
+  --dept-card-bg: #11141d;
+  --dept-border: rgba(229, 195, 120, 0.15);
+  --dept-accent: #e5c378;
+  background-color: var(--dept-bg);
+}
+
+/* Department 04: 40 Creators Archive (Warm Venetian Travertine & Burgundy) */
+.dept-creators {
+  --dept-bg: #faf6f0;
+  --dept-card-bg: #ffffff;
+  --dept-border: rgba(136, 19, 55, 0.1);
+  --dept-accent: #881337;
+  background-color: var(--dept-bg);
+}
+.dark .dept-creators {
+  --dept-bg: #0d0f16;
+  --dept-card-bg: #131722;
+  --dept-border: rgba(255, 255, 255, 0.08);
+  --dept-accent: #f43f5e;
+  background-color: var(--dept-bg);
+}
+
+/* Department 05: Viral Playbook (Technical Blueprint Indigo) */
+.dept-playbook {
+  --dept-bg: #eef4f8;
+  --dept-card-bg: #ffffff;
+  --dept-border: rgba(67, 56, 202, 0.1);
+  --dept-accent: #4338ca;
+  background-color: var(--dept-bg);
+}
+.dark .dept-playbook {
+  --dept-bg: #080f1e;
+  --dept-card-bg: #0d172b;
+  --dept-border: rgba(129, 140, 248, 0.1);
+  --dept-accent: #818cf8;
+  background-color: var(--dept-bg);
+}
+
+/* Department 06: Global Tape & Markets (Financial Times Newsprint Salmon) */
+.dept-markets {
+  --dept-bg: #f7efe8;
+  --dept-card-bg: #ffffff;
+  --dept-border: rgba(22, 101, 52, 0.1);
+  --dept-accent: #166534;
+  background-color: var(--dept-bg);
+}
+.dark .dept-markets {
+  --dept-bg: #131017;
+  --dept-card-bg: #1a1622;
+  --dept-border: rgba(255, 255, 255, 0.08);
+  --dept-accent: #4ade80;
+  background-color: var(--dept-bg);
+}
+
+/* Department 07: Daily Gazette (Vintage Broadside Aged Newsprint) */
+.dept-gazette {
+  --dept-bg: #f6f1e5;
+  --dept-card-bg: #ffffff;
+  --dept-border: rgba(120, 53, 15, 0.1);
+  --dept-accent: #78350f;
+  background-color: var(--dept-bg);
+}
+.dark .dept-gazette {
+  --dept-bg: #111114;
+  --dept-card-bg: #18181d;
+  --dept-border: rgba(255, 255, 255, 0.08);
+  --dept-accent: #d97706;
+  background-color: var(--dept-bg);
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans), 'Inter', system-ui, -apple-system, sans-serif;
   letter-spacing: -0.01em;
   overflow-x: hidden;
   transition: background-color 0.25s ease, color 0.25s ease;
@@ -33,14 +149,17 @@ body {
 
 /* Authentic Magazine Drop-Cap */
 .drop-cap::first-letter {
-  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  font-family: 'Newsreader', 'Playfair Display', Georgia, 'Times New Roman', serif;
   float: left;
-  font-size: 3.4rem;
-  line-height: 0.85;
-  padding-right: 0.55rem;
-  padding-top: 0.15rem;
-  color: var(--editorial-crimson);
+  font-size: 3.8rem;
+  line-height: 0.82;
+  padding-right: 0.65rem;
+  padding-top: 0.2rem;
+  color: #9e2a2b;
   font-weight: 700;
+}
+.dark .drop-cap::first-letter {
+  color: #e5c378;
 }
 
 /* Magazine Double Hairline Rule */
@@ -53,8 +172,8 @@ body {
 
 /* Custom Editorial Scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -62,18 +181,18 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(150, 150, 150, 0.25);
+  background: rgba(150, 150, 150, 0.3);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(158, 42, 43, 0.5);
+  background: rgba(158, 42, 43, 0.6);
 }
 
 /* Museum Placard & Framed Code Canvas */
 .museum-frame {
   border: 1px solid var(--hairline-border);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
 }
 
 .framed-code-window {

@@ -44,36 +44,36 @@ export function AiDepartment({ updates, onBackToCover }: Props) {
         {updates.map((item, idx) => (
           <article
             key={item.id}
-            className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-12 shadow-xs space-y-6"
+            className="bg-white dark:bg-[#0e1424] border-2 border-stone-200/90 dark:border-blue-900/30 p-8 sm:p-14 shadow-sm space-y-6"
           >
             {/* Meta Header */}
-            <div className="flex items-center justify-between border-b border-stone-100 dark:border-white/[0.04] pb-4">
+            <div className="flex items-center justify-between border-b border-stone-200/80 dark:border-white/[0.06] pb-4">
               <div className="flex items-center space-x-3">
-                <span className="px-3 py-1 text-xs font-mono uppercase tracking-widest bg-[#9e2a2b] text-white font-bold">
+                <span className="px-3.5 py-1 text-xs font-mono uppercase tracking-widest bg-[#1e3a8a] text-white font-bold shadow-xs">
                   {item.tag}
                 </span>
-                <span className="text-sm font-serif italic text-stone-600 dark:text-stone-400">
+                <span className="text-sm font-serif italic text-stone-600 dark:text-stone-300">
                   {item.category}
                 </span>
               </div>
-              <span className="text-xs font-mono text-stone-400">
-                DISPATCH NO. {String(idx + 1).padStart(2, "0")} · 2026 EDITION
+              <span className="text-xs font-mono text-stone-400 font-bold">
+                RESEARCH MONOGRAPH NO. {String(idx + 1).padStart(2, "0")} · PEER VERIFIED
               </span>
             </div>
 
             {/* Headline */}
-            <h3 className="text-2xl sm:text-4xl font-serif font-bold text-stone-900 dark:text-white leading-snug">
+            <h3 className="text-3xl sm:text-5xl font-serif font-black text-stone-900 dark:text-white leading-[1.12]">
               {item.title}
             </h3>
 
-            {/* Main Narrative Excerpt */}
-            <p className="font-serif text-base sm:text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
+            {/* Main Narrative Excerpt with Drop-Cap */}
+            <p className="drop-cap font-serif text-lg sm:text-xl text-stone-800 dark:text-stone-200 leading-relaxed">
               {item.summary}
             </p>
 
             {/* YouTube Embed Framed in Gallery Inset */}
             {item.youtubeId && (
-              <div className="my-8 border border-stone-300 dark:border-white/[0.1] bg-black aspect-video relative shadow-md">
+              <div className="my-8 border-2 border-stone-300 dark:border-white/[0.15] bg-black aspect-video relative shadow-lg">
                 <iframe
                   className="w-full h-full"
                   src={`https://www.youtube-nocookie.com/embed/${item.youtubeId}`}
@@ -86,15 +86,15 @@ export function AiDepartment({ updates, onBackToCover }: Props) {
             )}
 
             {/* Key Engineering Takeaways in Museum Placard Box */}
-            <div className="p-6 bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-200/90 dark:border-white/[0.06] space-y-4">
-              <div className="text-xs font-mono uppercase tracking-widest text-[#9e2a2b] dark:text-[#e5c378] font-bold flex items-center space-x-2">
+            <div className="p-8 bg-[#f4f7fb] dark:bg-[#080d18] border border-blue-900/20 dark:border-blue-500/20 space-y-5">
+              <div className="text-xs font-mono uppercase tracking-widest text-[#1e3a8a] dark:text-[#60a5fa] font-black flex items-center space-x-2">
                 <BookOpen className="w-4 h-4" />
                 <span>CORE ENGINEERING CONCLUSIONS // 核心实战工程结论</span>
               </div>
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {item.takeaways.map((takeaway, tIdx) => (
-                  <div key={tIdx} className="flex items-start space-x-3 text-sm sm:text-base font-serif text-stone-800 dark:text-stone-200 leading-relaxed">
-                    <span className="text-[#9e2a2b] dark:text-[#e5c378] font-bold font-mono text-base mt-0.5">
+                  <div key={tIdx} className="flex items-start space-x-3.5 text-base sm:text-lg font-serif text-stone-800 dark:text-stone-200 leading-relaxed">
+                    <span className="text-[#1e3a8a] dark:text-[#60a5fa] font-black font-mono text-base mt-0.5">
                       [{String(tIdx + 1).padStart(2, "0")}]
                     </span>
                     <span>{takeaway}</span>
@@ -104,10 +104,10 @@ export function AiDepartment({ updates, onBackToCover }: Props) {
             </div>
 
             {/* Article Footer Colophon */}
-            <div className="pt-4 border-t border-stone-100 dark:border-white/[0.04] flex items-center justify-between text-xs font-mono text-stone-400">
-              <span>READING TIME: ~5 MINS · INDUSTRIAL PROTOCOL</span>
-              <span className="text-[#9e2a2b] dark:text-[#e5c378] font-semibold">
-                FULL CODE REPRODUCIBLE
+            <div className="pt-4 border-t border-stone-200/80 dark:border-white/[0.06] flex items-center justify-between text-xs font-mono text-stone-400">
+              <span>READING TIME: ~6 MINS · INDUSTRIAL SPECIFICATION</span>
+              <span className="text-[#1e3a8a] dark:text-[#60a5fa] font-bold">
+                100% REPRODUCIBLE IN PRODUCTION
               </span>
             </div>
           </article>
