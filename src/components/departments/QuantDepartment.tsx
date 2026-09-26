@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { QuantResearch } from "../../types";
 import { ArrowLeft, Check, Copy, Terminal, Award, LineChart } from "lucide-react";
+import { QuantArchitectureDiagram } from "./QuantArchitectureDiagram";
 
 interface Props {
   research: QuantResearch[];
@@ -81,35 +82,58 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
               {item.coreHypothesis}
             </p>
 
+            {/* Mathematical Formulation Callout (High Design Taste) */}
+            {item.mathFormula && (
+              <div className="p-5 sm:p-6 bg-[#0a0c12] border-l-4 border-[#c5a059] shadow-inner space-y-2">
+                <span className="text-xs font-mono uppercase tracking-widest text-[#e5c378] font-bold block">
+                  MATHEMATICAL FORMULATION // 数理公理与状态转移方程
+                </span>
+                <div className="font-mono text-base sm:text-lg text-emerald-400 dark:text-emerald-300 overflow-x-auto py-2">
+                  <code>{item.mathFormula}</code>
+                </div>
+              </div>
+            )}
+
+            {/* Museum Plate Technical Schematic Diagram */}
+            <QuantArchitectureDiagram plateId={item.id} />
+
             {/* Performance Indicators Placard (Large & Clear) */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 bg-[#0c0e14] border border-white/[0.08] font-mono">
               <div>
-                <div className="text-xs text-stone-400 uppercase">SHARPE RATIO</div>
-                <div className="text-2xl sm:text-3xl font-bold text-[#e5c378] mt-1">3.12 (ANN.)</div>
+                <div className="text-xs text-stone-400 uppercase font-bold">SHARPE RATIO</div>
+                <div className="text-2xl sm:text-3xl font-black text-[#e5c378] mt-1">
+                  {item.backtestSummary.sharpe || item.backtestSummary.sharpeRatio || "3.12 (ANN.)"}
+                </div>
               </div>
               <div>
-                <div className="text-xs text-stone-400 uppercase">MAX DRAWDOWN</div>
-                <div className="text-2xl sm:text-3xl font-bold text-emerald-400 mt-1">4.8%</div>
+                <div className="text-xs text-stone-400 uppercase font-bold">ANNUAL RETURN</div>
+                <div className="text-2xl sm:text-3xl font-black text-emerald-400 mt-1">
+                  {item.backtestSummary.annualReturn || "28.4%"}
+                </div>
               </div>
               <div>
-                <div className="text-xs text-stone-400 uppercase">INFORMATION RATIO</div>
-                <div className="text-2xl sm:text-3xl font-bold text-stone-200 mt-1">1.84</div>
+                <div className="text-xs text-stone-400 uppercase font-bold">MAX DRAWDOWN</div>
+                <div className="text-2xl sm:text-3xl font-black text-rose-400 mt-1">
+                  {item.backtestSummary.maxDrawdown || "4.2%"}
+                </div>
               </div>
               <div>
-                <div className="text-xs text-stone-400 uppercase">SIGNAL HORIZON</div>
-                <div className="text-2xl sm:text-3xl font-bold text-stone-200 mt-1">15m ~ 1h</div>
+                <div className="text-xs text-stone-400 uppercase font-bold">SIGNAL HORIZON</div>
+                <div className="text-2xl sm:text-3xl font-black text-stone-200 mt-1">
+                  {item.backtestSummary.signalHorizon || "15m ~ 1h"}
+                </div>
               </div>
             </div>
 
             {/* Framed Code Canvas (装裱级代码画作) */}
-            <div className="my-8 border border-white/[0.15] bg-[#07090e] shadow-2xl overflow-hidden">
+            <div className="my-8 border-2 border-white/[0.15] bg-[#07090e] shadow-2xl overflow-hidden">
               <div className="flex items-center justify-between px-6 py-3 bg-[#151a24] border-b border-white/[0.08]">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 rounded-full bg-rose-500/80" />
                   <div className="w-3 h-3 rounded-full bg-amber-500/80" />
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
                   <span className="ml-3 text-xs font-mono text-stone-300 font-bold">
-                    vectorized_alpha_engine.py — Python 3.11+
+                    vectorized_alpha_engine.py — Python 3.11+ / VectorBT
                   </span>
                 </div>
                 <button
@@ -138,7 +162,7 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
             {/* Museum Placard Inscription Caption */}
             <div className="text-center pt-2">
               <p className="text-sm font-serif italic text-stone-400">
-                Plate IV. Algorithmic Formulation for Cross-Asset Reinforcement Learning Hedging Protocol.
+                Plate {["I", "II", "III", "IV"][idx] || "I"}. Systematic Algorithmic Formulation &amp; Vectorized Execution Protocol.
               </p>
             </div>
           </article>

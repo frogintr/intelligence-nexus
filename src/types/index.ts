@@ -18,6 +18,8 @@ export interface AiUpdate {
   tag: string;
   category: "CASE" | "BREAKTHROUGH" | "TREND";
   summary: string;
+  detailedAnalysis?: string;
+  benchmarkMetrics?: Record<string, string>;
   sourceUrl?: string;
   youtubeId?: string;
   imageUrl?: string;
@@ -30,13 +32,18 @@ export interface QuantResearch {
   authors?: string;
   factorCategory: string;
   coreHypothesis: string;
+  mathFormula?: string;
   backtestSummary: {
-    sharpeRatio: string;
+    sharpe?: string;
+    sharpeRatio?: string;
     annualReturn: string;
     maxDrawdown: string;
+    informationRatio?: string;
+    signalHorizon?: string;
     turnover?: string;
   };
   sampleCode: string;
+  paperUrl?: string;
 }
 
 export interface StockMarket {

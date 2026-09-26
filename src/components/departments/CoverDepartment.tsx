@@ -3,6 +3,7 @@
 import React from "react";
 import { DailyDossier } from "../../types";
 import { Compass, Quote, TrendingUp, DollarSign, Activity, Flame, Scale, ArrowRight, BookOpen, Cpu, Layers, Terminal } from "lucide-react";
+import { CoverTransmissionCanvas } from "./CoverTransmissionCanvas";
 
 interface Props {
   dossier: DailyDossier;
@@ -105,52 +106,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
           </p>
 
           {/* Museum-Framed Copperplate Engraving / System Transmission Canvas */}
-          <div className="my-10 border border-stone-300/80 dark:border-white/[0.1] bg-[#fdfcf9] dark:bg-[#090b10] p-6 sm:p-8 shadow-inner">
-            <div className="flex items-center justify-between text-xs font-mono text-stone-400 uppercase tracking-widest border-b border-stone-200/60 dark:border-white/[0.04] pb-3 mb-6">
-              <span>PLATE I // SYSTEM TRANSMISSION MATRIX</span>
-              <span>FIGURE 1.0</span>
-            </div>
-
-            {/* Architectural Flowchart SVG */}
-            <div className="py-6 px-2 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-center">
-              <div className="p-4 border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 w-full sm:w-1/4 shadow-xs">
-                <div className="text-xs text-stone-400">DISCOUNT ANCHOR</div>
-                <div className="text-lg sm:text-xl font-bold text-[#e50914] dark:text-[#e5c378]">10Y UST 4.18%</div>
-                <div className="text-xs text-stone-500 mt-1 font-serif">贴现率估值中轴</div>
-              </div>
-
-              <span className="text-stone-400 font-bold text-lg hidden sm:inline">⟶</span>
-
-              <div className="p-4 border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 w-full sm:w-1/4 shadow-xs">
-                <div className="text-xs text-stone-400">LIQUIDITY VECTOR</div>
-                <div className="text-lg sm:text-xl font-bold text-sky-700 dark:text-sky-400">DXY &amp; CNH</div>
-                <div className="text-xs text-stone-500 mt-1 font-serif">跨国流动性再平衡</div>
-              </div>
-
-              <span className="text-stone-400 font-bold text-lg hidden sm:inline">⟶</span>
-
-              <div className="p-4 border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 w-full sm:w-1/4 shadow-xs">
-                <div className="text-xs text-stone-400">AGENTIC CAPEX</div>
-                <div className="text-lg sm:text-xl font-bold text-emerald-700 dark:text-emerald-400">DeepSeek &amp; MoE</div>
-                <div className="text-xs text-stone-500 mt-1 font-serif">智能体工业级落地</div>
-              </div>
-
-              <span className="text-stone-400 font-bold text-lg hidden sm:inline">⟶</span>
-
-              <div className="p-4 border border-stone-300 dark:border-stone-700 bg-white dark:bg-stone-900 w-full sm:w-1/4 shadow-xs">
-                <div className="text-xs text-stone-400">SYSTEMATIC ALPHA</div>
-                <div className="text-lg sm:text-xl font-bold text-amber-700 dark:text-amber-400">Sharpe 3.12</div>
-                <div className="text-xs text-stone-500 mt-1 font-serif">量化多空统计套利</div>
-              </div>
-            </div>
-
-            {/* Museum Placard Inscription Caption */}
-            <div className="text-center pt-4 border-t border-stone-200/60 dark:border-white/[0.04]">
-              <p className="text-sm font-serif italic text-stone-500 dark:text-stone-400">
-                Plate I. The Sovereign Transmission Engine: Macro Discount Rates Translating to Automated Agentic Trading Alpha.
-              </p>
-            </div>
-          </div>
+          <CoverTransmissionCanvas />
 
           {/* Quick CTA to AI Department */}
           <div className="flex flex-col sm:flex-row items-center justify-between pt-6 border-t border-stone-200/80 dark:border-white/[0.06] text-sm font-serif gap-4">

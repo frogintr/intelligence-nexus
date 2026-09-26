@@ -3,6 +3,7 @@
 import React from "react";
 import { CONTENT_MODELS, QUANT_ROADMAP } from "../../data/creatorsData";
 import { ArrowLeft, Target, Layers, Sparkles, Zap, Shield, TrendingUp, CheckCircle2, BookmarkCheck, Clock, Lightbulb } from "lucide-react";
+import { PlaybookRoadmapDiagram } from "./PlaybookRoadmapDiagram";
 
 interface Props {
   onBackToCover: () => void;
@@ -155,6 +156,9 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
             FROM ZERO TO PRODUCTION HEDGE FUND
           </span>
         </div>
+
+        {/* Museum Blueprint Trajectory Schematic */}
+        <PlaybookRoadmapDiagram />
 
         <div className="space-y-8">
           {QUANT_ROADMAP.map((stg, sIdx) => (

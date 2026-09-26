@@ -91,12 +91,49 @@ Nexus 构建了面向顶级 AI 开发者与量化从业者的三大结构化内�
 
 ---
 
-## 三、 设计落地检查清单 (Implementation Checklist)
-- [x] 顶部杂志刊头导航（Header & Edition Date）
-- [x] 多栏目切换（每日专报 / 创作者智库 / 爆款方法论 / 量化路线图）
-- [x] 40 位博主全量卡片流与双层 Filter（赛道 + 梯队）
-- [x] 沉浸式博主画像抽屉（包含选题、Hook 脚本、实操建议）
-- [x] 响应式设计支持（桌面端 3 列网格，平板 2 列，移动端单列流）
+## 三、 7 大独立展厅专属视觉系统与调色板 (Seven Department Themes)
+
+为彻底破除“巨石单页拼凑”与“不同栏目风格雷同”的痛点，Nexus 为 7 大核心专栏定制了独立的气质与设计系统：
+
+| 专栏编号 | 栏目名称 | 核心主题与美学隐喻 | 日间模式底色 (Light) | 夜间模式底色 (Dark) | 标志性点缀色 (Accent) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **DEPT 01** | **封面导读 (`cover`)** | **帝国古典公报 (Imperial Gazette)** · 经典大画幅排版 | `#FAF7EE` (羊皮纸暖白) | `#0C0E14` (曜石冷黑) | `#E50914` 绯红 / `#C5A059` 古金 |
+| **DEPT 02** | **前沿范式 (`ai`)** | **牛津学术白皮书 (Oxford Monograph)** · 数理严谨 | `#F4F7FB` (档案冷青白) | `#090D18` (深空海军蓝) | `#1E3A8A` 牛津蓝 / `#60A5FA` 浅钴蓝 |
+| **DEPT 03** | **量化展厅 (`quant`)** | **卢浮宫艺术特展 (Louvre Salon)** · 装裱级代码画作 | `#F5F2EB` (美术馆画纸) | `#08090C` (特展暗室黑) | `#B88E39` 烫金 / `#E5C378` 浅金 |
+| **DEPT 04** | **创作者智库 (`creators`)** | **名人堂肖像长廊 (Portrait Gallery)** · 机密学术档案 | `#FAF6F0` (威尼斯洞石) | `#0D0F16` (档案室深黑) | `#881337` 勃艮第红 / `#F43F5E` 玫红 |
+| **DEPT 05** | **爆款与路线 (`playbook`)** | **工程跃迁工坊 (Blueprint Workshop)** · 认知矩阵蓝图 | `#EEF4F8` (晒图纸青灰) | `#080F1E` (深邃工程蓝) | `#4338CA` 靛青 / `#818CF8` 亮紫 |
+| **DEPT 06** | **股期全景 (`markets`)** | **金融时报大厅 (FT Trading Floor)** · 华尔街行情纸 | `#F7EFE8` (FT 经典粉红纸) | `#131017` (夜盘交易室) | `#166534` 银行家墨绿 / `#DC2626` 红色 |
+| **DEPT 07** | **晨报速递 (`gazette`)** | **历史合订本 (Historic Broadside)** · 铅印复古沉香 | `#F6F1E5` (沉香老报纸) | `#111114` (冷墨压制黑) | `#78350F` 沉香乌金 / `#D97706` 琥珀 |
+
+---
+
+## 四、 页面版式与配图审美规范 (Visual & Editorial Invariants)
+
+1. **画布规格 (Canvas Scale)**：
+   * 采用超宽幅杂志画卷：`max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16`；
+   * 彻底摒弃窄小的 1280px 居中局促框，保证多列排版与宽幅图表有充足呼吸空间。
+2. **文字排版品味 (Typographic Taste)**：
+   * **巨幅报刊主标题**：`text-5xl sm:text-7xl lg:text-8xl font-serif font-black tracking-tight leading-[1.06]`；
+   * **首字下沉 (Authentic Drop-Cap)**：主故事首段必须使用 3.8rem 大号古典衬线体首字下沉；
+   * **大幅引语 (Monumental Pull-Quote)**：采用 `text-2xl sm:text-4xl font-serif italic` 配合装饰性引语记号；
+   * **正文舒适行高**：保持在 `leading-relaxed`（约 1.75 - 1.8），每行 65-75 字符最佳阅读宽度。
+3. **配图与图表设计感 (Graphic Aesthetics - 拒绝 AI 塑料感)**：
+   * **严禁**使用无意义、充满廉价光效的通用 AI 概念插画；
+   * **采用古典铜版雕刻 (Copperplate Engravings) 与精细线框拓扑图**：
+     * `PLATE I // SYSTEM TRANSMISSION MATRIX`：细线条框线、高对比度参数卡片、优雅箭头指引；
+     * `装裱级代码画作 (Framed Code Canvas)`：暗色磨砂玻璃代码窗口、带红黄绿控制点、等宽高亮代码、一键复制；
+     * `展签式数据徽章 (Museum Placards)`：双线古典边框、罗马数字标号（FIG I.0 / PLATE IV）。
+4. **创作者档案右侧滑出抽屉 (Slide-Over Dossier Drawer)**：
+   * 点击创作者卡片后，从右侧滑出 `max-w-4xl` 全高抽屉，背景叠加高斯模糊（`backdrop-blur-md`）；
+   * 包含 5 阶深度内容：学术定位、三大代表作、30 秒 Hook（带 0-6s / 6-16s / 16-30s 节拍指示）、剧本架构与量化启示。
+
+---
+
+## 五、 内容“做厚、做实”的标准 (Content Density Standards)
+
+- **严禁薄弱的泛泛空谈**：每项研报必须具备微观机制假设、数学推导公式与具体代码复现。
+- **量化策略交付标准**：包含夏普比率（Sharpe Ratio > 2.5）、最大回撤（Max Drawdown < 10%）、交易频率与完整的 Python 3.11+ VectorBT 向量化回测脚本。
+- **创作者拆解标准**：每位博主必须给出真实可读的 30 秒剧本文案，标注核心痛点与转化技巧。
 
 ---
 

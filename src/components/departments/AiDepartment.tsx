@@ -3,6 +3,7 @@
 import React from "react";
 import { AiUpdate } from "../../types";
 import { ArrowLeft, BookOpen, ExternalLink, Sparkles, Terminal, CheckCircle2 } from "lucide-react";
+import { AiArchitectureDiagram } from "./AiArchitectureDiagram";
 
 interface Props {
   updates: AiUpdate[];
@@ -71,9 +72,40 @@ export function AiDepartment({ updates, onBackToCover }: Props) {
               {item.summary}
             </p>
 
+            {/* In-depth Architectural Analysis (Thick Content) */}
+            {item.detailedAnalysis && (
+              <div className="p-6 sm:p-8 bg-[#f8fafc] dark:bg-[#0b101c] border-l-4 border-[#1e3a8a] dark:border-[#60a5fa] space-y-2">
+                <span className="text-xs font-mono uppercase tracking-widest text-[#1e3a8a] dark:text-[#60a5fa] font-bold block">
+                  TECHNICAL DEEP-DIVE &amp; ARCHITECTURAL SPECIFICATION (机制剖析与工程实测)
+                </span>
+                <p className="font-serif text-base sm:text-lg text-stone-700 dark:text-stone-300 leading-relaxed">
+                  {item.detailedAnalysis}
+                </p>
+              </div>
+            )}
+
+            {/* Museum Architectural Blueprint Schematic */}
+            <AiArchitectureDiagram diagramId={item.id} />
+
+            {/* Industrial Benchmark Metrics Grid (4 Pedestals) */}
+            {item.benchmarkMetrics && (
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 bg-[#f4f7fb] dark:bg-[#070b14] border border-blue-900/15 dark:border-blue-400/20 font-mono shadow-2xs">
+                {Object.entries(item.benchmarkMetrics).map(([key, val], mIdx) => (
+                  <div key={mIdx} className="space-y-1">
+                    <div className="text-[11px] text-stone-500 dark:text-stone-400 uppercase tracking-wider">
+                      {key}
+                    </div>
+                    <div className="text-xl sm:text-2xl font-bold text-[#1e3a8a] dark:text-[#60a5fa]">
+                      {val}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
             {/* YouTube Embed Framed in Gallery Inset */}
             {item.youtubeId && (
-              <div className="my-8 border-2 border-stone-300 dark:border-white/[0.15] bg-black aspect-video relative shadow-lg">
+              <div className="my-8 border-2 border-stone-300 dark:border-white/[0.15] bg-black aspect-video relative shadow-lg overflow-hidden group/vid">
                 <iframe
                   className="w-full h-full"
                   src={`https://www.youtube-nocookie.com/embed/${item.youtubeId}`}

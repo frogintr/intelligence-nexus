@@ -98,4 +98,39 @@ const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDe
 ## 5. 安全运行与防风控原则
 1. **彻底解耦个人账户**：所有采集脚本在独立的 Node.js/Python 进程或无痕沙箱下运行，**严禁携带个人 Google 账号的 Cookie/Session**。
 2. **请求抖动（Jitter）**：RSS 轮询不同博主时，设置 `2000ms ~ 5000ms` 的随机休眠，杜绝高并发瞬时打垮网络。
+
+---
+
+## 6. 当前 YouTube 访问受限时的降级容灾与本地内容做厚策略 (Fallback Strategy)
+
+当检测到网络环境或 YouTube 前台出现 IP 封禁 / 429 访问受限时：
+
+1. **绝对禁止盲目重试与高频前台爬虫**：
+   * 严禁在无代理防护下高频直连 YouTube 视频播放页，杜绝 BotGuard 将出口 IP 进一步惩罚性封禁；
+2. **API / RSS 双规优先通道**：
+   * 优先通过 `~/.secrets/gcloud-oauth-client.json` 授权的官方 Google Cloud API 或零配额公共 RSS XML 接口取得最新 15 视频标题与时间戳；
+3. **内容“做厚做实”本地化策略 (Content Thickening Protocol)**：
+   * 当视频内容与外部字幕（SRT）暂时不可直取时，**研发焦点立即向“本地研究硬核化”转移**：
+     * **前沿范式 (AI Frontiers)**：深化 MoE 路由架构、Computer Use 沙盒安全与多智能体状态机源码拆解；
+     * **量化展厅 (Quant Alpha)**：扩充至三大经典因子（OFI 订单流失衡、协整配对交易、深度强化学习执行），配齐完整 VectorBT 向量化回测 Python 源码；
+     * **创作者档案 (Creators 40)**：将 40 位博主的 120 篇代表作做深做厚，补齐 0-6s / 6-16s / 16-30s 黄金 Hook 具体台词与脚本拆解；
+     * **宏观资产 (Markets)**：做深 10Y UST 实际利率走廊与离岸人民币流动性推演，保证不依赖外部视频也能提供高信噪比决策价值。
 3. **429 自动熔断**：一旦收到限流提示，立即挂起当前爬虫并转入休眠，避免持续重试引发长效 IP 标记。
+
+---
+
+## 7. 生产执行脚本与数据产物索引
+
+### 7.1 执行脚本
+- **自动化管线**：`scripts/youtube_pipeline.py`
+  * 自动从 `src/data/creatorsData.ts` 提取 40 位博主 Handle；
+  * 动态解析 Channel ID 并持久化缓存至 `data/creator_channels.json`；
+  * 免配额拉取最新 15 支视频，提取 Video ID、标题、发布日期、描述；
+  * 导出至 `data/youtube_feed.json`；
+- **每日主调度器**：`scripts/fetch_daily_data.py`
+  * 集成每日研报同步与 YouTube RSS 管线调用。
+
+### 7.2 前端呈现
+- **智库大抽屉**：`src/components/departments/CreatorsDepartment.tsx`
+  * 在创作者档案底部动态渲染 `06 // LIVE YOUTUBE RSS FEED & LATEST PUBLICATIONS`；
+  * 展示最新视频发布时间、标题、简要描述与直达链接。

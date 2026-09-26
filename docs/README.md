@@ -36,5 +36,11 @@
   * Refero Design MCP 设计集成（`~/.secrets/refero-mcp-token.txt`）
   * 本地服务端口拓扑（Next.js `:3000` & Web Portal `:8080`）
 
-### 5. [环境变量模板文件 (../.env.example)](../.env.example)
+### 5. [阶段性里程碑与内容深耕做厚执行蓝图](./milestones-and-content-enrichment-plan.md)
+* **包含内容**：
+  * UI/UX 艺术杂志 3 阶 Taste 蜕变清单（1720px 宽幅、7 大展厅独立背景、右侧全高大抽屉、DailyArt 红标）
+  * 四大内容深耕行动矩阵（AI 前沿 4 篇专论、量化展厅三大装裱级因子、创作者 120 代表作台词级细化、宏观资产深化）
+  * YouTube 访问受限下的降级容灾与本地内容做厚策略
+
+### 6. [环境变量模板文件 (../.env.example)](../.env.example)
 * 标准化环境变量样例，用于本地开发环境快速初始化（`.env.local`），杜绝敏感凭据泄露。

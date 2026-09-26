@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from "react";
 import { CREATORS_DATA, Creator } from "../../data/creatorsData";
+import youtubeFeedData from "../../../data/youtube_feed.json";
 import {
   Search,
   ExternalLink,
@@ -15,6 +16,8 @@ import {
   Lightbulb,
   CheckCircle2,
   Cpu,
+  Radio,
+  Clock,
 } from "lucide-react";
 
 type TrackFilter = "ALL" | "AI 深度解读" | "AI 量化交易";
@@ -450,19 +453,88 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
                   </div>
                 </div>
 
-                {/* Section 4: Quantitative Trading Insight */}
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-xs font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold tracking-wider">
-                    <CheckCircle2 className="w-4 h-4" />
-                    <span>05 // QUANTITATIVE TRADING INSIGHT (量化投研启示与开源交付法则)</span>
+                  {/* Section 4: Quantitative Trading Insight */}
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2 text-xs font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold tracking-wider">
+                      <CheckCircle2 className="w-4 h-4" />
+                      <span>05 // QUANTITATIVE TRADING INSIGHT (量化投研启示与开源交付法则)</span>
+                    </div>
+                    <div className="p-6 sm:p-8 bg-[#fbf9f5] dark:bg-[#080d18] border-2 border-[#9e2a2b]/30 dark:border-[#c5a059]/30 shadow-xs">
+                      <p className="font-serif text-base sm:text-lg text-stone-900 dark:text-stone-100 leading-relaxed font-medium">
+                        {selectedCreator.actionableTakeaways?.forTrading || selectedCreator.positioning}
+                      </p>
+                    </div>
                   </div>
-                  <div className="p-6 sm:p-8 bg-[#fbf9f5] dark:bg-[#080d18] border-2 border-[#9e2a2b]/30 dark:border-[#c5a059]/30 shadow-xs">
-                    <p className="font-serif text-base sm:text-lg text-stone-900 dark:text-stone-100 leading-relaxed font-medium">
-                      {selectedCreator.actionableTakeaways?.forTrading || selectedCreator.positioning}
-                    </p>
+
+                  {/* Section 5: Live YouTube RSS Feed & Latest Releases */}
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-2 text-xs font-mono text-emerald-700 dark:text-emerald-400 uppercase font-bold tracking-wider">
+                        <Radio className="w-4 h-4 animate-pulse" />
+                        <span>06 // LIVE YOUTUBE RSS FEED &amp; LATEST PUBLICATIONS (官方 RSS 零配额最新发布追踪)</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-stone-400 border border-stone-200 dark:border-white/[0.08] px-2 py-0.5">
+                        ZERO-QUOTA ATOM STREAM
+                      </span>
+                    </div>
+
+                    {(() => {
+                      const creatorFeed = (youtubeFeedData.feed as Record<string, any>)[selectedCreator.id];
+                      if (creatorFeed && creatorFeed.latestVideos && creatorFeed.latestVideos.length > 0) {
+                        return (
+                          <div className="space-y-3">
+                            <div className="p-3 bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-500/20 flex items-center justify-between text-xs font-mono text-emerald-800 dark:text-emerald-300">
+                              <span>已同步该频道最近公开发布的 {creatorFeed.latestVideos.length} 支视频条目</span>
+                              <span>更新时间: {youtubeFeedData.updatedAt?.slice(0, 10)}</span>
+                            </div>
+                            <div className="divide-y divide-stone-200/80 dark:divide-white/[0.06] bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08]">
+                              {creatorFeed.latestVideos.slice(0, 6).map((v: any, vIdx: number) => (
+                                <div key={vIdx} className="p-4 sm:p-5 space-y-2 hover:bg-stone-50 dark:hover:bg-white/[0.02] transition-colors">
+                                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                                    <a
+                                      href={v.url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="font-serif font-bold text-base sm:text-lg text-stone-900 dark:text-white hover:text-red-600 transition-colors inline-flex items-center space-x-1.5"
+                                    >
+                                      <span>{v.title}</span>
+                                      <ExternalLink className="w-3.5 h-3.5 text-stone-400 inline" />
+                                    </a>
+                                    <span className="text-xs font-mono text-stone-400 flex items-center space-x-1">
+                                      <Clock className="w-3 h-3" />
+                                      <span>{v.published?.slice(0, 10)}</span>
+                                    </span>
+                                  </div>
+                                  {v.description && (
+                                    <p className="text-xs sm:text-sm font-serif text-stone-600 dark:text-stone-300 leading-relaxed line-clamp-2">
+                                      {v.description}
+                                    </p>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      }
+                      return (
+                        <div className="p-6 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] text-center space-y-2">
+                          <p className="text-sm font-serif text-stone-600 dark:text-stone-300">
+                            本频道已列入 YouTube RSS 零配额监控池。后台调度将在下一个周期自动拉取该博主最新视频条目。
+                          </p>
+                          <a
+                            href={selectedCreator.channelUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center space-x-2 text-xs font-mono text-red-600 hover:underline pt-1"
+                          >
+                            <Youtube className="w-4 h-4" />
+                            <span>直接前往 YouTube 频道查看最新动态 ➔</span>
+                          </a>
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
-              </div>
 
               {/* Drawer Footer Actions */}
               <div className="sticky bottom-0 z-20 bg-stone-100 dark:bg-black/90 border-t border-stone-200 dark:border-white/[0.1] p-6 flex flex-wrap items-center justify-between gap-4">

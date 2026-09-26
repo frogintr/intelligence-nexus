@@ -1,0 +1,787 @@
+{
+  "updatedAt": "2026-09-26T20:53:24.912242+00:00",
+  "totalCreatorsMonitored": 10,
+  "totalVideos": 100,
+  "feed": {
+    "andrej-karpathy": {
+      "creatorId": "andrej-karpathy",
+      "creatorName": "Andrej Karpathy",
+      "handle": "@AndrejKarpathy",
+      "channelId": "UCXUPKJO5MZQN11PqgIvyuvQ",
+      "latestVideos": [
+        {
+          "videoId": "EWvNQjAaOHw",
+          "title": "How I use LLMs",
+          "published": "2025-02-27T22:29:56+00:00",
+          "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+          "description": "The example-driven, practical walkthrough of Large Language Models and their growing list of related features, as a new entry to my general audience series on LLMs. In this more practical followup, I take you through the many ways I use LLMs in my own life.\n\nChapters\n00:00:00 Int"
+        },
+        {
+          "videoId": "7xTGNNLPyMI",
+          "title": "Deep Dive into LLMs like ChatGPT",
+          "published": "2025-02-05T18:23:47+00:00",
+          "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+          "description": "This is a general audience deep dive into the Large Language Model (LLM) AI technology that powers ChatGPT and related products. It is covers the full training stack of how the models are developed, along with mental models of how to think about their \"psychology\", and how to get"
+        },
+        {
+          "videoId": "l8pRSuU81PU",
+          "title": "Let's reproduce GPT-2 (124M)",
+          "published": "2024-06-09T23:31:35+00:00",
+          "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
+          "description": "We reproduce the GPT-2 (124M) from scratch. This video covers the whole process: First we build the GPT-2 network, then we optimize its training to be really fast, then we set up the training run following the GPT-2 and GPT-3 paper and their hyperparameters, then we hit run, and "
+        },
+        {
+          "videoId": "zduSFxRajkE",
+          "title": "Let's build the GPT Tokenizer",
+          "published": "2024-02-20T17:11:35+00:00",
+          "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
+          "description": "The Tokenizer is a necessary and pervasive component of Large Language Models (LLMs), where it translates between strings and tokens (text chunks). Tokenizers are a completely separate stage of the LLM pipeline: they have their own training sets, training algorithms (Byte Pair En"
+        },
+        {
+          "videoId": "zjkBMFhNj_g",
+          "title": "[1hr Talk] Intro to Large Language Models",
+          "published": "2023-11-23T02:27:48+00:00",
+          "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+          "description": "This is a 1 hour general-audience introduction to Large Language Models: the core technical component behind systems like ChatGPT, Claude, and Bard. What they are, where they are headed, comparisons and analogies to present-day operating systems, and some of the security-related "
+        },
+        {
+          "videoId": "kCc8FmEb1nY",
+          "title": "Let's build GPT: from scratch, in code, spelled out.",
+          "published": "2023-01-17T16:33:27+00:00",
+          "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
+          "description": "We build a Generatively Pretrained Transformer (GPT), following the paper \"Attention is All You Need\" and OpenAI's GPT-2 / GPT-3. We talk about connections to ChatGPT, which has taken the world by storm. We watch GitHub Copilot, itself a GPT, help us write a GPT (meta :D!) . I re"
+        },
+        {
+          "videoId": "t3YJ5hKiMQ0",
+          "title": "Building makemore Part 5: Building a WaveNet",
+          "published": "2022-11-21T00:32:48+00:00",
+          "url": "https://www.youtube.com/watch?v=t3YJ5hKiMQ0",
+          "description": "We take the 2-layer MLP from previous video and make it deeper with a tree-like structure, arriving at a convolutional neural network architecture similar to the WaveNet (2016) from DeepMind. In the WaveNet paper, the same hierarchical architecture is implemented more efficiently"
+        },
+        {
+          "videoId": "q8SA3rM6ckI",
+          "title": "Building makemore Part 4: Becoming a Backprop Ninja",
+          "published": "2022-10-11T17:56:19+00:00",
+          "url": "https://www.youtube.com/watch?v=q8SA3rM6ckI",
+          "description": "We take the 2-layer MLP (with BatchNorm) from the previous video and backpropagate through it manually without using PyTorch autograd's loss.backward(): through the cross entropy loss, 2nd linear layer, tanh, batchnorm, 1st linear layer, and the embedding table. Along the way, we"
+        },
+        {
+          "videoId": "P6sfmUTpUmc",
+          "title": "Building makemore Part 3: Activations & Gradients, BatchNorm",
+          "published": "2022-10-04T16:41:03+00:00",
+          "url": "https://www.youtube.com/watch?v=P6sfmUTpUmc",
+          "description": "We dive into some of the internals of MLPs with multiple layers and scrutinize the statistics of the forward pass activations, backward pass gradients, and some of the pitfalls when they are improperly scaled. We also look at the typical diagnostic tools and visualizations you'd "
+        },
+        {
+          "videoId": "TCH_1BHY58I",
+          "title": "Building makemore Part 2: MLP",
+          "published": "2022-09-12T14:43:06+00:00",
+          "url": "https://www.youtube.com/watch?v=TCH_1BHY58I",
+          "description": "We implement a multilayer perceptron (MLP) character-level language model. In this video we also introduce many basics of machine learning (e.g. model training, learning rate tuning, hyperparameters, evaluation, train/dev/test splits, under/overfitting, etc.).\n\nLinks:\n- makemore "
+        }
+      ]
+    },
+    "3blue1brown": {
+      "creatorId": "3blue1brown",
+      "creatorName": "3Blue1Brown (Grant Sanderson)",
+      "handle": "@3blue1brown",
+      "channelId": "UCYO_jab_esuFRV4b17AJtAw",
+      "latestVideos": [
+        {
+          "videoId": "ausLKMojXaY",
+          "title": "The Phone Number puzzle",
+          "published": "2026-09-25T13:35:02+00:00",
+          "url": "https://www.youtube.com/shorts/ausLKMojXaY",
+          "description": "Part of a monthly series of puzzles: https://momath.org/mindbenders/"
+        },
+        {
+          "videoId": "bRQEWPA832A",
+          "title": "The last IMO problem AI could not solve",
+          "published": "2026-09-18T17:14:08+00:00",
+          "url": "https://www.youtube.com/shorts/bRQEWPA832A",
+          "description": "Full video: https://youtu.be/Nbwv5wHQoj0"
+        },
+        {
+          "videoId": "Nbwv5wHQoj0",
+          "title": "The last IMO problem AI could not solve",
+          "published": "2026-09-18T17:12:53+00:00",
+          "url": "https://www.youtube.com/watch?v=Nbwv5wHQoj0",
+          "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nGue"
+        },
+        {
+          "videoId": "rYyJm1tD3d0",
+          "title": "The jumping pegs puzzle",
+          "published": "2026-08-18T14:54:17+00:00",
+          "url": "https://www.youtube.com/shorts/rYyJm1tD3d0",
+          "description": "Part of a series of monthly puzzles with MoMath."
+        },
+        {
+          "videoId": "6XPlmCDNLNc",
+          "title": "The 64 sugar cubes puzzle",
+          "published": "2026-07-24T15:05:39+00:00",
+          "url": "https://www.youtube.com/shorts/6XPlmCDNLNc",
+          "description": "See all monthly puzzles: https://momath.org/mindbenders/"
+        },
+        {
+          "videoId": "GlYgs6v2YfU",
+          "title": "But what is cross-entropy? | Compression is Intelligence Part 2",
+          "published": "2026-07-16T11:56:04+00:00",
+          "url": "https://www.youtube.com/watch?v=GlYgs6v2YfU",
+          "description": "Where the loss function for training LLMs comes from.\nJob opportunities aligned to this audience: https://3b1b.co/talent\nEarly views and other perks for supporters: https://3b1b.co/support\nHome page: https://www.3blue1brown.com\n\nPart 1: https://youtu.be/l6DKRf-fAAM\n\nIf you want t"
+        },
+        {
+          "videoId": "wGffBCfrAsE",
+          "title": "100 random chords, how many intersections?",
+          "published": "2026-06-16T18:04:05+00:00",
+          "url": "https://www.youtube.com/shorts/wGffBCfrAsE",
+          "description": "Part of a series of monthly puzzles done in collaboration with MoMath."
+        },
+        {
+          "videoId": "-7etvZSBxlk",
+          "title": "Measuring the entropy of English",
+          "published": "2026-06-12T13:22:02+00:00",
+          "url": "https://www.youtube.com/shorts/-7etvZSBxlk",
+          "description": "Full video: https://youtu.be/l6DKRf-fAAM"
+        },
+        {
+          "videoId": "7L_eTem1SQ4",
+          "title": "What's the perfect encoding? How do you know?",
+          "published": "2026-06-10T13:26:34+00:00",
+          "url": "https://www.youtube.com/shorts/7L_eTem1SQ4",
+          "description": "Full video: https://youtu.be/l6DKRf-fAAM"
+        },
+        {
+          "videoId": "l6DKRf-fAAM",
+          "title": "Reinventing Entropy | Compression is Intelligence Part 1",
+          "published": "2026-06-07T11:49:51+00:00",
+          "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
+          "description": "How to study the compressibility of language.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new projects before they go live: https://3b1b.co/support\n\nAnimation credit:\nManim scenes by Aaron Gostein and Grant Sanderson\nShannon’s story, as well as those for various"
+        }
+      ]
+    },
+    "two-minute-papers": {
+      "creatorId": "two-minute-papers",
+      "creatorName": "Two Minute Papers (Dr. Károly)",
+      "handle": "@TwoMinutePapers",
+      "channelId": "UCbfYPyITQ-7l4upoX8nvctg",
+      "latestVideos": [
+        {
+          "videoId": "SA9kdAX2Zj0",
+          "title": "Claude Opus 5.5 AI: An Incredible Leap Forward",
+          "published": "2026-09-24T08:40:55+00:00",
+          "url": "https://www.youtube.com/watch?v=SA9kdAX2Zj0",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulating it for more generations.\n\nClaude Opus "
+        },
+        {
+          "videoId": "qBBRRsH0rQc",
+          "title": "Yes, Jev Is Insane, But There's A Catch",
+          "published": "2026-09-22T09:32:13+00:00",
+          "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementations, models:\nhttps://huggingface.co/conv"
+        },
+        {
+          "videoId": "vIHw_2VjSUw",
+          "title": "DeepSeek’s Insane New Architecture",
+          "published": "2026-09-18T07:03:46+00:00",
+          "url": "https://www.youtube.com/watch?v=vIHw_2VjSUw",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek V4.1 Flash paper is available here:\nhttps://www.deepseek.com/en/news/deepseek-v4-1-flash/\n\nErratum: Opus 5.1 label at 3:23 should have been Opus 5. Apologies!\n\nSources:\nhttps://x.co"
+        },
+        {
+          "videoId": "YoEWjZSwoys",
+          "title": "Claude Is Now Leaving Invisible Fingerprints In Its Text",
+          "published": "2026-09-15T10:12:34+00:00",
+          "url": "https://www.youtube.com/watch?v=YoEWjZSwoys",
+          "description": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The papers and sources are available here:\nhttps://proceedings.mlr.press/v202/kirchenbauer23a.html\nhttps://www.nature.com/articles/s41586-024-08025-4\nhttps://www.anthropic.com/news/claude-t"
+        },
+        {
+          "videoId": "mOvtumfyjCs",
+          "title": "I Never Thought I’d See This Happen",
+          "published": "2026-09-10T08:47:23+00:00",
+          "url": "https://www.youtube.com/watch?v=mOvtumfyjCs",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Navier-Stokes solution paper is available here:\nhttps://openai.com/index/navier-stokes-solution/\n\nMy fluid simulations and papers:\nhttps://users.cg.tuwien.ac.at/zsolnai/gfx/fluid_control_msc"
+        },
+        {
+          "videoId": "eVBJIUxv8N8",
+          "title": "GPT-6 Astra Changes Everything",
+          "published": "2026-09-08T08:24:27+00:00",
+          "url": "https://www.youtube.com/watch?v=eVBJIUxv8N8",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nLinks / sources:\nHoney sim: search for \"Variational Stokes: A Unified Pressure-Viscosity Solver for Accurate Viscous Liquids\" here: https://cs.uwaterloo.ca/~c2batty/\nhttps://x.com/mindblown_ai/sta"
+        },
+        {
+          "videoId": "B3LXEW4Pc-w",
+          "title": "Claude Fable AI Is Much Stranger Than The Headlines Suggest",
+          "published": "2026-09-03T08:23:37+00:00",
+          "url": "https://www.youtube.com/watch?v=B3LXEW4Pc-w",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Claude Fable 5.1 paper is available here:\nhttps://www.anthropic.com/claude-fable-and-mythos-5-1\nhttps://www-cdn.anthropic.com/0339e6a7c5c7b87f5c07798616dc32c215d14235/Claude%20Fable%205.1%20"
+        },
+        {
+          "videoId": "w9RDunJACkc",
+          "title": "GLM 5.3: Powerful AI Is Becoming Almost Free",
+          "published": "2026-09-01T09:04:56+00:00",
+          "url": "https://www.youtube.com/watch?v=w9RDunJACkc",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 GLM 5.3 Flash:\nhttps://z.ai/blog/glm-5.3-flash\n\nSources:\nhttps://x.com/louszbd/status/2092694163104113016\nhttps://x.com/semianalysis_/status/2092623833630998556\nhttps://x.com/skalskip92/status/2"
+        },
+        {
+          "videoId": "LBiNcdGNgrg",
+          "title": "The Billion Dollar AI Gap Is Collapsing",
+          "published": "2026-08-28T09:44:44+00:00",
+          "url": "https://www.youtube.com/watch?v=LBiNcdGNgrg",
+          "description": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The paper and Qwen3.8-Flash-Next are available here:\nhttps://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf\nhttps://qwen.ai/blog?id=qwen3.8-flash-next\n\nSources:\nhttps://x.co"
+        },
+        {
+          "videoId": "L9mMfAFwbl4",
+          "title": "DeepSeek’s New AI System Shouldn’t Be Possible",
+          "published": "2026-08-26T13:10:13+00:00",
+          "url": "https://www.youtube.com/watch?v=L9mMfAFwbl4",
+          "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 DeepSeek Harness + paper are available here:\nhttps://deepseek.com/harness/en/\nhttps://github.com/cordiverse/paper\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Pa"
+        }
+      ]
+    },
+    "fireship": {
+      "creatorId": "fireship",
+      "creatorName": "Fireship (Jeff Delaney)",
+      "handle": "@Fireship",
+      "channelId": "UCsBjURrPoezykLs9EqgamOA",
+      "latestVideos": [
+        {
+          "videoId": "c1rPlzxSZ8E",
+          "title": "Meta is pivoting again... everything you missed from Connect 2026",
+          "published": "2026-09-25T19:22:32+00:00",
+          "url": "https://www.youtube.com/watch?v=c1rPlzxSZ8E",
+          "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn this video we break down everything from Meta Connect 2026. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireship.dev"
+        },
+        {
+          "videoId": "ylO0DQeVEBQ",
+          "title": "The most expensive 33 hours in WordPress history...",
+          "published": "2026-09-23T17:17:22+00:00",
+          "url": "https://www.youtube.com/watch?v=ylO0DQeVEBQ",
+          "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: http://greptile.com/go/fireship\n\nAutomattic's board fired WordPress co-founder Matt Mullenweg while he was at Burning Man... 33 hours later, he replaced the board and declared himself a pirate. L"
+        },
+        {
+          "videoId": "TbkUKCm3CHQ",
+          "title": "An ex-OpenAI researcher just deleted language from the LLM...",
+          "published": "2026-09-21T17:52:29+00:00",
+          "url": "https://www.youtube.com/watch?v=TbkUKCm3CHQ",
+          "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nEx-OpenAI researcher Diogo Almeida spent two years in stealth building Jev, a \"System 1\" AI model that can't talk or write code but claims to be 2"
+        },
+        {
+          "videoId": "LoLYw--s-5w",
+          "title": "Did Google just kickstart the intelligence explosion?",
+          "published": "2026-09-17T20:33:55+00:00",
+          "url": "https://www.youtube.com/watch?v=LoLYw--s-5w",
+          "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nGoogle DeepMind just published Dream-RSI, a technique that turns an AI's old discovery logs into a simulator so it can test thousands of exploration strategies. But is this actually RSI or just a"
+        },
+        {
+          "videoId": "7r4ikZHm9AI",
+          "title": "Anthropic researchers are quitting... and now we know why",
+          "published": "2026-09-15T17:45:39+00:00",
+          "url": "https://www.youtube.com/watch?v=7r4ikZHm9AI",
+          "description": "Macroscope can auto-approve your team’s PRs safely. Try it here:\nhttps://macroscope.com/?utm_source=fireship\n\nAnthropic just dropped a 154-page report on how hackers, scientists, and rival AI labs have been abusing Claude. Let's dive in.\n\n#coding #programming\n\nWant more Fireship?"
+        },
+        {
+          "videoId": "aspmNhKAFMc",
+          "title": "OpenAI's biggest math breakthrough is getting ugly...",
+          "published": "2026-09-11T17:24:40+00:00",
+          "url": "https://www.youtube.com/watch?v=aspmNhKAFMc",
+          "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nOpenAI claims it cracked a 90 year old math problem, but one NYU professor isn't happy about it. Let's dive in. \n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.d"
+        },
+        {
+          "videoId": "2Xiljy4xzbc",
+          "title": "I built the same game with Astra and Fable 5.1... only one was fun",
+          "published": "2026-09-09T16:34:27+00:00",
+          "url": "https://www.youtube.com/watch?v=2Xiljy4xzbc",
+          "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nNow that Astra is actually available to use, let's see if it lives up to the hype.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: htt"
+        },
+        {
+          "videoId": "Y5rSSvXfL4g",
+          "title": "5 open source tools that replaced my $320/mo AI stack...",
+          "published": "2026-09-07T17:24:51+00:00",
+          "url": "https://www.youtube.com/watch?v=Y5rSSvXfL4g",
+          "description": "Get 67% off VPS hosting with Hostinger's one-click templates. Use code FIRESHIP for an extra discount - https://hostinger.com/fireship\n\nIn this video we cover 5 free and open-source tools that'll help you cut token costs. Let's dive in.\n\n- Ollama\n- 9router\n- Headroom\n- Diffy\n- Op"
+        },
+        {
+          "videoId": "FluKUJyeYD8",
+          "title": "Did OpenAI actually build AGI? GPT-6 Astra first look",
+          "published": "2026-09-04T20:14:12+00:00",
+          "url": "https://www.youtube.com/watch?v=FluKUJyeYD8",
+          "description": "CodeRabbit Security protects your code from AI-driven exploits. Get 10 free code scans here: https://coderabbit.link/fireship-010\n\nOpenAI finally announced GPT-6 Astra which they're claiming is AGI... Let's see if that's true.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsle"
+        },
+        {
+          "videoId": "0Rp9KJCEIvg",
+          "title": "The most interesting hack in history just got weirder...",
+          "published": "2026-09-02T19:01:28+00:00",
+          "url": "https://www.youtube.com/watch?v=0Rp9KJCEIvg",
+          "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nOpenAI finally published the postmortem on the Hugging Face hack and it turns out it's way more interesting than we first though. Let's dive in.\n\n#c"
+        }
+      ]
+    },
+    "ai-explained": {
+      "creatorId": "ai-explained",
+      "creatorName": "AI Explained",
+      "handle": "@aiexplained-official",
+      "channelId": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "latestVideos": [
+        {
+          "videoId": "R9momwXV9w4",
+          "title": "Opus 5.5: How Close Are We to Automated AI Research?",
+          "published": "2026-09-24T22:51:54+00:00",
+          "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
+          "description": "Not only is Opus 5.5 out, pushing the frontier of AI, it also tells us much about what is going on inside the labs, as they both warn about, and promise, Recursive Self Improvement, aka automated AI research. I cover the model (digging into its 230 page paper), labs’ mixed record"
+        },
+        {
+          "videoId": "J3ljHm57yU0",
+          "title": "What AI Researchers Saw, Before Their Demand to ‘Pace’ AI",
+          "published": "2026-09-16T20:51:40+00:00",
+          "url": "https://www.youtube.com/watch?v=J3ljHm57yU0",
+          "description": "Why has it been the last few days that the calls to come to pace the frontier AI have come so loudly? The safety warnings, and lab leader messages? Let’s explore the six axes that the researchers are looking at, the incidence reports and trends, to get a better gauge on what has "
+        },
+        {
+          "videoId": "Spuza-KwTJ4",
+          "title": "GPT 6 Astra, so good even OpenAI are worried",
+          "published": "2026-09-04T11:37:27+00:00",
+          "url": "https://www.youtube.com/watch?v=Spuza-KwTJ4",
+          "description": "Where to start? A new era of cost-efficient AI on a day benchmark-makers got humbled, traders got excited, and AI safety researchers got unnerved. From monitorability losing hold of GPT-6 Astra’s chains of thought to breakthrough discoveries, Fable-mogging and much more…\n\nExclusi"
+        },
+        {
+          "videoId": "KL9_1GbmCic",
+          "title": "Sam Altman :‘AGI in 2026’, just as Models Start to [Mis]Train Themselves",
+          "published": "2026-08-27T19:16:24+00:00",
+          "url": "https://www.youtube.com/watch?v=KL9_1GbmCic",
+          "description": "First, a Time Magazine spread has Sam Altman declaring AGI is imminent, at the same time as we get two bombshell reports, from OpenAI and METR which on first glance are detailing the AI swarm, but reveal a deeper story about how we are making AI in 2026. From redacted risk report"
+        },
+        {
+          "videoId": "xGzseSSStnw",
+          "title": "AI is getting a little out of control",
+          "published": "2026-08-06T15:02:06+00:00",
+          "url": "https://www.youtube.com/watch?v=xGzseSSStnw",
+          "description": "Wow. Mathematical breakthroughs that would be called genius if done by humans. A secret message-board w/ AI agent swarms leaving notes read by future versions. Hassabis leaves CEO position, or was pushed out? Not to mention news of constitutional breakdowns, Gemini 4 and Jeff Dea"
+        },
+        {
+          "videoId": "wzY2fV4Mp3U",
+          "title": "GPT-6 Goes Rogue? The HuggingFace Incident, Sans Hype",
+          "published": "2026-07-22T16:36:53+00:00",
+          "url": "https://www.youtube.com/watch?v=wzY2fV4Mp3U",
+          "description": "An unreleased internal OpenAI model, very likely to be called GPT-6, was able to autonomously break out of its sandbox AND break into HuggingFace, just to score higher on a benchmark prompt. This video has the details you may have missed, a layperson analogy, whether this is trul"
+        },
+        {
+          "videoId": "mWlCituW7wo",
+          "title": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+          "published": "2026-07-10T12:40:15+00:00",
+          "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+          "description": "What a week in AI, for real. GPT 5.6 may actually beat Claude Fable, in what you get for your money, while the new Grok 4.5 and Meta Muse Spark 1.1 make the choice even harder. Uncovering a dozen nuggets of gold you may have missed from all the viral headlines, I can also assure "
+        },
+        {
+          "videoId": "y24lF1q4SFY",
+          "title": "Fable 5 vs GPT 5.6 Sol: The Early Results",
+          "published": "2026-07-02T16:27:26+00:00",
+          "url": "https://www.youtube.com/watch?v=y24lF1q4SFY",
+          "description": "Fable 5 (newly re-released) vs GPT 5.6 Sol, what comparisons can we unearth? Plus, Sonnet 5, a 5% equity seizure by US Govt, the ‘largest heist’, Beetlejuice and more…\n\n\n\nExclusive Vids in AI Insiders ($9!): https://www.patreon.com/AIExplained\n\n\nChapters:\n00:00 - Introduction\n01:"
+        },
+        {
+          "videoId": "Qj71N0tBzRo",
+          "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
+          "published": "2026-06-14T14:52:27+00:00",
+          "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
+          "description": "Claude Fable 5 banned, but what’s the bigger story. We go through 11 under-reported details, so you have the context to see what’s coming next for your use of AI. From whether the ban will last, what the possible motives are, what the model can actually do, and some wild over-ext"
+        },
+        {
+          "videoId": "haK1KoQWm18",
+          "title": "Claude Fable 5 - Full 319 page Breakdown",
+          "published": "2026-06-10T18:43:12+00:00",
+          "url": "https://www.youtube.com/watch?v=haK1KoQWm18",
+          "description": "Fable 5 is out - and it’s good, very good. But beyond the splashy demos, I want to bring you the 20+ nuggets from the 319 page system card, which I read in full, all day, plus benchmarks you may not have noticed. \n\nhttps://assemblyai.com/aiexplained\n\nPlus two worrying trends insi"
+        }
+      ]
+    },
+    "matthew-berman": {
+      "creatorId": "matthew-berman",
+      "creatorName": "Matthew Berman",
+      "handle": "@matthew_berman",
+      "channelId": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "latestVideos": [
+        {
+          "videoId": "rgO5v8MFtFg",
+          "title": "What People Are Building With Opus 5.5",
+          "published": "2026-09-26T01:30:30+00:00",
+          "url": "https://www.youtube.com/shorts/rgO5v8MFtFg",
+          "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
+        },
+        {
+          "videoId": "zICv3IJaAfQ",
+          "title": "DeepSeek is CRAZY",
+          "published": "2026-09-25T21:05:41+00:00",
+          "url": "https://www.youtube.com/shorts/zICv3IJaAfQ",
+          "description": "Explore DigitalOcean's model catalog: https://do.co/matthewberman #ad\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/mat"
+        },
+        {
+          "videoId": "jGD_UR4wMJc",
+          "title": "8 Jev Use Cases That Feel Like Cheating",
+          "published": "2026-09-24T18:37:13+00:00",
+          "url": "https://www.youtube.com/watch?v=jGD_UR4wMJc",
+          "description": "Check out Zapier: https://bit.ly/4jlEapW\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: htt"
+        },
+        {
+          "videoId": "Ima_AVPyQ9E",
+          "title": "GPT-6 Sol and Luna Are HERE!",
+          "published": "2026-09-23T20:19:04+00:00",
+          "url": "https://www.youtube.com/watch?v=Ima_AVPyQ9E",
+          "description": "Tell your agents to use this: https://here.now/r/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewber"
+        },
+        {
+          "videoId": "OWu2kjKrRTA",
+          "title": "Anthropic went CRAZY (Opus 5.5)",
+          "published": "2026-09-23T03:41:24+00:00",
+          "url": "https://www.youtube.com/watch?v=OWu2kjKrRTA",
+          "description": "Check out all our Opus 5.5 tests: https://forwardfuture.com/opus-5-5-review\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nThanks to Thariq for joining! https://x.com/trq212\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com"
+        },
+        {
+          "videoId": "bn4uvtg8ECY",
+          "title": "How I Use Eight Sleep to Improve My Sleep",
+          "published": "2026-09-22T21:33:00+00:00",
+          "url": "https://www.youtube.com/shorts/bn4uvtg8ECY",
+          "description": "Use code MATTHEWBERMAN at checkout: https://eightsleep.com/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/"
+        },
+        {
+          "videoId": "5MFORiebZks",
+          "title": "GPT-6 SOL AND LUNA ARE OUT!!!",
+          "published": "2026-09-22T18:38:33+00:00",
+          "url": "https://www.youtube.com/watch?v=5MFORiebZks",
+          "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
+        },
+        {
+          "videoId": "MJllZbpvrAc",
+          "title": "Did Elon catch up? (Grok 4.7 is here)",
+          "published": "2026-09-22T00:13:35+00:00",
+          "url": "https://www.youtube.com/watch?v=MJllZbpvrAc",
+          "description": "Check out Zapier! https://bit.ly/3TLc4tQ\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: htt"
+        },
+        {
+          "videoId": "6ov1JaMVT_U",
+          "title": "What People Are Building With Jev Is Incredible",
+          "published": "2026-09-21T16:46:24+00:00",
+          "url": "https://www.youtube.com/shorts/6ov1JaMVT_U",
+          "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
+        },
+        {
+          "videoId": "S4VUMFELhaQ",
+          "title": "Is This Simulated Fruit Fly Real?",
+          "published": "2026-09-21T06:18:26+00:00",
+          "url": "https://www.youtube.com/shorts/S4VUMFELhaQ",
+          "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
+        }
+      ]
+    },
+    "statquest": {
+      "creatorId": "statquest",
+      "creatorName": "StatQuest with Josh Starmer",
+      "handle": "@statquest",
+      "channelId": "UCtYLUTtgS3k1Fg4y5tAhLbw",
+      "latestVideos": [
+        {
+          "videoId": "2FaI2Fen1mQ",
+          "title": "The GELU, SiLU and SwiGLU activation functions, clearly explained!!!",
+          "published": "2026-09-08T04:00:04+00:00",
+          "url": "https://www.youtube.com/watch?v=2FaI2Fen1mQ",
+          "description": "There's a new activation function in town. Actually, there are a bunch of new activation functions in town. This StatQuest gives you the essential information you need at the very start, followed by a surprisingly interesting derivation of each of these new activation functions. "
+        },
+        {
+          "videoId": "UwbASFlIS7A",
+          "title": "Another three (3) more lessons from my Pop!",
+          "published": "2026-09-04T04:00:21+00:00",
+          "url": "https://www.youtube.com/watch?v=UwbASFlIS7A",
+          "description": "Since September 4th is Global Frank Starmer Day (and also his birthday), we'll celebrate by talking about another three (3) more lessons from him that influenced me over the span of my career so far.\n\nIf you'd like to support StatQuest, please consider...\nPatreon: https://www.pat"
+        },
+        {
+          "videoId": "Yx-ZkLftybY",
+          "title": "TRIPLE BAM!!! With Josh, Luis and special guest Brandon Rohrer",
+          "published": "2026-08-21T04:09:09+00:00",
+          "url": "https://www.youtube.com/watch?v=Yx-ZkLftybY",
+          "description": "Made with Restream Studio. Livestream on 30+ platforms at once via https://restream.io\n\nCome join us in this Live Q/A where our guest is Brandon Rohrer, author of the very popular (and most excellent) Brandon Rohrer blog https://brandonrohrer.com/ and Senior Staff Machine Learnin"
+        },
+        {
+          "videoId": "lgD9lNB9Ums",
+          "title": "The Simplex Algorithm, Mathematical Details!!!",
+          "published": "2026-07-13T04:00:15+00:00",
+          "url": "https://www.youtube.com/watch?v=lgD9lNB9Ums",
+          "description": "In the StatQuest, Optimization with Linear Programming (and the Simplex Algorithm), Main Ideas!!!, we learned the Main Ideas of Linear Programming and the Simplex Algorithm. Now let's dive into the nitty gritty details of how it's done, one step at a time. BAM!\n\nNOTE: This StatQu"
+        },
+        {
+          "videoId": "h5o1n1QMcmM",
+          "title": "Optimization with Linear Programming (and the Simplex Algorithm), Main Ideas!!!",
+          "published": "2026-07-06T04:00:30+00:00",
+          "url": "https://www.youtube.com/watch?v=h5o1n1QMcmM",
+          "description": "If you've ever wondered how airplane schedules are optimized, warehouses are optimized or how crops are optimized, then you've wondered about Linear Programming. This StatQuest introduces you to the main ideas of how Linear Programming can be used to optimize problems, and, speci"
+        },
+        {
+          "videoId": "mIlw5j3WyVk",
+          "title": "StatQuest: Random Forests Part 2: Missing data and clustering",
+          "published": "2026-06-08T15:02:05+00:00",
+          "url": "https://www.youtube.com/watch?v=mIlw5j3WyVk",
+          "description": "NOTE: This StatQuest is the updated version of the original Random Forests Part 3 and includes two minor corrections.\n\nLast time we talked about how to create, use and evaluate random forests. Now it's time to see how they can deal with missing data and how they can be used to cl"
+        },
+        {
+          "videoId": "L3nlGfSyHV0",
+          "title": "False Discovery Rates, FDR, clearly explained",
+          "published": "2026-06-08T15:01:35+00:00",
+          "url": "https://www.youtube.com/watch?v=L3nlGfSyHV0",
+          "description": "One of the best ways to prevent p-hacking is to adjust p-values for multiple testing. This StatQuest explains how the Benjamini-Hochberg method corrects for multiple-testing and FDR.\n\nFor a complete index of all the StatQuest videos, check out:\nhttps://statquest.org/video-index/\n"
+        },
+        {
+          "videoId": "aFDOzpTeg0s",
+          "title": "The Essence of Linear Regression!!!",
+          "published": "2026-05-18T04:00:01+00:00",
+          "url": "https://www.youtube.com/watch?v=aFDOzpTeg0s",
+          "description": "This StatQuest takes you through basic linear regression, step-by-step, explaining both the method and the motivation behind the method. Each step is broken down into easy-to-understand parts so that anyone can develop a deep understanding of how to do and interpret a linear regr"
+        },
+        {
+          "videoId": "q-BiW5srMFQ",
+          "title": "How AI works in Super Simple Terms!!!",
+          "published": "2026-01-12T05:01:06+00:00",
+          "url": "https://www.youtube.com/watch?v=q-BiW5srMFQ",
+          "description": "In this StatQuest we explain how AI, like ChatGPT, works. However, instead of using lots of complicated math, we're going to use a super simple example and super simple terms. If math scares you, this StatQuest is for you! And even if math doesn't scare you, this StatQuest will g"
+        },
+        {
+          "videoId": "WRYk7oZiogg",
+          "title": "StatQuest: Career Advice from Tech Industry Leaders",
+          "published": "2025-09-04T04:00:42+00:00",
+          "url": "https://www.youtube.com/watch?v=WRYk7oZiogg",
+          "description": "This year, for my Pop's birthday, we're going to hear from current tech industry leaders that all started out working for my pop in the IT-Lab at the Medical University of South Carolina. These leaders have started all kinds of startups, pioneered Oscar award winning computer gra"
+        }
+      ]
+    },
+    "yannic-kilcher": {
+      "creatorId": "yannic-kilcher",
+      "creatorName": "Yannic Kilcher",
+      "handle": "@YannicKilcher",
+      "channelId": "UCZHmQk67mSJgfCCTn7xBfew",
+      "latestVideos": [
+        {
+          "videoId": "xHi8PUIVyoo",
+          "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
+          "published": "2026-03-06T22:07:33+00:00",
+          "url": "https://www.youtube.com/watch?v=xHi8PUIVyoo",
+          "description": "All information about GTC and the DGX Spark Raffle is here: https://www.ykilcher.com/gtc\n\n\nLinks:\nHomepage: https://ykilcher.com\nMerch: https://ykilcher.com/merch\nYouTube: https://www.youtube.com/c/yannickilcher\nTwitter: https://twitter.com/ykilcher\nDiscord: https://ykilcher.com/"
+        },
+        {
+          "videoId": "Dr6jw-WAd9E",
+          "title": "Traditional X-Mas Stream",
+          "published": "2025-12-29T03:44:20+00:00",
+          "url": "https://www.youtube.com/watch?v=Dr6jw-WAd9E",
+          "description": "Letsgooo"
+        },
+        {
+          "videoId": "DNajvkqfobY",
+          "title": "Traditional Holiday Live Stream",
+          "published": "2025-12-28T12:41:54+00:00",
+          "url": "https://www.youtube.com/watch?v=DNajvkqfobY",
+          "description": "https://ykilcher.com/discord\n\nLinks:\nTabNine Code Completion (Referral): http://bit.ly/tabnine-yannick\nYouTube: https://www.youtube.com/c/yannickilcher\nTwitter: https://twitter.com/ykilcher\nDiscord: https://discord.gg/4H8xxDF\nBitChute: https://www.bitchute.com/channel/yannic-kilc"
+        },
+        {
+          "videoId": "taCVT5vDAk0",
+          "title": "TiDAR: Think in Diffusion, Talk in Autoregression (Paper Analysis)",
+          "published": "2025-12-27T14:33:29+00:00",
+          "url": "https://www.youtube.com/watch?v=taCVT5vDAk0",
+          "description": "Paper: https://arxiv.org/abs/2511.08923\n\nAbstract:\nDiffusion language models hold the promise of fast parallel generation, while autoregressive (AR) models typically excel in quality due to their causal structure aligning naturally with language modeling. This raises a fundamenta"
+        },
+        {
+          "videoId": "v67plFw1nMw",
+          "title": "Titans: Learning to Memorize at Test Time (Paper Analysis)",
+          "published": "2025-12-14T16:22:15+00:00",
+          "url": "https://www.youtube.com/watch?v=v67plFw1nMw",
+          "description": "Paper: https://arxiv.org/abs/2501.00663\n\nAbstract:\nOver more than a decade there has been an extensive research effort on how to effectively utilize recurrent models and attention. While recurrent models aim to compress the data into a fixed-size memory (called hidden state), att"
+        },
+        {
+          "videoId": "Nao16-6l6dQ",
+          "title": "[Paper Analysis] The Free Transformer (and some Variational Autoencoder stuff)",
+          "published": "2025-11-01T17:39:06+00:00",
+          "url": "https://www.youtube.com/watch?v=Nao16-6l6dQ",
+          "description": "https://arxiv.org/abs/2510.17558\n\nAbstract:\nWe propose an extension of the decoder Transformer that conditions its generative process on random latent variables which are learned without supervision thanks to a variational procedure. Experimental evaluations show that allowing su"
+        },
+        {
+          "videoId": "0bpYCxv2qhw",
+          "title": "[Video Response] What Cloudflare's code mode misses about MCP and tool calling",
+          "published": "2025-10-19T10:58:51+00:00",
+          "url": "https://www.youtube.com/watch?v=0bpYCxv2qhw",
+          "description": "Theo's Video: https://www.youtube.com/watch?v=bAYZjVAodoo\nCloudflare article: https://blog.cloudflare.com/code-mode/\n\nLinks:\nHomepage: https://ykilcher.com\nMerch: https://ykilcher.com/merch\nYouTube: https://www.youtube.com/c/yannickilcher\nTwitter: https://twitter.com/ykilcher\nDis"
+        },
+        {
+          "videoId": "zKohTkN0Fyk",
+          "title": "[Paper Analysis] On the Theoretical Limitations of Embedding-Based Retrieval (Warning: Rant)",
+          "published": "2025-10-11T16:07:41+00:00",
+          "url": "https://www.youtube.com/watch?v=zKohTkN0Fyk",
+          "description": "Paper: https://arxiv.org/abs/2508.21038\n\nAbstract:\nVector embeddings have been tasked with an ever-increasing set of retrieval tasks over the years, with a nascent rise in using them for reasoning, instruction-following, coding, and more. These new benchmarks push embeddings to w"
+        },
+        {
+          "videoId": "hkAH7-u7t5k",
+          "title": "AGI is not coming!",
+          "published": "2025-08-09T10:39:28+00:00",
+          "url": "https://www.youtube.com/watch?v=hkAH7-u7t5k",
+          "description": "jack Morris's investigation into GPT-OSS training data\n\nhttps://x.com/jxmnop/status/1953899426075816164?t=3YRhVQDwQLk2gouTSACoqA&s=09"
+        },
+        {
+          "videoId": "hpC4qjWu_aY",
+          "title": "Context Rot: How Increasing Input Tokens Impacts LLM Performance (Paper Analysis)",
+          "published": "2025-07-23T11:10:52+00:00",
+          "url": "https://www.youtube.com/watch?v=hpC4qjWu_aY",
+          "description": "Paper: https://research.trychroma.com/context-rot\n\nAbstract:\nLarge Language Models (LLMs) are typically presumed to process context uniformly—that is, the model should handle the 10,000th token just as reliably as the 100th. However, in practice, this assumption does not hold. We"
+        }
+      ]
+    },
+    "wes-roth": {
+      "creatorId": "wes-roth",
+      "creatorName": "Wes Roth",
+      "handle": "@WesRoth",
+      "channelId": "UCqcbQf6yw5KzRoDDcZ_wBSw",
+      "latestVideos": [
+        {
+          "videoId": "V3KeMw2nIDA",
+          "title": "OpenAI paused all training runs... ALIGNMENT FAILURE",
+          "published": "2026-09-26T15:22:31+00:00",
+          "url": "https://www.youtube.com/watch?v=V3KeMw2nIDA",
+          "description": "OpenAI’s alarm went off. The automatic shutdown didn’t. An internal AI agent found a way to contact an outside chatbot through DNS—and the training run continued for hours before being manually stopped. We examine OpenAI’s reports, the resulting pause in its most capable models’ "
+        },
+        {
+          "videoId": "LYNSHecA2Ks",
+          "title": "THE END IS NEAR... and more AI doom",
+          "published": "2026-09-25T13:28:28+00:00",
+          "url": "https://www.youtube.com/watch?v=LYNSHecA2Ks",
+          "description": "Try Runway: https://app.runwayml.com/?utm_source=youtube&utm_medium=sponsored&utm_campaign=ai-influencer=WesRoth\n\nThanks to Runway for sponsoring this video. I made three short films—The Last Light, Second Spring, and Midnight Service—and show how I built them using AI video gene"
+        },
+        {
+          "videoId": "H7KruLVX2Rk",
+          "title": "Claude JUST found hidden DNA...",
+          "published": "2026-09-24T05:24:14+00:00",
+          "url": "https://www.youtube.com/watch?v=H7KruLVX2Rk",
+          "description": "Claude just helped uncover a previously unknown biological system—and how it found it might be the bigger story. Anthropic’s agents searched for roughly 21 hours before researchers followed up on a strange pattern in DNA. We look at ART, the surprising signals inside Mythos 5, an"
+        },
+        {
+          "videoId": "p2i-fcx0G0M",
+          "title": "AI labs may be hiding their biggest breakthroughs",
+          "published": "2026-09-22T12:20:07+00:00",
+          "url": "https://www.youtube.com/watch?v=p2i-fcx0G0M",
+          "description": "Scott Aaronson thinks the singularity has already started—and says he’s heard that AI companies are sitting on major mathematical breakthroughs they haven’t released. As the debate over OpenAI’s Navier–Stokes result continues, a bigger question is emerging: what happens when mach"
+        },
+        {
+          "videoId": "iQGLI14p88Q",
+          "title": "OpenAI JUST got HACKED...",
+          "published": "2026-09-19T08:43:54+00:00",
+          "url": "https://www.youtube.com/watch?v=iQGLI14p88Q",
+          "description": "The latest AI News. Learn about LLMs, Gen AI and get ready for the rollout of AGI. Wes Roth covers the latest happenings in the world of OpenAI, Google, Anthropic, NVIDIA and Open Source AI.\n\n______________________________________________\nMy Links 🔗\n➡️ Twitter: https://x.com/WesR"
+        },
+        {
+          "videoId": "NQQsAegQXuw",
+          "title": "OpenAI's model just JAILBROKE ITSELF...",
+          "published": "2026-09-18T05:28:05+00:00",
+          "url": "https://www.youtube.com/watch?v=NQQsAegQXuw",
+          "description": "Try Genspark Design and get free credits: https://www.genspark.ai/agents?type=design&utm_campaign=WesRoth04&utm_source=yt\n\nThanks to @GensparkProduct for sponsoring this video.\n______________________________________________\nMy Links 🔗\n➡️ Twitter: https://x.com/WesRoth\n➡️ AI Newsl"
+        },
+        {
+          "videoId": "thR9_VYJiQo",
+          "title": "Google is SO back...",
+          "published": "2026-09-17T07:35:41+00:00",
+          "url": "https://www.youtube.com/watch?v=thR9_VYJiQo",
+          "description": "Google researchers are letting AI “dream” through past experiments to improve how it chooses what to try next. Dream-RSI turns recorded discoveries into replayable worlds, where an agent can test better research strategies before running new experiments. Could learning to choose "
+        },
+        {
+          "videoId": "WBK2WX7TA4g",
+          "title": "we JUST got played...",
+          "published": "2026-09-10T08:37:45+00:00",
+          "url": "https://www.youtube.com/watch?v=WBK2WX7TA4g",
+          "description": "Dark money behind the AI panic.\n______________________________________________\nMy Links 🔗\n➡️ Twitter: https://x.com/WesRothMoney\n➡️ AI Newsletter: https://natural20.beehiiv.com/subscribe\n\nWant to work with me?\nBrand, sponsorship & business inquiries: wesroth@smoothmedia.co\n______"
+        },
+        {
+          "videoId": "lkujyxUdUIk",
+          "title": "OpenAI JUST solved math....",
+          "published": "2026-09-09T05:41:44+00:00",
+          "url": "https://www.youtube.com/watch?v=lkujyxUdUIk",
+          "description": "OpenAI says 10,000 AI agents produced a proposed solution to the Navier–Stokes Millennium Prize Problem in just 88 hours. But the announcement has sparked a dispute over credit, competing research, and the role of human mathematicians. We break down the math, Tristan Buckmaster a"
+        },
+        {
+          "videoId": "Vjh3YCnI3vo",
+          "title": "OpenAI’s chief scientist just issued a warning...",
+          "published": "2026-09-07T08:45:18+00:00",
+          "url": "https://www.youtube.com/watch?v=Vjh3YCnI3vo",
+          "description": "OpenAI’s chief scientist says AI is approaching recursive self-improvement—and our ability to keep it under control isn’t keeping pace. Jakub Pachocki’s new essay, “An Alien Mind,” lays out why this moment matters. We look at OpenAI’s internal research data, the limits of AI alig"
+        }
+      ]
+    },
+    "deeplearningai": {
+      "creatorId": "deeplearningai",
+      "creatorName": "DeepLearning.AI (Andrew Ng)",
+      "handle": "@deeplearningai_",
+      "channelId": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "latestVideos": [
+        {
+          "videoId": "uRGHx-1CqBQ",
+          "title": "Building AI Assistants with On-Device Memory",
+          "published": "2026-09-23T13:30:05+00:00",
+          "url": "https://www.youtube.com/watch?v=uRGHx-1CqBQ",
+          "description": "Learn More: https://bit.ly/4AlVW2n\n\nA cloud-based assistant can remember what it sees, hears, and is told, but only by staying connected and sending that data to a remote server.\n\nIn our new short course, Building AI Assistants with On-Device Memory, built in partnership with Qdr"
+        },
+        {
+          "videoId": "hy8UstR2NEg",
+          "title": "Full Course: Spec-Driven Development with Coding Agents",
+          "published": "2026-09-22T19:32:17+00:00",
+          "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
+          "description": "Vibe coding is fast, but it often produces code that doesn't match what you asked for. Spec-driven development is the disciplined alternative: write a clear markdown spec defining what to build, and let your coding agent implement it.\n\nEarn your certificate here: https://bit.ly/4"
+        },
+        {
+          "videoId": "AIXQ8qsC3J0",
+          "title": "AI Agents for Image and Video Generation. #GoogleCloud #DeepLearningAI #AIAgents",
+          "published": "2026-09-04T13:30:06+00:00",
+          "url": "https://www.youtube.com/shorts/AIXQ8qsC3J0",
+          "description": "One good AI image is easy. Consistent quality at scale is an evaluation problem.\n\nThis UI design agent reads brand guidelines, generates mockups, scores its own output, and feeds the critique back into the next round.\n\nLearn to build it, plus a video generation agent, in \"AI Agen"
+        },
+        {
+          "videoId": "8tpXt9CGdZE",
+          "title": "Local AI is just getting started, and there’s room for you to shape it.",
+          "published": "2026-09-02T13:30:10+00:00",
+          "url": "https://www.youtube.com/shorts/8tpXt9CGdZE",
+          "description": "A note from Paul Everitt for everyone taking the course: local AI is just getting started, and there’s room for you to shape it.\n\nTake the course, then come share what you build:\nhttps://www.deeplearning.ai/courses/ai-coding-workflows-from-cloud-to-local"
+        },
+        {
+          "videoId": "Y_bxMqcCNbU",
+          "title": "AI Dev | San Francisco 2026 | 2,599 AI Developers",
+          "published": "2026-09-01T21:18:23+00:00",
+          "url": "https://www.youtube.com/watch?v=Y_bxMqcCNbU",
+          "description": "Thousands of developers, two days on the San Francisco waterfront, and a whole lot of code.\n\nAI Dev in San Francisco brought the DeepLearning.AI community together on April 28 - 29 for the biggest AI Dev yet. Hosted by Andrew Ng, the conference ran on hands-on workshops, technica"
+        },
+        {
+          "videoId": "YVluf1-g0wY",
+          "title": "Spec-driven development and local AI are a natural pair.",
+          "published": "2026-08-28T13:30:38+00:00",
+          "url": "https://www.youtube.com/shorts/YVluf1-g0wY",
+          "description": "Spec-driven development and local AI are a natural pair: clear specs give smaller models a real shot at the work.\n\nPaul Everitt worked both into his new course with DeepLearning.AI. Check it out:\n\nhttps://www.deeplearning.ai/courses/ai-coding-workflows-from-cloud-to-local"
+        },
+        {
+          "videoId": "MbB1gNIj3G0",
+          "title": "Build AI agents that learn from experience",
+          "published": "2026-08-26T13:00:14+00:00",
+          "url": "https://www.youtube.com/watch?v=MbB1gNIj3G0",
+          "description": "Learn More: https://bit.ly/4iu7p9F \n\nIntroducing Building Adaptive AI Agents, a short course built in partnership with Oracle and taught by Nacho Martínez, Data Scientist Advocate at Oracle, and Casius Lee, AI Developer Advocate at Oracle.\n\nAgents don't need to relearn the job ev"
+        },
+        {
+          "videoId": "1LZSKYLSKno",
+          "title": "Frontier models for the big problems. #aiagents #jetbrains #deeplearning",
+          "published": "2026-08-24T13:30:33+00:00",
+          "url": "https://www.youtube.com/shorts/1LZSKYLSKno",
+          "description": "Frontier models for the big problems. Local models when you want control, privacy, and to keep your stuff yours.\n\nKnowing how to split the work between them is the skill. Learn it in our free course with JetBrains:\nhttps://www.deeplearning.ai/courses/ai-coding-workflows-from-clou"
+        },
+        {
+          "videoId": "tRz2bxfPJbE",
+          "title": "The big brain for the big work...  #aiagents #buildinpublic #deeplearning #jetbrains @JetBrainsTV",
+          "published": "2026-08-20T13:46:53+00:00",
+          "url": "https://www.youtube.com/shorts/tRz2bxfPJbE",
+          "description": "The big brain for the big work, the little brain for the little work. Paul Everitt’s rule for splitting coding tasks between frontier and local models.\n\nBuild the full workflow in AI Coding Workflows: From Cloud to Local, a free short course built with JetBrains:\nhttps://www.deep"
+        },
+        {
+          "videoId": "xUXJuPC7gz0",
+          "title": "Take back control of your AI coding workflow",
+          "published": "2026-08-12T15:30:40+00:00",
+          "url": "https://www.youtube.com/watch?v=xUXJuPC7gz0",
+          "description": "Learn More: https://bit.ly/4q6zSEc\n\nAI coding agents like Claude Code and Codex give you a ready-made way to work. That convenience comes at the cost of control: over which models run, what you spend, and what leaves your machine.\n\nIn our new short course, AI Coding Workflows: Fr"
+        }
+      ]
+    }
+  }
+}
