@@ -43,6 +43,21 @@ export function CreatorsView() {
   const [selectedTier, setSelectedTier] = useState<TierFilter>("ALL");
   const [selectedCreator, setSelectedCreator] = useState<Creator | null>(null);
 
+  // Hash listener for header navigation
+  React.useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash;
+      if (hash === "#playbook-framework") {
+        setActiveTab("content");
+      } else if (hash === "#creators-radar") {
+        setActiveTab("radar");
+      }
+    };
+    handleHash();
+    window.addEventListener("hashchange", handleHash);
+    return () => window.removeEventListener("hashchange", handleHash);
+  }, []);
+
   // Filtered creators list
   const filteredCreators = useMemo(() => {
     return CREATORS_DATA.filter((c) => {
@@ -61,18 +76,18 @@ export function CreatorsView() {
   }, [searchQuery, selectedTrack, selectedTier]);
 
   return (
-    <div className="space-y-12">
+    <div id="creators-radar" className="space-y-12">
       {/* Editorial Masthead / Hero Banner */}
-      <section className="relative overflow-hidden rounded-2xl border border-slate-200/90 dark:border-white/[0.08] bg-gradient-to-b from-[#f5f2eb] to-[#f9f8f5] dark:from-[#0f131c] dark:to-[#0a0d14] p-6 sm:p-10 shadow-sm">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#997328]/10 via-[#c5a059]/5 to-transparent rounded-full blur-3xl pointer-events-none" />
+      <section className="relative overflow-hidden rounded-2xl border border-stone-200/90 dark:border-white/[0.08] bg-gradient-to-b from-[#f7f5ee] to-[#f9f8f5] dark:from-[#0f131c] dark:to-[#0a0d14] p-6 sm:p-10 shadow-sm">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#9e2a2b]/10 via-[#c5a059]/5 to-transparent rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-4xl">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-[#997328]/30 dark:border-[#c5a059]/40 bg-[#997328]/10 dark:bg-[#c5a059]/10 text-[#997328] dark:text-[#e5c378] text-xs font-mono font-bold tracking-wider uppercase mb-4">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-[#9e2a2b]/30 dark:border-[#c5a059]/40 bg-[#9e2a2b]/10 dark:bg-[#c5a059]/10 text-[#9e2a2b] dark:text-[#e5c378] text-xs font-mono font-bold tracking-wider uppercase mb-4">
             <Sparkles className="w-3.5 h-3.5" />
             <span>GLOBAL YOUTUBE INTEL · RESEARCH RADAR</span>
           </div>
-          <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white font-sans">
+          <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white font-serif">
             全球 YouTube AI 与量化交易创作者雷达
-          </h1>
+          </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 font-serif leading-relaxed">
             精选 40 位全球顶尖工程实战派与对冲基金研究员全景图谱。每位博主均配备**三大代表作拆解、前30秒Hook秘诀、文案剧本架构与量化交易启示**；深度解构 4 象限爆款选题矩阵与 4 阶量化工程跃迁蓝图，全量本地化离线归档，直击技术与实盘本质。
           </p>
@@ -493,12 +508,12 @@ export function CreatorsView() {
 
       {/* TAB 2: CONTENT FRAMEWORKS & 30S HOOK */}
       {activeTab === "content" && (
-        <section className="space-y-10">
+        <section id="playbook-framework" className="space-y-10">
           {/* 4-Quadrant Topic Matrix */}
           <div>
             <div className="flex items-center space-x-3 mb-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#997328] dark:bg-[#c5a059]" />
-              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white font-sans">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#9e2a2b] dark:bg-[#c5a059]" />
+              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-stone-900 dark:text-white font-serif">
                 4 象限爆款选题矩阵
               </h2>
             </div>

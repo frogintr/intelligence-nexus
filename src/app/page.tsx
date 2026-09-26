@@ -6,13 +6,14 @@ import { MacroAnchors } from "../components/MacroAnchors";
 import { SentimentGauges } from "../components/SentimentGauges";
 import { AiFrontiers } from "../components/AiFrontiers";
 import { QuantAlpha } from "../components/QuantAlpha";
+import { CreatorsView } from "../components/CreatorsView";
 import { MarketPanoramic } from "../components/MarketPanoramic";
+import { NewsletterSection } from "../components/NewsletterSection";
 import { Footer } from "../components/Footer";
 
 function getLatestDossier(): DailyDossier {
   const dataDir = path.join(process.cwd(), "data", "daily");
-  
-  // Default fallback if directory not yet created
+
   if (!fs.existsSync(dataDir)) {
     throw new Error("Data directory not found");
   }
@@ -33,34 +34,42 @@ export default function Home() {
   const dossier = getLatestDossier();
 
   return (
-    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col justify-between selection:bg-[#c5a059]/30 selection:text-slate-900 dark:selection:text-white transition-colors duration-200">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col justify-between selection:bg-[#9e2a2b]/20 selection:text-stone-900 dark:selection:text-white transition-colors duration-200">
       <div>
+        {/* DailyArt Gazette Masthead */}
         <Header date={dossier.date} />
 
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          {/* Executive Vision & 4 Macro Pricing Anchors */}
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+          {/* Department 1: Executive Vision & 4 Macro Pricing Anchors */}
           <MacroAnchors
             oneLiner={dossier.oneLinerSummary}
             anchors={dossier.macroAnchors}
           />
 
-          {/* Dual Sentiment Gauges (中美分立情绪) */}
+          {/* Department 2: Dual Sentiment Gauges (中美分立情绪标尺) */}
           <SentimentGauges sentiment={dossier.sentiment} />
 
-          {/* AI Frontiers & Multi-Agent Industrial Case Studies */}
+          {/* Department 3: AI Frontiers & Multi-Agent Industrial Case Studies */}
           <AiFrontiers updates={dossier.aiUpdates} />
 
-          {/* Quant Alpha Research & Gallery-Framed Code Artwork */}
+          {/* Department 4: Quant Alpha Research & Gallery-Framed Code Artwork */}
           <QuantAlpha research={dossier.quantResearch} />
 
-          {/* Market Panoramic (US/China Stocks & Commodities) */}
+          {/* Department 5: Unified Creator Radar, 4-Quadrant Matrix, 30s Hook & 4-Stage Roadmap */}
+          <CreatorsView />
+
+          {/* Department 6: Market Panoramic (US/China Stocks & Commodities) */}
           <MarketPanoramic
             stocks={dossier.stocks}
             commodities={dossier.commodities}
           />
+
+          {/* Department 7: DailyArt Split Newsletter Subscription Gazette */}
+          <NewsletterSection />
         </main>
       </div>
 
+      {/* DailyArt Publication Colophon Footer */}
       <Footer />
     </div>
   );
