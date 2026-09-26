@@ -1,0 +1,33 @@
+name: Intelligence Nexus Daily Dispatch
+
+on:
+  schedule:
+    # 23:00 UTC = 07:00 Beijing Time (CST)
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run daily intelligence collector
+        run: |
+          python scripts/fetch_daily_data.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Intelligence Nexus Bot"
+          git add data/daily/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): auto-update daily dossier [$(date -u +'%Y-%m-%d')]" && git push)
