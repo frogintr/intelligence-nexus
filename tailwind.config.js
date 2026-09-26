@@ -23,9 +23,9 @@ module.exports = {
         }
       },
       fontFamily: {
-        serif: ["Georgia", "Cambria", "'Newsreader'", "serif"],
-        sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        mono: ["JetBrains Mono", "Fira Code", "monospace"],
+        serif: ["'Newsreader'", "'Cinzel'", "'Didot'", "'Bodoni MT'", "Georgia", "Cambria", "serif"],
+        sans: ["Inter", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "sans-serif"],
+        mono: ["'JetBrains Mono'", "Fira Code", "monospace"],
       },
       boxShadow: {
         'framed': '0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1)',

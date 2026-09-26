@@ -76,88 +76,93 @@ export function CreatorsView() {
   }, [searchQuery, selectedTrack, selectedTier]);
 
   return (
-    <div id="creators-radar" className="space-y-12">
-      {/* Editorial Masthead / Hero Banner */}
-      <section className="relative overflow-hidden rounded-2xl border border-stone-200/90 dark:border-white/[0.08] bg-gradient-to-b from-[#f7f5ee] to-[#f9f8f5] dark:from-[#0f131c] dark:to-[#0a0d14] p-6 sm:p-10 shadow-sm">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#9e2a2b]/10 via-[#c5a059]/5 to-transparent rounded-full blur-3xl pointer-events-none" />
-        <div className="relative z-10 max-w-4xl">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full border border-[#9e2a2b]/30 dark:border-[#c5a059]/40 bg-[#9e2a2b]/10 dark:bg-[#c5a059]/10 text-[#9e2a2b] dark:text-[#e5c378] text-xs font-mono font-bold tracking-wider uppercase mb-4">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>GLOBAL YOUTUBE INTEL · RESEARCH RADAR</span>
+    <div id="creators-radar" className="space-y-8">
+      {/* DailyArt Exhibition Masthead */}
+      <div className="flex items-center justify-between border-b-2 border-stone-800 dark:border-stone-400 pb-2">
+        <div>
+          <div className="text-[10px] font-mono tracking-widest text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold">
+            DEPARTMENT III · THE 40 CREATOR INTELLIGENCE ARCHIVE
           </div>
-          <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white font-serif">
-            全球 YouTube AI 与量化交易创作者雷达
+          <h2 className="text-xl sm:text-2xl font-serif font-black uppercase tracking-tight text-stone-900 dark:text-stone-50">
+            全球 YouTube AI 与量化交易创作者学术馆藏
           </h2>
-          <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 font-serif leading-relaxed">
-            精选 40 位全球顶尖工程实战派与对冲基金研究员全景图谱。每位博主均配备**三大代表作拆解、前30秒Hook秘诀、文案剧本架构与量化交易启示**；深度解构 4 象限爆款选题矩阵与 4 阶量化工程跃迁蓝图，全量本地化离线归档，直击技术与实盘本质。
-          </p>
+        </div>
+        <span className="text-[11px] font-mono text-stone-400 hidden sm:inline-block">
+          40 CURATED DOSSIERS
+        </span>
+      </div>
 
-          {/* Quick Metrics Bar */}
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div className="p-3 rounded-lg border border-slate-200/80 dark:border-white/[0.06] bg-white/70 dark:bg-white/[0.02]">
-              <div className="text-[11px] text-slate-500 dark:text-slate-400 font-mono uppercase">精选创作者</div>
-              <div className="text-xl font-bold font-mono text-[#997328] dark:text-[#e5c378]">40 位全量深度</div>
-            </div>
-            <div className="p-3 rounded-lg border border-slate-200/80 dark:border-white/[0.06] bg-white/70 dark:bg-white/[0.02]">
-              <div className="text-[11px] text-slate-500 dark:text-slate-400 font-mono uppercase">深度代表作拆解</div>
-              <div className="text-xl font-bold font-mono text-slate-900 dark:text-white">120 篇核心课程</div>
-            </div>
-            <div className="p-3 rounded-lg border border-slate-200/80 dark:border-white/[0.06] bg-white/70 dark:bg-white/[0.02]">
-              <div className="text-[11px] text-slate-500 dark:text-slate-400 font-mono uppercase">留存模型</div>
-              <div className="text-xl font-bold font-mono text-emerald-600 dark:text-emerald-400">30s 黄金 Hook</div>
-            </div>
-            <div className="p-3 rounded-lg border border-slate-200/80 dark:border-white/[0.06] bg-white/70 dark:bg-white/[0.02]">
-              <div className="text-[11px] text-slate-500 dark:text-slate-400 font-mono uppercase">量化工程线</div>
-              <div className="text-xl font-bold font-mono text-indigo-600 dark:text-indigo-400">4 阶跃迁体系</div>
-            </div>
+      {/* Editorial Overview & Metrics Placard */}
+      <section className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-6 sm:p-8">
+        <p className="text-sm font-serif text-stone-700 dark:text-stone-300 leading-relaxed mb-6">
+          精选 40 位全球顶尖工程实战派与对冲基金研究员全景图谱。每位博主均配备<strong>三大代表作拆解、前30秒Hook秘诀、文案剧本架构与量化交易启示</strong>；深度解构 4 象限爆款选题矩阵与 4 阶量化工程跃迁蓝图，全量本地化离线归档，直击技术与实盘本质。
+        </p>
+
+        {/* 4 Metrics in Museum Placards */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="p-3 bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-200/80 dark:border-white/[0.06]">
+            <div className="text-[10px] text-stone-400 font-mono uppercase">精选创作者</div>
+            <div className="text-lg font-bold font-mono text-[#9e2a2b] dark:text-[#e5c378]">40 位全量深度</div>
+          </div>
+          <div className="p-3 bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-200/80 dark:border-white/[0.06]">
+            <div className="text-[10px] text-stone-400 font-mono uppercase">深度代表作拆解</div>
+            <div className="text-lg font-bold font-mono text-stone-900 dark:text-white">120 篇核心课程</div>
+          </div>
+          <div className="p-3 bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-200/80 dark:border-white/[0.06]">
+            <div className="text-[10px] text-stone-400 font-mono uppercase">留存模型</div>
+            <div className="text-lg font-bold font-mono text-emerald-700 dark:text-emerald-400">30s 黄金 Hook</div>
+          </div>
+          <div className="p-3 bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-200/80 dark:border-white/[0.06]">
+            <div className="text-[10px] text-stone-400 font-mono uppercase">量化工程线</div>
+            <div className="text-lg font-bold font-mono text-sky-700 dark:text-sky-400">4 阶跃迁体系</div>
           </div>
         </div>
 
-        {/* View Segment Switcher */}
-        <div className="mt-8 flex flex-wrap items-center gap-2 border-t border-slate-200/80 dark:border-white/[0.08] pt-6">
+        {/* Museum Exhibition Wing Switcher Tabs */}
+        <div className="mt-6 flex flex-wrap items-center gap-2 border-t border-stone-200/80 dark:border-white/[0.06] pt-4">
           <button
             onClick={() => setActiveTab("radar")}
-            className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-medium transition-all ${
+            className={`flex items-center space-x-1.5 px-3 py-1.5 text-xs font-serif transition-all ${
               activeTab === "radar"
-                ? "bg-[#997328] dark:bg-[#c5a059] text-white dark:text-slate-950 font-semibold shadow-sm"
-                : "bg-white/80 dark:bg-white/[0.04] text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/[0.08] border border-slate-200 dark:border-white/[0.08]"
+                ? "bg-[#9e2a2b] dark:bg-[#c5a059] text-white dark:text-stone-950 font-bold shadow-xs"
+                : "text-stone-700 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-stone-100 dark:bg-white/[0.04]"
             }`}
           >
             <Cpu className="w-3.5 h-3.5" />
-            <span>创作者图谱雷达 ({filteredCreators.length})</span>
+            <span>01. 创作者全景馆藏 ({filteredCreators.length})</span>
           </button>
           <button
             onClick={() => setActiveTab("content")}
-            className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-medium transition-all ${
+            className={`flex items-center space-x-1.5 px-3 py-1.5 text-xs font-serif transition-all ${
               activeTab === "content"
-                ? "bg-[#997328] dark:bg-[#c5a059] text-white dark:text-slate-950 font-semibold shadow-sm"
-                : "bg-white/80 dark:bg-white/[0.04] text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/[0.08] border border-slate-200 dark:border-white/[0.08]"
+                ? "bg-[#9e2a2b] dark:bg-[#c5a059] text-white dark:text-stone-950 font-bold shadow-xs"
+                : "text-stone-700 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-stone-100 dark:bg-white/[0.04]"
             }`}
           >
             <Target className="w-3.5 h-3.5" />
-            <span>4象限选题与30秒Hook</span>
+            <span>02. 4象限选题与30秒Hook</span>
           </button>
           <button
             onClick={() => setActiveTab("roadmap")}
-            className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-medium transition-all ${
+            className={`flex items-center space-x-1.5 px-3 py-1.5 text-xs font-serif transition-all ${
               activeTab === "roadmap"
-                ? "bg-[#997328] dark:bg-[#c5a059] text-white dark:text-slate-950 font-semibold shadow-sm"
-                : "bg-white/80 dark:bg-white/[0.04] text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/[0.08] border border-slate-200 dark:border-white/[0.08]"
+                ? "bg-[#9e2a2b] dark:bg-[#c5a059] text-white dark:text-stone-950 font-bold shadow-xs"
+                : "text-stone-700 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-stone-100 dark:bg-white/[0.04]"
             }`}
           >
             <Layers className="w-3.5 h-3.5" />
-            <span>4阶量化工程路线</span>
+            <span>03. 4阶量化工程路线</span>
           </button>
           <button
             onClick={() => setActiveTab("playbook")}
-            className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-xs font-medium transition-all ${
+            className={`flex items-center space-x-1.5 px-3 py-1.5 text-xs font-serif transition-all ${
               activeTab === "playbook"
-                ? "bg-[#997328] dark:bg-[#c5a059] text-white dark:text-slate-950 font-semibold shadow-sm"
-                : "bg-white/80 dark:bg-white/[0.04] text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/[0.08] border border-slate-200 dark:border-white/[0.08]"
+                ? "bg-[#9e2a2b] dark:bg-[#c5a059] text-white dark:text-stone-950 font-bold shadow-xs"
+                : "text-stone-700 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-stone-100 dark:bg-white/[0.04]"
             }`}
           >
             <BookmarkCheck className="w-3.5 h-3.5" />
-            <span>个人 IP 破局指南</span>
+            <span>04. 个人 IP 破局指南</span>
           </button>
         </div>
       </section>
@@ -240,22 +245,22 @@ export function CreatorsView() {
           </div>
 
           {/* Creators Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {filteredCreators.map((creator) => (
               <div
                 key={creator.id}
-                className="group flex flex-col justify-between rounded-xl border border-slate-200/90 dark:border-white/[0.08] bg-white dark:bg-[#0c0f17] p-5 sm:p-6 shadow-sm hover:border-[#997328]/50 dark:hover:border-[#c5a059]/50 hover:shadow-md transition-all duration-200"
+                className="group flex flex-col justify-between bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-5 sm:p-6 hover:border-[#9e2a2b]/50 dark:hover:border-[#c5a059]/50 shadow-xs transition-all duration-200"
               >
                 <div>
                   {/* Card Top: Channel Identity & Links */}
                   <div className="flex items-start justify-between gap-3">
                     <div className="flex items-center space-x-3">
-                      <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-[#997328]/20 to-[#6d5118]/20 dark:from-[#c5a059]/20 dark:to-[#8c6d32]/20 border border-[#997328]/30 dark:border-[#c5a059]/30 flex items-center justify-center font-mono font-bold text-sm text-[#997328] dark:text-[#e5c378] group-hover:scale-105 transition-transform shrink-0">
+                      <div className="w-11 h-11 border border-stone-300 dark:border-white/[0.1] bg-stone-50 dark:bg-[#090b10] flex items-center justify-center font-mono font-bold text-sm text-[#9e2a2b] dark:text-[#e5c378] group-hover:scale-105 transition-transform shrink-0">
                         {creator.name.slice(0, 2).toUpperCase()}
                       </div>
                       <div>
                         <div className="flex items-center space-x-2">
-                          <h3 className="text-base font-bold text-slate-900 dark:text-white font-sans group-hover:text-[#997328] dark:group-hover:text-[#e5c378] transition-colors">
+                          <h3 className="text-base font-bold text-stone-900 dark:text-white font-serif group-hover:text-[#9e2a2b] dark:group-hover:text-[#e5c378] transition-colors">
                             {creator.name}
                           </h3>
                           <span className="text-[11px] font-mono text-slate-400">
@@ -326,10 +331,10 @@ export function CreatorsView() {
 
                   <button
                     onClick={() => setSelectedCreator(creator)}
-                    className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-[#997328]/10 dark:bg-[#c5a059]/10 hover:bg-[#997328]/20 dark:hover:bg-[#c5a059]/20 text-[#997328] dark:text-[#e5c378] border border-[#997328]/30 dark:border-[#c5a059]/30 text-xs font-medium transition-all"
+                    className="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-[#9e2a2b]/10 dark:bg-[#c5a059]/10 hover:bg-[#9e2a2b]/20 dark:hover:bg-[#c5a059]/20 text-[#9e2a2b] dark:text-[#e5c378] border border-[#9e2a2b]/30 dark:border-[#c5a059]/30 text-xs font-serif transition-all"
                   >
                     <BookOpen className="w-3.5 h-3.5" />
-                    <span>查看深度档案</span>
+                    <span>查看学术档案</span>
                     <ArrowRight className="w-3 h-3" />
                   </button>
                 </div>
@@ -351,25 +356,25 @@ export function CreatorsView() {
       {selectedCreator && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
           <div
-            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl border border-slate-200/90 dark:border-white/[0.1] bg-[#fdfcf9] dark:bg-[#0c0f17] p-6 sm:p-8 shadow-2xl space-y-6"
+            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-300 dark:border-white/[0.1] p-6 sm:p-10 shadow-2xl space-y-6"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="flex items-start justify-between gap-4 border-b border-slate-200 dark:border-white/[0.08] pb-5">
+            <div className="flex items-start justify-between gap-4 border-b border-stone-200 dark:border-white/[0.08] pb-5">
               <div className="flex items-center space-x-4">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#997328]/20 to-[#6d5118]/20 dark:from-[#c5a059]/20 dark:to-[#8c6d32]/20 border border-[#997328]/40 dark:border-[#c5a059]/40 flex items-center justify-center font-mono font-extrabold text-xl text-[#997328] dark:text-[#e5c378]">
+                <div className="w-14 h-14 border border-stone-300 dark:border-white/10 bg-white dark:bg-[#12151e] flex items-center justify-center font-mono font-bold text-xl text-[#9e2a2b] dark:text-[#e5c378]">
                   {selectedCreator.name.slice(0, 2).toUpperCase()}
                 </div>
                 <div>
                   <div className="flex items-center space-x-2">
-                    <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white font-sans">
+                    <h2 className="text-xl sm:text-2xl font-black text-stone-900 dark:text-white font-serif">
                       {selectedCreator.name}
                     </h2>
-                    <span className="text-xs font-mono text-slate-400">
+                    <span className="text-xs font-mono text-stone-400">
                       {selectedCreator.handle}
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm font-semibold text-[#997328] dark:text-[#e5c378] mt-0.5">
+                  <p className="text-xs sm:text-sm font-semibold text-[#9e2a2b] dark:text-[#e5c378] font-serif italic mt-0.5">
                     {selectedCreator.tagline}
                   </p>
                   <div className="flex flex-wrap items-center gap-2 mt-2">
