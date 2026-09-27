@@ -31,16 +31,29 @@ export function MarketsDepartment({ stocks, commodities, onBackToCover }: Props)
       </div>
 
       {/* Monumental Department Header */}
-      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6">
-        <div className="text-xs font-mono tracking-widest text-[#166534] dark:text-[#4ade80] uppercase font-bold mb-2">
-          DEPARTMENT VI · CROSS-ASSET FINANCIAL TAPE &amp; COMMODITIES
+      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6 space-y-4">
+        <div className="text-xs font-mono tracking-widest text-[#166534] dark:text-[#4ade80] uppercase font-bold">
+          DEPARTMENT VI · CROSS-ASSET FINANCIAL TAPE &amp; COMMODITIES // 中美股票主线与大宗商品全景复盘
         </div>
-        <h2 className="text-4xl sm:text-6xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase leading-tight">
+        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 leading-[1.08] uppercase">
           中美股票主线与大宗商品全景复盘
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
+        <p className="text-base sm:text-xl font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
           全球云厂商与半导体资本开支博弈 · A/H股红利出清与高能商品供需测算，以华尔街与金融时报传统报纸宽幅版面呈现。
         </p>
+
+        {/* Standardized Editorial Metadata Rail */}
+        <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-stone-500 dark:text-stone-400 border-t border-stone-200/80 dark:border-white/[0.06] pt-4">
+          <span className="text-stone-900 dark:text-stone-200 font-semibold font-serif text-sm">
+            By Nexus Cross-Asset Financial Tape Desk
+          </span>
+          <span>•</span>
+          <span>NEW YORK &amp; HONG KONG</span>
+          <span>•</span>
+          <span>4 US BELLWETHERS · 4 CHINA GIANTS</span>
+          <span>•</span>
+          <span>5 GLOBAL COMMODITIES</span>
+        </div>
       </div>
 
       {/* Stocks Panoramic Grid */}

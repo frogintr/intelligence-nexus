@@ -38,16 +38,29 @@ export function GazetteDepartment({ onBackToCover }: Props) {
       </div>
 
       {/* Monumental Department Header */}
-      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6">
-        <div className="text-xs font-mono tracking-widest text-[#78350f] dark:text-[#d97706] uppercase font-bold mb-2">
-          DEPARTMENT VII · DAILY DISPATCH GAZETTE &amp; RESEARCH PRIVILEGES
+      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6 space-y-4">
+        <div className="text-xs font-mono tracking-widest text-[#78350f] dark:text-[#d97706] uppercase font-bold">
+          DEPARTMENT VII · DAILY DISPATCH GAZETTE &amp; RESEARCH PRIVILEGES // 晨报速递与投研内参订约
         </div>
-        <h2 className="text-4xl sm:text-6xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase leading-tight">
+        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 leading-[1.08] uppercase">
           晨报速递与投研内参订约
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
+        <p className="text-base sm:text-xl font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
           每日北京时间 07:00（美东 19:00），将全球宏观流动性突变、前沿 AI 范式演进与装裱级量化策略代码准时呈递。剔除浮夸噪音，坚持学术级真实信噪比与完全开源交付。
         </p>
+
+        {/* Standardized Editorial Metadata Rail */}
+        <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-stone-500 dark:text-stone-400 border-t border-stone-200/80 dark:border-white/[0.06] pt-4">
+          <span className="text-stone-900 dark:text-stone-200 font-semibold font-serif text-sm">
+            By Nexus Dispatch Editorial Board
+          </span>
+          <span>•</span>
+          <span>BEIJING &amp; LONDON</span>
+          <span>•</span>
+          <span>DAILY AT 07:00 CST</span>
+          <span>•</span>
+          <span>ZERO COMMERCIAL PROMOTIONS</span>
+        </div>
       </div>
 
       {/* DailyArt Magazine Split Editorial Box */}

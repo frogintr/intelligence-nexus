@@ -60,7 +60,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
       {/* ========================================================================= */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         {/* Left Column: Lead Cover Dispatch (7 Cols / ~60%) */}
-        <article className="lg:col-span-8 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-12 shadow-xs">
+        <article className="lg:col-span-8 bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-12 shadow-xs">
           {/* DailyArt Category Kicker */}
           <div className="flex items-center justify-between border-b border-stone-200/80 dark:border-white/[0.06] pb-4 mb-6">
             <div className="flex items-center space-x-3">

@@ -29,16 +29,29 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
       </div>
 
       {/* Monumental Department Header */}
-      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6">
-        <div className="text-xs font-mono tracking-widest text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold mb-2">
-          DEPARTMENT V · STRATEGIC BLUEPRINT &amp; ENGINEERING TRAJECTORY
+      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6 space-y-4">
+        <div className="text-xs font-mono tracking-widest text-[#4338ca] dark:text-[#818cf8] uppercase font-bold">
+          DEPARTMENT V · STRATEGIC BLUEPRINT &amp; ENGINEERING TRAJECTORY // 爆款选题矩阵与四阶量化工程跃迁蓝图
         </div>
-        <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase">
+        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 leading-[1.08] uppercase">
           爆款选题矩阵与四阶量化工程跃迁蓝图
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-600 dark:text-stone-300 max-w-3xl leading-relaxed">
+        <p className="text-base sm:text-xl font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
           解构顶级科技创作者内容发酵的底层心理学坐标，以及量化投研从零到实盘对冲基金级工程基建的四阶跃迁路径。
         </p>
+
+        {/* Standardized Editorial Metadata Rail */}
+        <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-stone-500 dark:text-stone-400 border-t border-stone-200/80 dark:border-white/[0.06] pt-4">
+          <span className="text-stone-900 dark:text-stone-200 font-semibold font-serif text-sm">
+            By Nexus Strategic Engineering Group
+          </span>
+          <span>•</span>
+          <span>4 PSYCHOLOGICAL QUADRANTS</span>
+          <span>•</span>
+          <span>4 RETENTION BLUEPRINTS</span>
+          <span>•</span>
+          <span>4-STAGE ENGINEERING TRAJECTORY</span>
+        </div>
       </div>
 
       {/* ========================================================================= */}

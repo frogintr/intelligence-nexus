@@ -4,7 +4,7 @@ import { GitBranch, Shield, Zap, Sparkles } from "lucide-react";
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-stone-200/90 dark:border-white/[0.08] bg-[#f4f2ec] dark:bg-[#07080c] py-14 text-stone-600 dark:text-stone-400 font-mono text-xs transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 pb-10 border-b border-stone-200 dark:border-white/[0.06]">
           {/* Brand Philosophy */}
           <div className="md:col-span-2 space-y-3">

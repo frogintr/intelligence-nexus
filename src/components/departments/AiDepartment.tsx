@@ -23,21 +23,34 @@ export function AiDepartment({ updates, onBackToCover }: Props) {
           <span>返回封面精选导读 (Back to Cover)</span>
         </button>
         <span className="text-xs font-mono text-stone-400">
-          DEPARTMENT II OF VII
+          DEPARTMENT II OF VII · AI FRONTIER LAB
         </span>
       </div>
 
       {/* Monumental Department Header */}
-      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6">
-        <div className="text-xs font-mono tracking-widest text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold mb-2">
-          DEPARTMENT II · AI FRONTIER REVOLUTION &amp; AGENTIC SYSTEMS
+      <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6 space-y-4">
+        <div className="text-xs font-mono tracking-widest text-[#1e3a8a] dark:text-[#60a5fa] uppercase font-bold">
+          DEPARTMENT II · AI FRONTIER REVOLUTION &amp; AGENTIC SYSTEMS // 前沿范式与工业级智能体实践
         </div>
-        <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight text-stone-900 dark:text-white uppercase">
+        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 leading-[1.08] uppercase">
           前沿范式与工业级智能体实践
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-600 dark:text-stone-300 max-w-3xl leading-relaxed">
-          深入拆解开源大模型混合专家（MoE）路由实测、计算机图形界面自主交互（Computer Use）及生产级多智能体协同流水线。
+        <p className="text-base sm:text-xl font-serif italic text-stone-700 dark:text-stone-300 max-w-4xl leading-relaxed">
+          深入拆解开源大模型混合专家（MoE）双层稀疏路由实测、计算机图形界面自主交互（Computer Use）安全沙箱及生产级多智能体协同流水线。
         </p>
+
+        {/* Standardized Editorial Metadata Rail */}
+        <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-stone-500 dark:text-stone-400 border-t border-stone-200/80 dark:border-white/[0.06] pt-4">
+          <span className="text-stone-900 dark:text-stone-200 font-semibold font-serif text-sm">
+            By Nexus Frontier AI Engineering Group
+          </span>
+          <span>•</span>
+          <span>SAN FRANCISCO &amp; BEIJING</span>
+          <span>•</span>
+          <span>RESEARCH MONOGRAPHS NO. 01–04</span>
+          <span>•</span>
+          <span>100% PRODUCTION REPRODUCIBLE</span>
+        </div>
       </div>
 
       {/* Case Studies Long-form Stream */}

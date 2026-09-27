@@ -36,16 +36,29 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
       </div>
 
       {/* Monumental Department Header */}
-      <div className="border-b-2 border-[#c5a059] pb-6">
-        <div className="text-xs font-mono tracking-widest text-[#e5c378] uppercase font-bold mb-2">
-          DEPARTMENT III · QUANTITATIVE ALPHA GALLERY &amp; CODE AS ART
+      <div className="border-b-2 border-[#c5a059] pb-6 space-y-4">
+        <div className="text-xs font-mono tracking-widest text-[#e5c378] uppercase font-bold">
+          DEPARTMENT III · QUANTITATIVE ALPHA GALLERY &amp; CODE AS ART // 量化 ALPHA 艺术展厅与装裱级因子
         </div>
-        <h2 className="text-3xl sm:text-5xl font-serif font-black tracking-tight text-white uppercase">
+        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-white leading-[1.08] uppercase">
           量化 Alpha 艺术展厅与装裱级因子
         </h2>
-        <p className="mt-3 text-base sm:text-lg font-serif italic text-stone-400 max-w-3xl leading-relaxed">
+        <p className="text-base sm:text-xl font-serif italic text-stone-300 max-w-4xl leading-relaxed">
           以古典艺术博物馆特展标准，陈列微观市场结构因子假说、非线性强化学习对冲模型及可复现的 Python 3.11+ 原生策略源码。
         </p>
+
+        {/* Standardized Editorial Metadata Rail */}
+        <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-stone-400 border-t border-white/[0.08] pt-4">
+          <span className="text-stone-200 font-semibold font-serif text-sm">
+            By Nexus Quantitative Research Group
+          </span>
+          <span>•</span>
+          <span>NEW YORK &amp; SHANGHAI</span>
+          <span>•</span>
+          <span>MUSEUM PLATES I–III</span>
+          <span>•</span>
+          <span>PEER REVIEWED &amp; VECTORBT NATIVE</span>
+        </div>
       </div>
 
       {/* Masterpieces Plates Stream */}
