@@ -22,7 +22,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
       value: macroAnchors.us10yYield,
       desc: "无风险基准利率 · 贴现率中轴",
       icon: TrendingUp,
-      accent: "text-[#9e2a2b] dark:text-[#e5c378]",
+      accent: "text-[#e50914] dark:text-[#ff4d4f]",
     },
     {
       num: "02",
@@ -257,7 +257,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
       <div className="space-y-6">
         <div className="flex items-center justify-between border-b-2 border-stone-800 dark:border-stone-400 pb-3">
           <div>
-            <div className="text-xs font-mono tracking-widest text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold">
+            <div className="text-xs font-mono tracking-widest text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold">
               CURATED DEPARTMENTS // 本期核心专栏总览
             </div>
             <h3 className="text-2xl sm:text-3xl font-serif font-black uppercase text-stone-900 dark:text-white">
@@ -271,13 +271,13 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Portal 1: AI Frontiers */}
-          <div className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between hover:border-[#9e2a2b]/50 dark:hover:border-[#c5a059]/50 transition-all shadow-xs group">
+          <div className="bg-white dark:bg-[#12151e] border border-stone-200 dark:border-white/10 p-6 sm:p-8 flex flex-col justify-between hover:border-[#e50914]/50 dark:hover:border-[#e50914]/50 transition-all shadow-xs group">
             <div>
               <div className="flex items-center justify-between text-xs font-mono text-stone-400 mb-3">
-                <span className="text-[#9e2a2b] dark:text-[#e5c378] font-bold">DEPARTMENT II</span>
+                <span className="text-[#e50914] dark:text-[#ff4d4f] font-bold">DEPARTMENT II</span>
                 <span>3 大实证案例</span>
               </div>
-              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#9e2a2b] dark:group-hover:text-[#e5c378] transition-colors">
+              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#e50914] dark:group-hover:text-[#ff4d4f] transition-colors">
                 前沿范式与工业智能体
               </h4>
               <p className="text-xs sm:text-sm font-serif text-stone-600 dark:text-stone-300 leading-relaxed mb-6">
@@ -286,7 +286,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
             </div>
             <button
               onClick={() => onSelectDepartment("ai")}
-              className="w-full flex items-center justify-center space-x-1.5 py-2.5 bg-stone-100 hover:bg-[#9e2a2b] hover:text-white dark:bg-white/[0.06] dark:hover:bg-[#c5a059] dark:hover:text-stone-950 text-stone-800 dark:text-stone-200 text-xs font-serif font-bold transition-all"
+              className="w-full flex items-center justify-center space-x-1.5 py-2.5 border border-[#e50914] text-[#e50914] hover:bg-[#e50914] hover:text-white dark:border-[#e50914] dark:text-[#ff4d4f] dark:hover:bg-[#e50914] dark:hover:text-white text-xs font-serif font-bold tracking-wide uppercase transition-all shadow-xs"
             >
               <span>浏览 AI 前沿专栏</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -294,13 +294,13 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
           </div>
 
           {/* Portal 2: Quant Alpha */}
-          <div className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between hover:border-[#9e2a2b]/50 dark:hover:border-[#c5a059]/50 transition-all shadow-xs group">
+          <div className="bg-white dark:bg-[#12151e] border border-stone-200 dark:border-white/10 p-6 sm:p-8 flex flex-col justify-between hover:border-[#e50914]/50 dark:hover:border-[#e50914]/50 transition-all shadow-xs group">
             <div>
               <div className="flex items-center justify-between text-xs font-mono text-stone-400 mb-3">
-                <span className="text-[#9e2a2b] dark:text-[#e5c378] font-bold">DEPARTMENT III</span>
+                <span className="text-[#e50914] dark:text-[#ff4d4f] font-bold">DEPARTMENT III</span>
                 <span>PLATE IV 画作</span>
               </div>
-              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#9e2a2b] dark:group-hover:text-[#e5c378] transition-colors">
+              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#e50914] dark:group-hover:text-[#ff4d4f] transition-colors">
                 量化 Alpha 艺术展厅
               </h4>
               <p className="text-xs sm:text-sm font-serif text-stone-600 dark:text-stone-300 leading-relaxed mb-6">
@@ -309,7 +309,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
             </div>
             <button
               onClick={() => onSelectDepartment("quant")}
-              className="w-full flex items-center justify-center space-x-1.5 py-2.5 bg-stone-100 hover:bg-[#9e2a2b] hover:text-white dark:bg-white/[0.06] dark:hover:bg-[#c5a059] dark:hover:text-stone-950 text-stone-800 dark:text-stone-200 text-xs font-serif font-bold transition-all"
+              className="w-full flex items-center justify-center space-x-1.5 py-2.5 border border-[#e50914] text-[#e50914] hover:bg-[#e50914] hover:text-white dark:border-[#e50914] dark:text-[#ff4d4f] dark:hover:bg-[#e50914] dark:hover:text-white text-xs font-serif font-bold tracking-wide uppercase transition-all shadow-xs"
             >
               <span>进入量化艺术展厅</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -317,13 +317,13 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
           </div>
 
           {/* Portal 3: 40 Creators Archive */}
-          <div className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between hover:border-[#9e2a2b]/50 dark:hover:border-[#c5a059]/50 transition-all shadow-xs group">
+          <div className="bg-white dark:bg-[#12151e] border border-stone-200 dark:border-white/10 p-6 sm:p-8 flex flex-col justify-between hover:border-[#e50914]/50 dark:hover:border-[#e50914]/50 transition-all shadow-xs group">
             <div>
               <div className="flex items-center justify-between text-xs font-mono text-stone-400 mb-3">
-                <span className="text-[#9e2a2b] dark:text-[#e5c378] font-bold">DEPARTMENT IV</span>
+                <span className="text-[#e50914] dark:text-[#ff4d4f] font-bold">DEPARTMENT IV</span>
                 <span>40 位学者全量</span>
               </div>
-              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#9e2a2b] dark:group-hover:text-[#e5c378] transition-colors">
+              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#e50914] dark:group-hover:text-[#ff4d4f] transition-colors">
                 40位创作者学术馆藏
               </h4>
               <p className="text-xs sm:text-sm font-serif text-stone-600 dark:text-stone-300 leading-relaxed mb-6">
@@ -332,7 +332,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
             </div>
             <button
               onClick={() => onSelectDepartment("creators")}
-              className="w-full flex items-center justify-center space-x-1.5 py-2.5 bg-stone-100 hover:bg-[#9e2a2b] hover:text-white dark:bg-white/[0.06] dark:hover:bg-[#c5a059] dark:hover:text-stone-950 text-stone-800 dark:text-stone-200 text-xs font-serif font-bold transition-all"
+              className="w-full flex items-center justify-center space-x-1.5 py-2.5 border border-[#e50914] text-[#e50914] hover:bg-[#e50914] hover:text-white dark:border-[#e50914] dark:text-[#ff4d4f] dark:hover:bg-[#e50914] dark:hover:text-white text-xs font-serif font-bold tracking-wide uppercase transition-all shadow-xs"
             >
               <span>查阅 40 位创作者智库</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -340,13 +340,13 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
           </div>
 
           {/* Portal 4: Markets & Playbook */}
-          <div className="bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between hover:border-[#9e2a2b]/50 dark:hover:border-[#c5a059]/50 transition-all shadow-xs group">
+          <div className="bg-white dark:bg-[#12151e] border border-stone-200 dark:border-white/10 p-6 sm:p-8 flex flex-col justify-between hover:border-[#e50914]/50 dark:hover:border-[#e50914]/50 transition-all shadow-xs group">
             <div>
               <div className="flex items-center justify-between text-xs font-mono text-stone-400 mb-3">
-                <span className="text-[#9e2a2b] dark:text-[#e5c378] font-bold">DEPARTMENT V &amp; VI</span>
+                <span className="text-[#e50914] dark:text-[#ff4d4f] font-bold">DEPARTMENT V &amp; VI</span>
                 <span>跨资产复盘</span>
               </div>
-              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#9e2a2b] dark:group-hover:text-[#e5c378] transition-colors">
+              <h4 className="text-xl font-serif font-bold text-stone-900 dark:text-white mb-2 group-hover:text-[#e50914] dark:group-hover:text-[#ff4d4f] transition-colors">
                 股期全景与工程路线
               </h4>
               <p className="text-xs sm:text-sm font-serif text-stone-600 dark:text-stone-300 leading-relaxed mb-6">
@@ -355,7 +355,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
             </div>
             <button
               onClick={() => onSelectDepartment("markets")}
-              className="w-full flex items-center justify-center space-x-1.5 py-2.5 bg-stone-100 hover:bg-[#9e2a2b] hover:text-white dark:bg-white/[0.06] dark:hover:bg-[#c5a059] dark:hover:text-stone-950 text-stone-800 dark:text-stone-200 text-xs font-serif font-bold transition-all"
+              className="w-full flex items-center justify-center space-x-1.5 py-2.5 border border-[#e50914] text-[#e50914] hover:bg-[#e50914] hover:text-white dark:border-[#e50914] dark:text-[#ff4d4f] dark:hover:bg-[#e50914] dark:hover:text-white text-xs font-serif font-bold tracking-wide uppercase transition-all shadow-xs"
             >
               <span>查看全球股期全景</span>
               <ArrowRight className="w-3.5 h-3.5" />

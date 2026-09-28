@@ -27,7 +27,7 @@ export function GazetteDepartment({ onBackToCover }: Props) {
       <div className="flex items-center justify-between border-b border-stone-200 dark:border-white/[0.08] pb-4">
         <button
           onClick={onBackToCover}
-          className="inline-flex items-center space-x-2 text-sm font-serif text-[#9e2a2b] dark:text-[#e5c378] font-bold hover:underline"
+          className="inline-flex items-center space-x-2 text-sm font-serif text-[#e50914] dark:text-[#ff4d4f] font-bold hover:underline"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>返回封面精选导读 (Back to Cover)</span>
@@ -39,8 +39,13 @@ export function GazetteDepartment({ onBackToCover }: Props) {
 
       {/* Monumental Department Header */}
       <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6 space-y-4">
-        <div className="text-xs font-mono tracking-widest text-[#78350f] dark:text-[#d97706] uppercase font-bold">
-          DEPARTMENT VII · DAILY DISPATCH GAZETTE &amp; RESEARCH PRIVILEGES // 晨报速递与投研内参订约
+        <div className="flex items-center space-x-3">
+          <span className="inline-block px-3 py-1 text-xs font-mono uppercase tracking-widest bg-[#e50914] text-white font-bold shadow-xs">
+            DEPARTMENT VII · DAILY DISPATCH GAZETTE
+          </span>
+          <span className="text-xs font-serif italic text-stone-500 dark:text-stone-400">
+            // 晨报速递与投研内参订约
+          </span>
         </div>
         <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 leading-[1.08] uppercase">
           晨报速递与投研内参订约
@@ -59,7 +64,7 @@ export function GazetteDepartment({ onBackToCover }: Props) {
           <span>•</span>
           <span>DAILY AT 07:00 CST</span>
           <span>•</span>
-          <span>ZERO COMMERCIAL PROMOTIONS</span>
+          <span className="text-[#e50914] font-bold">DAILYART VERNACULAR</span>
         </div>
       </div>
 
@@ -68,7 +73,7 @@ export function GazetteDepartment({ onBackToCover }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left Column: Editorial Proposition */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1 border border-[#78350f]/30 dark:border-[#d97706]/30 bg-[#78350f]/10 dark:bg-[#d97706]/10 text-[#78350f] dark:text-[#d97706] text-xs font-mono font-bold uppercase tracking-widest">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 bg-[#e50914] text-white text-xs font-mono font-bold uppercase tracking-widest shadow-xs">
               <Sparkles className="w-3.5 h-3.5" />
               <span>THE DAILY DISPATCH // 每日清晨推送</span>
             </div>
@@ -130,7 +135,7 @@ export function GazetteDepartment({ onBackToCover }: Props) {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="researcher@hedgefund.com"
-                        className="w-full pl-10 pr-4 py-3 text-sm bg-white dark:bg-[#12151e] border border-stone-300 dark:border-white/[0.1] text-stone-900 dark:text-white placeholder:text-stone-400 focus:outline-none focus:border-[#9e2a2b] dark:focus:border-[#c5a059] transition-all font-mono"
+                        className="w-full pl-10 pr-4 py-3 text-sm bg-white dark:bg-[#12151e] border border-stone-300 dark:border-white/[0.1] text-stone-900 dark:text-white placeholder:text-stone-400 focus:outline-none focus:border-[#e50914] transition-all font-mono"
                       />
                     </div>
                   </div>
@@ -142,7 +147,7 @@ export function GazetteDepartment({ onBackToCover }: Props) {
                       id="gazette-agreed"
                       checked={agreed}
                       onChange={(e) => setAgreed(e.target.checked)}
-                      className="mt-1 text-[#9e2a2b] focus:ring-[#9e2a2b] cursor-pointer"
+                      className="mt-1 text-[#e50914] focus:ring-[#e50914] cursor-pointer"
                     />
                     <label
                       htmlFor="gazette-agreed"
@@ -152,11 +157,11 @@ export function GazetteDepartment({ onBackToCover }: Props) {
                     </label>
                   </div>
 
-                  {/* DailyArt Signature Burgundy CTA Button */}
+                  {/* DailyArt Signature Red CTA Button */}
                   <button
                     type="submit"
                     disabled={!agreed}
-                    className="w-full flex items-center justify-center space-x-2 py-3 px-6 bg-[#9e2a2b] hover:bg-[#852223] text-white font-serif font-bold text-sm tracking-wider uppercase transition-all disabled:opacity-50 disabled:cursor-not-allowed group shadow-sm"
+                    className="w-full flex items-center justify-center space-x-2 py-3 px-6 bg-[#e50914] hover:bg-[#c40812] text-white font-serif font-bold text-sm tracking-wider uppercase transition-all disabled:opacity-50 disabled:cursor-not-allowed group shadow-sm"
                   >
                     <span>即刻加入每日晨报</span>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

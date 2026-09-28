@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand Philosophy */}
           <div className="md:col-span-2 space-y-3">
             <div className="flex items-center space-x-2">
-              <span className="w-2 h-2 rounded-full bg-[#9e2a2b] dark:bg-[#c5a059]" />
+              <span className="w-2 h-2 rounded-full bg-[#e50914] dark:bg-[#ff4d4f]" />
               <span className="text-stone-900 dark:text-white font-bold tracking-wider uppercase text-sm font-serif">
                 INTELLIGENCE NEXUS // 出版规范与美学准则
               </span>
@@ -17,7 +17,7 @@ export function Footer() {
             <p className="text-stone-500 dark:text-stone-400 font-serif text-xs leading-relaxed max-w-md">
               以 DailyArt 艺术期刊美学，重塑严肃宏观与 AI 量化投研跟踪体验。坚持数据微观锚定、代码展签装裱呈现、真金白银实盘验证与完全开源交付。
             </p>
-            <div className="text-[11px] text-[#9e2a2b] dark:text-[#e5c378] font-mono font-bold">
+            <div className="text-[11px] text-[#e50914] dark:text-[#ff4d4f] font-mono font-bold">
               ISSN 2026-NEXUS · ISSUE VOL. XLII
             </div>
           </div>
@@ -46,7 +46,7 @@ export function Footer() {
                 GitHub Actions 自动化调度爬虫
               </span>
               <span className="flex items-center">
-                <Zap className="w-3.5 h-3.5 mr-1.5 text-[#9e2a2b] dark:text-[#e5c378] shrink-0" />
+                <Zap className="w-3.5 h-3.5 mr-1.5 text-[#e50914] dark:text-[#ff4d4f] shrink-0" />
                 Vercel Deploy Hook 自动增量触发
               </span>
               <span className="flex items-center">

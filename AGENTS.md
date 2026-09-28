@@ -104,7 +104,7 @@
 2. **单向依赖**：展示层依赖领域数据层，领域数据层严禁反向依赖 UI 组件。
 3. **UI/UX 杂志美学规范**：
    * 严格复刻 **DailyArt Magazine** 经典艺术杂志美学（参见 [`docs/design-and-content-system.md`](./docs/design-and-content-system.md)）；
-   * **拒绝巨石单页拼凑**：严禁把所有内容机械堆叠在单页长距离滚动；采用清晰的模块化栏目导航（Tabs）与沉浸式博主档案抽屉（Slide-over Drawer）。
+   * **拒绝巨石单页拼凑**：严禁把所有内容机械堆叠在单页长距离滚动；采用清晰的模块化栏目导航（Tabs）与居中宽幅跨页画册展陈（2-Page Monograph Spread）。
 4. **YouTube 调研零账户风控原则**：
    * 严禁在抓取脚本中携带用户个人 Google 登录态 Cookie；
    * 严格控制官方 API 消耗在 10,000 配额的 10% 以内，其余大流量走公开 RSS XML 与免 OAuth 字幕解析。

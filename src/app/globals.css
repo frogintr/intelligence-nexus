@@ -5,19 +5,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #faf8f3;
+  --background: #ffffff;
   --foreground: #1c1917;
-  --paper-cream: #f6f3eb;
-  --editorial-crimson: #9e2a2b;
+  --paper-cream: #faf9f5;
+  --editorial-crimson: #e50914;
   --editorial-gold: #b88e39;
   --hairline-border: rgba(0, 0, 0, 0.08);
 }
 
 .dark {
-  --background: #0d0f15;
+  --background: #0e1017;
   --foreground: #f5f5f4;
-  --paper-cream: #131620;
-  --editorial-crimson: #e55353;
+  --paper-cream: #12151e;
+  --editorial-crimson: #e50914;
   --editorial-gold: #e5c378;
   --hairline-border: rgba(255, 255, 255, 0.08);
 }
@@ -106,35 +106,35 @@
   background-color: var(--dept-bg);
 }
 
-/* Department 06: Global Tape & Markets (Financial Times Newsprint Salmon) */
+/* Department 06: Global Tape & Markets (DailyArt Curated Financial Exhibition & Ledger) */
 .dept-markets {
-  --dept-bg: #f7efe8;
-  --dept-card-bg: #ffffff;
-  --dept-border: rgba(22, 101, 52, 0.1);
-  --dept-accent: #166534;
+  --dept-bg: #ffffff;
+  --dept-card-bg: #faf9f5;
+  --dept-border: rgba(0, 0, 0, 0.08);
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 .dark .dept-markets {
-  --dept-bg: #131017;
-  --dept-card-bg: #1a1622;
+  --dept-bg: #0e1017;
+  --dept-card-bg: #12151e;
   --dept-border: rgba(255, 255, 255, 0.08);
-  --dept-accent: #4ade80;
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 
-/* Department 07: Daily Gazette (Vintage Broadside Aged Newsprint) */
+/* Department 07: Daily Gazette (DailyArt Editorial Dispatch & Archives) */
 .dept-gazette {
-  --dept-bg: #f6f1e5;
+  --dept-bg: #faf9f5;
   --dept-card-bg: #ffffff;
-  --dept-border: rgba(120, 53, 15, 0.1);
-  --dept-accent: #78350f;
+  --dept-border: rgba(0, 0, 0, 0.08);
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 .dark .dept-gazette {
-  --dept-bg: #111114;
-  --dept-card-bg: #18181d;
+  --dept-bg: #0e1017;
+  --dept-card-bg: #12151e;
   --dept-border: rgba(255, 255, 255, 0.08);
-  --dept-accent: #d97706;
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 
@@ -155,7 +155,7 @@ body {
   line-height: 0.82;
   padding-right: 0.65rem;
   padding-top: 0.2rem;
-  color: #9e2a2b;
+  color: #e50914;
   font-weight: 700;
 }
 .dark .drop-cap::first-letter {
@@ -186,7 +186,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(158, 42, 43, 0.6);
+  background: rgba(229, 9, 20, 0.6);
 }
 
 /* Museum Placard & Framed Code Canvas */

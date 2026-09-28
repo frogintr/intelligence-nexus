@@ -1,25 +1,25 @@
 # 网站设计哲学与内容体系架构指南 (Design & Content System)
 
 > **文档性质**：Intelligence Nexus 网站 UI/UX 美学设计原则与全维内容体系规范  
-> **设计灵感源**：**DailyArt Magazine**、**Financial Times Editorial**、**Bloomberg Pursuits**  
-> **核心目标**：构建兼具顶级学术杂志质感、高端金融报刊排版与极客深度的高信噪比决策门户  
+> **设计灵感源**：**100% 严格复刻 DailyArt Magazine (Refero Site ID 571, dailyartmagazine.com)**，拒绝任何混杂模板  
+> **核心目标**：构建兼具顶级艺术杂志美学质感、高对比度报刊排版与极客深度的高信噪比决策门户  
 
 ---
 
 ## 一、 网站设计哲学与 UI/UX 规范 (Design Philosophy)
 
-传统的开发看板与数据仪表盘往往陷入“全盘罗列、单页无限滚动、冷冰冰的技术指标堆砌”的误区。**Intelligence Nexus 确立了以“数字艺术杂志 (Digital Magazine & Editorial Experience)”为核心的美学体系**。
+传统的开发看板与数据仪表盘往往陷入“全盘罗列、单页无限滚动、冷冰冰的技术指标堆砌”的误区。**Intelligence Nexus 确立了以“DailyArt 艺术杂志 (DailyArt Magazine Editorial Experience)”为唯一基准的美学体系**。
 
 ```mermaid
 graph TD
-    A["DailyArt 艺术杂志美学<br/>(经典排版/充足留白/优雅衬线)"] --> M["Intelligence Nexus 视觉体系"]
-    B["高端金融报刊逻辑<br/>(多维大盘/分层抽屉/高信噪比)"] --> M
-    C["极客开源交付法则<br/>(代码高亮/架构流转/可执行Takeaways)"] --> M
+    A["DailyArt 艺术杂志美学<br/>(经典排版/充足留白/优雅衬线)"] --> M["Intelligence Nexus 统一视觉体系"]
+    B["DailyArt 策展级画卷<br/>(高对比度/三联展陈/红标徽章)"] --> M
+    C["极客开源交付法则<br/>(代码装裱/架构流转/可执行Takeaways)"] --> M
     
     M --> D["栏目分流导航 (Non-monolithic Tabs)"]
-    M --> E["多级元数据徽章 (Metadata Chips)"]
-    M --> F["沉浸式档案抽屉 (Dossier Slide-over)"]
-    M --> G["响应式双端适配 (Desktop Grid + Mobile Flow)"]
+    M --> E["DailyArt 红标徽章 (Red Category Pills #E50914)"]
+    M --> F["居中双页画册展开展陈 (2-Page Monograph Spread)"]
+    M --> G["响应式杂志画卷 (Responsive Editorial Canvas)"]
 ```
 
 ### 1. 核心设计原则 (Core Editorial Principles)
@@ -93,17 +93,17 @@ Nexus 构建了面向顶级 AI 开发者与量化从业者的三大结构化内�
 
 ## 三、 7 大独立展厅专属视觉系统与调色板 (Seven Department Themes)
 
-为彻底破除“巨石单页拼凑”与“不同栏目风格雷同”的痛点，Nexus 为 7 大核心专栏定制了独立的气质与设计系统：
+为彻底破除“巨石单页拼凑”与“不同栏目风格雷同”的痛点，Nexus 严格依据 **DailyArt Magazine** 在首页特辑、流派展陈、产品目录与特刊专栏等不同页面的经典布局与调色，为 7 大核心专栏定制了独立的气质与设计系统：
 
-| 专栏编号 | 栏目名称 | 核心主题与美学隐喻 | 日间模式底色 (Light) | 夜间模式底色 (Dark) | 标志性点缀色 (Accent) |
+| 专栏编号 | 栏目名称 | 核心主题与 DailyArt 页面美学映射 | 日间模式底色 (Light) | 夜间模式底色 (Dark) | 标志性点缀色 (Accent) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DEPT 01** | **封面导读 (`cover`)** | **帝国古典公报 (Imperial Gazette)** · 经典大画幅排版 | `#FAF7EE` (羊皮纸暖白) | `#0C0E14` (曜石冷黑) | `#E50914` 绯红 / `#C5A059` 古金 |
-| **DEPT 02** | **前沿范式 (`ai`)** | **牛津学术白皮书 (Oxford Monograph)** · 数理严谨 | `#F4F7FB` (档案冷青白) | `#090D18` (深空海军蓝) | `#1E3A8A` 牛津蓝 / `#60A5FA` 浅钴蓝 |
-| **DEPT 03** | **量化展厅 (`quant`)** | **卢浮宫艺术特展 (Louvre Salon)** · 装裱级代码画作 | `#F5F2EB` (美术馆画纸) | `#08090C` (特展暗室黑) | `#B88E39` 烫金 / `#E5C378` 浅金 |
-| **DEPT 04** | **创作者智库 (`creators`)** | **名人堂肖像长廊 (Portrait Gallery)** · 机密学术档案 | `#FAF6F0` (威尼斯洞石) | `#0D0F16` (档案室深黑) | `#881337` 勃艮第红 / `#F43F5E` 玫红 |
-| **DEPT 05** | **爆款与路线 (`playbook`)** | **工程跃迁工坊 (Blueprint Workshop)** · 认知矩阵蓝图 | `#EEF4F8` (晒图纸青灰) | `#080F1E` (深邃工程蓝) | `#4338CA` 靛青 / `#818CF8` 亮紫 |
-| **DEPT 06** | **股期全景 (`markets`)** | **金融时报大厅 (FT Trading Floor)** · 华尔街行情纸 | `#F7EFE8` (FT 经典粉红纸) | `#131017` (夜盘交易室) | `#166534` 银行家墨绿 / `#DC2626` 红色 |
-| **DEPT 07** | **晨报速递 (`gazette`)** | **历史合订本 (Historic Broadside)** · 铅印复古沉香 | `#F6F1E5` (沉香老报纸) | `#111114` (冷墨压制黑) | `#78350F` 沉香乌金 / `#D97706` 琥珀 |
+| **DEPT 01** | **封面导读 (`cover`)** | **DailyArt 杂志刊头与主特辑** (Screen `11989a2e`) · 经典 3-Story Hero 布局 | `#FFFFFF` / `#FAF9F5` (画廊白) | `#0C0E14` (曜石冷黑) | `#E50914` DailyArt 经典绯红 / 细线黑金 |
+| **DEPT 02** | **前沿范式 (`ai`)** | **DailyArt 艺术流派深度学术专报** (Screen `b91050ab`) · 长文机制深度拆解 | `#F4F7FB` (档案冷青白) | `#090D18` (深空海军蓝) | `#E50914` 绯红标签 / `#1E3A8A` 研报蓝 |
+| **DEPT 03** | **量化展厅 (`quant`)** | **DailyArt 装裱级画作展陈** · 博物馆展签 (Museum Placard) 代码画卷 | `#F5F2EB` (美术馆画纸) | `#08090C` (特展暗室黑) | `#B88E39` 烫金 / `#E5C378` 浅金 |
+| **DEPT 04** | **创作者智库 (`creators`)** | **DailyArt 艺术家全维画册** · 居中 1580px 宽幅双页展陈 (2-Page Monograph) | `#FFFFFF` / `#FAF6F0` (洞石白) | `#0D0F16` (档案室深黑) | `#E50914` DailyArt 经典绯红 / `#111111` |
+| **DEPT 05** | **爆款与路线 (`playbook`)** | **DailyArt 创作者思维蓝图** · 四象限选题与留存节拍条 | `#EEF4F8` (晒图纸青灰) | `#080F1E` (深邃工程蓝) | `#E50914` 经典绯红 / `#4338CA` 靛青 |
+| **DEPT 06** | **股期全景 (`markets`)** | **DailyArt 艺术资产与行情策展账本** (Screen `6feb2a6b`) · 跨资产目录画卷 | `#FFFFFF` (纯白展厅) | `#0E1017` (曜石深黑展厅) | `#E50914` DailyArt 经典绯红 / `#111111` 浓墨 |
+| **DEPT 07** | **晨报速递 (`gazette`)** | **DailyArt 订阅与读者通讯专报** (Screen `96a4f452`) · 双联卡片读者邀约 | `#FAF9F5` (晨报特刊纸) | `#0E1017` (暗室冷墨) | `#E50914` 经典绯红按钮 / 极细双线 |
 
 ---
 

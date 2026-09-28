@@ -77,7 +77,7 @@ export function Header({
       <div className="border-b border-stone-200/80 dark:border-white/[0.06] bg-stone-100/70 dark:bg-black/50 py-2.5 px-4 sm:px-8 text-xs font-mono tracking-wider text-stone-600 dark:text-stone-300">
         <div className="max-w-[1720px] mx-auto flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center space-x-3">
-            <span className="font-bold text-[#9e2a2b] dark:text-[#e5c378]">
+            <span className="font-bold text-[#e50914] dark:text-[#ff4d4f]">
               VOL. XII // ISSUE NO. 042
             </span>
             <span className="text-stone-300 dark:text-stone-700">|</span>
@@ -89,7 +89,7 @@ export function Header({
           <div className="flex items-center space-x-4 sm:space-x-6">
             {/* Live Clock */}
             <div className="flex items-center space-x-1.5 text-stone-800 dark:text-stone-200 font-bold">
-              <Clock className="w-3.5 h-3.5 text-[#9e2a2b] dark:text-[#c5a059]" />
+              <Clock className="w-3.5 h-3.5 text-[#e50914] dark:text-[#ff4d4f]" />
               <span>{timeStr || "07:00:00 CST"}</span>
             </div>
 
@@ -148,7 +148,7 @@ export function Header({
         {/* Decorative Top Accent Kicker */}
         <div className="flex items-center justify-center space-x-4 mb-2">
           <div className="h-[1px] w-20 bg-stone-300 dark:bg-stone-700" />
-          <span className="text-xs font-mono tracking-[0.35em] uppercase text-[#9e2a2b] dark:text-[#e5c378] font-bold">
+          <span className="text-xs font-mono tracking-[0.35em] uppercase text-[#e50914] dark:text-[#ff4d4f] font-bold">
             THE DAILYART EDITORIAL GAZETTE
           </span>
           <div className="h-[1px] w-20 bg-stone-300 dark:bg-stone-700" />
@@ -175,7 +175,7 @@ export function Header({
           <span className="text-stone-300 dark:text-stone-700">•</span>
           <span>SHANGHAI &amp; NEW YORK</span>
           <span className="text-stone-300 dark:text-stone-700">•</span>
-          <span className="text-[#9e2a2b] dark:text-[#e5c378] font-bold">SOVEREIGN GRÁTIS EDITION</span>
+          <span className="text-[#e50914] dark:text-[#ff4d4f] font-bold">SOVEREIGN GRÁTIS EDITION</span>
         </div>
       </div>
 
@@ -191,8 +191,8 @@ export function Header({
                   onClick={() => handleDeptSelect(link.id)}
                   className={`whitespace-nowrap px-4 py-2 transition-all flex items-center space-x-2 rounded-sm ${
                     isActive
-                      ? "text-[#9e2a2b] dark:text-[#e5c378] font-black bg-stone-200/70 dark:bg-white/[0.08] underline decoration-2 underline-offset-8"
-                      : "text-stone-700 dark:text-stone-300 hover:text-[#9e2a2b] dark:hover:text-[#e5c378] font-medium hover:bg-stone-200/40 dark:hover:bg-white/[0.04]"
+                      ? "text-[#e50914] dark:text-[#ff4d4f] font-black bg-stone-200/70 dark:bg-white/[0.08] underline decoration-2 underline-offset-8"
+                      : "text-stone-700 dark:text-stone-300 hover:text-[#e50914] dark:hover:text-[#ff4d4f] font-medium hover:bg-stone-200/40 dark:hover:bg-white/[0.04]"
                   }`}
                 >
                   <span className="tracking-wide">{link.label}</span>
@@ -200,7 +200,7 @@ export function Header({
                     <span
                       className={`text-[10px] font-mono px-2 py-0.5 rounded font-bold uppercase ${
                         isActive
-                          ? "bg-[#9e2a2b] text-white dark:bg-[#e5c378] dark:text-stone-950"
+                          ? "bg-[#e50914] text-white"
                           : "bg-stone-300/60 dark:bg-white/[0.06] text-stone-600 dark:text-stone-400"
                       }`}
                     >

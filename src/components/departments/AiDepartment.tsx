@@ -17,7 +17,7 @@ export function AiDepartment({ updates, onBackToCover }: Props) {
       <div className="flex items-center justify-between border-b border-stone-200 dark:border-white/[0.08] pb-4">
         <button
           onClick={onBackToCover}
-          className="inline-flex items-center space-x-2 text-sm font-serif text-[#9e2a2b] dark:text-[#e5c378] font-bold hover:underline"
+          className="inline-flex items-center space-x-2 text-sm font-serif text-[#e50914] dark:text-[#ff4d4f] font-bold hover:underline"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>返回封面精选导读 (Back to Cover)</span>
