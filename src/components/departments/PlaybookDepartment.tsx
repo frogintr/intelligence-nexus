@@ -30,7 +30,7 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
 
       {/* Monumental Department Header */}
       <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6 space-y-4">
-        <div className="text-xs font-mono tracking-widest text-[#4338ca] dark:text-[#818cf8] uppercase font-bold">
+        <div className="text-xs font-mono tracking-widest text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold">
           DEPARTMENT V · STRATEGIC BLUEPRINT &amp; ENGINEERING TRAJECTORY // 爆款选题矩阵与四阶量化工程跃迁蓝图
         </div>
         <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 leading-[1.08] uppercase">
@@ -59,7 +59,7 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
       {/* ========================================================================= */}
       <section className="space-y-6">
         <div className="flex items-center justify-between border-b border-stone-200 dark:border-white/[0.08] pb-3">
-          <div className="flex items-center space-x-2 text-sm font-mono text-[#9e2a2b] dark:text-[#e5c378] uppercase font-bold">
+          <div className="flex items-center space-x-2 text-sm font-mono text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold">
             <Target className="w-4 h-4" />
             <span>THE 4-QUADRANT VIRAL TOPIC MATRIX // 4 象限爆款选题矩阵</span>
           </div>
@@ -72,13 +72,13 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
           {quadrants.map((q, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-[#0d172b] border-2 border-indigo-900/10 dark:border-indigo-400/20 p-8 sm:p-10 shadow-sm space-y-5"
+              className="bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-10 shadow-sm space-y-5"
             >
               <div className="flex items-center justify-between border-b border-stone-200/80 dark:border-white/[0.06] pb-3">
-                <span className="text-xs font-mono font-black px-3.5 py-1 bg-[#4338ca] text-white uppercase tracking-wider">
+                <span className="text-xs font-mono font-black px-3.5 py-1 bg-[#e50914] text-white uppercase tracking-wider">
                   QUADRANT 0{idx + 1}
                 </span>
-                <span className="text-xs font-mono font-bold px-3 py-0.5 bg-[#4338ca]/10 text-[#4338ca] dark:bg-[#818cf8]/20 dark:text-[#818cf8]">
+                <span className="text-xs font-mono font-bold px-3 py-0.5 bg-[#e50914]/10 text-[#e50914] dark:bg-[#e50914]/20 dark:text-[#ff4d4f]">
                   {q.badge}
                 </span>
               </div>
@@ -87,7 +87,7 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
                 {q.title}
               </h3>
 
-              <div className="p-5 bg-[#f0f4f8] dark:bg-[#080f1e] border-l-4 border-[#4338ca] dark:border-[#818cf8] text-base sm:text-lg font-serif italic text-stone-800 dark:text-stone-200 leading-relaxed">
+              <div className="p-5 bg-[#fbf9f5] dark:bg-[#0c0f16] border-l-4 border-[#e50914] dark:border-[#ff4d4f] text-base sm:text-lg font-serif italic text-stone-800 dark:text-stone-200 leading-relaxed">
                 &ldquo;{q.example}&rdquo;
               </div>
 
@@ -104,7 +104,7 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
       {/* ========================================================================= */}
       <section className="space-y-6 pt-8 border-t-2 border-stone-200 dark:border-white/[0.08]">
         <div className="flex items-center justify-between border-b border-stone-200 dark:border-white/[0.08] pb-3">
-          <div className="flex items-center space-x-2 text-sm font-mono text-[#4338ca] dark:text-[#818cf8] uppercase font-bold">
+          <div className="flex items-center space-x-2 text-sm font-mono text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold">
             <Clock className="w-4 h-4" />
             <span>30-SECOND RETENTION HOOK BLUEPRINTS // 前 30 秒黄金抓手公式</span>
           </div>
@@ -117,13 +117,13 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
           {hooks.map((h, hIdx) => (
             <div
               key={hIdx}
-              className="bg-white dark:bg-[#0d172b] border-2 border-indigo-900/10 dark:border-indigo-400/20 p-8 sm:p-10 shadow-sm space-y-5"
+              className="bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-10 shadow-sm space-y-5"
             >
               <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-200/80 dark:border-white/[0.06] pb-3">
                 <h3 className="text-2xl sm:text-3xl font-serif font-black text-stone-900 dark:text-white">
                   {h.mode}
                 </h3>
-                <span className="text-xs font-mono text-[#4338ca] dark:text-[#818cf8] font-bold">
+                <span className="text-xs font-mono text-[#e50914] dark:text-[#ff4d4f] font-bold">
                   {h.creators}
                 </span>
               </div>
@@ -132,10 +132,10 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
                 {h.timeline.map((item, tIdx) => (
                   <div
                     key={tIdx}
-                    className="p-5 bg-stone-50 dark:bg-[#080f1e] border border-stone-200/80 dark:border-white/[0.04] space-y-2"
+                    className="p-5 bg-stone-50 dark:bg-[#0c0f16] border border-stone-200/80 dark:border-white/[0.04] space-y-2"
                   >
                     <div className="flex items-center justify-between text-xs font-mono">
-                      <span className="font-bold text-[#4338ca] dark:text-[#818cf8] text-sm">
+                      <span className="font-bold text-[#e50914] dark:text-[#ff4d4f] text-sm">
                         ⏱ {item.time}
                       </span>
                       <span className="text-stone-600 dark:text-stone-300 font-serif font-bold text-sm">
@@ -156,12 +156,9 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
       {/* ========================================================================= */}
       {/* SECTION 3: 4-STAGE QUANTITATIVE ENGINEERING ROADMAP                       */}
       {/* ========================================================================= */}
-      {/* ========================================================================= */}
-      {/* SECTION 3: 4-STAGE QUANTITATIVE ENGINEERING ROADMAP                       */}
-      {/* ========================================================================= */}
       <section className="space-y-6 pt-8 border-t-2 border-stone-200 dark:border-white/[0.08]">
         <div className="flex items-center justify-between border-b border-stone-200 dark:border-white/[0.08] pb-3">
-          <div className="flex items-center space-x-2 text-sm font-mono text-[#4338ca] dark:text-[#818cf8] uppercase font-bold">
+          <div className="flex items-center space-x-2 text-sm font-mono text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold">
             <Layers className="w-4 h-4" />
             <span>4-STAGE QUANTITATIVE ENGINEERING ROADMAP // 四阶量化工程跃迁蓝图</span>
           </div>
@@ -177,11 +174,11 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
           {QUANT_ROADMAP.map((stg, sIdx) => (
             <div
               key={sIdx}
-              className="bg-white dark:bg-[#0d172b] border-2 border-indigo-900/10 dark:border-indigo-400/20 p-8 sm:p-10 shadow-sm space-y-4"
+              className="bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 sm:p-10 shadow-sm space-y-4"
             >
               <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-200/80 dark:border-white/[0.06] pb-3">
                 <div className="flex items-center space-x-3">
-                  <span className="text-xs font-mono font-bold px-3 py-1 bg-[#4338ca] text-white">
+                  <span className="text-xs font-mono font-bold px-3 py-1 bg-[#e50914] text-white">
                     STAGE 0{sIdx + 1}
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-serif font-black text-stone-900 dark:text-white">
@@ -219,7 +216,7 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
       {/* ========================================================================= */}
       <section className="space-y-6 pt-8 border-t-2 border-stone-200 dark:border-white/[0.08]">
         <div className="flex items-center justify-between border-b border-stone-200 dark:border-white/[0.08] pb-3">
-          <div className="flex items-center space-x-2 text-sm font-mono text-[#4338ca] dark:text-[#818cf8] uppercase font-bold">
+          <div className="flex items-center space-x-2 text-sm font-mono text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold">
             <BookmarkCheck className="w-4 h-4" />
             <span>INDIVIDUAL IP PLAYBOOK // 个人 IP 商业破局指南</span>
           </div>
@@ -232,7 +229,7 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
           {ipPlaybook.map((p, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-[#0d172b] border-2 border-indigo-900/10 dark:border-indigo-400/20 p-8 shadow-sm space-y-4"
+              className="bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 shadow-sm space-y-4"
             >
               <h3 className="text-2xl font-serif font-black text-stone-900 dark:text-white">
                 {p.title}
@@ -243,7 +240,7 @@ export function PlaybookDepartment({ onBackToCover }: Props) {
               <div className="pt-4 border-t border-stone-200/80 dark:border-white/[0.06] space-y-2.5">
                 {p.points.map((pt, pIdx) => (
                   <div key={pIdx} className="flex items-start space-x-2 text-sm font-serif text-stone-700 dark:text-stone-300 leading-relaxed">
-                    <span className="text-[#4338ca] dark:text-[#818cf8] font-bold">•</span>
+                    <span className="text-[#e50914] dark:text-[#ff4d4f] font-bold">•</span>
                     <span>{pt}</span>
                   </div>
                 ))}

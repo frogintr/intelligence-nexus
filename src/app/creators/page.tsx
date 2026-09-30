@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function CreatorsPage() {
   return (
-    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col justify-between selection:bg-[#9e2a2b]/20 selection:text-stone-900 dark:selection:text-white transition-colors duration-200">
+    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] flex flex-col justify-between selection:bg-[#e50914]/20 selection:text-stone-900 dark:selection:text-white transition-colors duration-200">
       <div>
         <Header activeDepartment="creators" />
 

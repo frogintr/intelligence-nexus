@@ -108,7 +108,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
       <div className="flex items-center justify-between border-b border-stone-200 dark:border-white/[0.08] pb-4">
         <button
           onClick={handleBack}
-          className="inline-flex items-center space-x-2 text-sm font-serif text-[#e50914] dark:text-[#f43f5e] font-bold hover:underline"
+          className="inline-flex items-center space-x-2 text-sm font-serif text-[#e50914] dark:text-[#ff4d4f] font-bold hover:underline"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>返回封面精选导读 (Back to Cover)</span>
@@ -120,7 +120,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
 
       {/* Monumental Department Header */}
       <div className="border-b-2 border-stone-800 dark:border-stone-400 pb-6 space-y-4">
-        <div className="text-xs font-mono tracking-widest text-[#e50914] dark:text-[#f43f5e] uppercase font-bold">
+        <div className="text-xs font-mono tracking-widest text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold">
           DEPARTMENT IV · THE 40 CREATOR INTELLIGENCE ARCHIVE // 全球创作者学术馆藏
         </div>
         <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-stone-900 dark:text-stone-50 leading-[1.08] uppercase">
@@ -147,7 +147,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div className="p-4 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08]">
             <div className="text-xs text-stone-400 font-mono uppercase">精选创作者</div>
-            <div className="text-xl sm:text-2xl font-bold font-mono text-[#e50914] dark:text-[#f43f5e] mt-1">40 位全量深度</div>
+            <div className="text-xl sm:text-2xl font-bold font-mono text-[#e50914] dark:text-[#ff4d4f] mt-1">40 位全量深度</div>
           </div>
           <div className="p-4 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08]">
             <div className="text-xs text-stone-400 font-mono uppercase">代表作深度拆解</div>
@@ -175,7 +175,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="搜索博主名称、领域、代表作 (如 Karpathy, 强化学习, VectorBT, Freqtrade, Two Sigma)..."
-              className="w-full pl-12 pr-12 py-3 text-sm sm:text-base bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-300 dark:border-white/[0.1] text-stone-900 dark:text-white placeholder:text-stone-400 focus:outline-none focus:border-[#e50914] dark:focus:border-[#f43f5e] transition-all font-sans"
+              className="w-full pl-12 pr-12 py-3 text-sm sm:text-base bg-[#fbf9f5] dark:bg-[#0c0f16] border border-stone-300 dark:border-white/[0.1] text-stone-900 dark:text-white placeholder:text-stone-400 focus:outline-none focus:border-[#e50914] dark:focus:border-[#ff4d4f] transition-all font-sans"
             />
             {searchQuery && (
               <button
@@ -195,7 +195,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
                 onClick={() => setSelectedTrack(track)}
                 className={`px-4 py-2 text-xs sm:text-sm font-serif font-bold transition-all ${
                   selectedTrack === track
-                    ? "bg-[#e50914] text-white dark:bg-[#c5a059] dark:text-stone-950 shadow-xs"
+                    ? "bg-[#e50914] text-white shadow-xs"
                     : "text-stone-600 dark:text-stone-400 hover:text-stone-950 dark:hover:text-white"
                 }`}
               >
@@ -223,7 +223,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
               onClick={() => setSelectedTier(tier.id as TierFilter)}
               className={`px-3 py-1 text-xs font-mono rounded-full transition-all ${
                 selectedTier === tier.id
-                  ? "bg-[#e50914]/15 dark:bg-[#c5a059]/20 text-[#e50914] dark:text-[#e5c378] border border-[#e50914]/40 dark:border-[#c5a059]/40 font-bold"
+                  ? "bg-[#e50914]/15 dark:bg-[#e50914]/20 text-[#e50914] dark:text-[#ff4d4f] border border-[#e50914]/40 dark:border-[#ff4d4f]/40 font-bold"
                   : "text-stone-600 dark:text-stone-400 bg-stone-50 dark:bg-white/[0.02] border border-stone-200 dark:border-white/[0.06] hover:bg-stone-100 dark:hover:bg-white/[0.05]"
               }`}
             >
@@ -243,33 +243,33 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
             creator.tierLabel === "头部权威"
               ? "bg-[#e50914] text-white"
               : creator.tierLabel === "新锐先锋"
-              ? "bg-[#b88e39] text-stone-950 font-bold"
+              ? "bg-stone-900 dark:bg-white text-white dark:text-stone-950 font-bold"
               : creator.tierLabel === "代码基建"
-              ? "bg-[#1e3a8a] text-white"
-              : "bg-[#059669] text-white";
+              ? "bg-stone-800 dark:bg-stone-700 text-stone-100 font-bold"
+              : "border border-[#e50914] text-[#e50914] dark:border-[#ff4d4f] dark:text-[#ff4d4f] font-bold";
 
           return (
             <article
               key={creator.id}
-              className="bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 flex flex-col justify-between hover:border-[#e50914] dark:hover:border-[#c5a059] transition-all shadow-sm hover:shadow-md group cursor-pointer"
+              className="bg-white dark:bg-[#12151e] border-2 border-stone-200/90 dark:border-white/[0.08] p-8 flex flex-col justify-between hover:border-[#e50914] dark:hover:border-[#ff4d4f] transition-all shadow-sm hover:shadow-md group cursor-pointer"
               onClick={() => setSelectedCreator(creator)}
             >
               <div>
                 {/* Card Top: Channel Identity & Links */}
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center space-x-4">
-                    <div className="w-14 h-14 border-2 border-stone-300 dark:border-white/20 bg-[#fbf9f5] dark:bg-[#0c0f16] flex items-center justify-center font-mono font-black text-xl text-[#e50914] dark:text-[#e5c378] group-hover:scale-105 transition-transform shrink-0 shadow-xs">
+                    <div className="w-14 h-14 border-2 border-stone-300 dark:border-white/20 bg-[#fbf9f5] dark:bg-[#0c0f16] flex items-center justify-center font-mono font-black text-xl text-[#e50914] dark:text-[#ff4d4f] group-hover:scale-105 transition-transform shrink-0 shadow-xs">
                       {creator.name.slice(0, 2).toUpperCase()}
                     </div>
                     <div>
-                      <h3 className="text-2xl font-serif font-black text-stone-900 dark:text-white group-hover:text-[#e50914] dark:group-hover:text-[#e5c378] transition-colors leading-tight">
+                      <h3 className="text-2xl font-serif font-black text-stone-900 dark:text-white group-hover:text-[#e50914] dark:group-hover:text-[#ff4d4f] transition-colors leading-tight">
                         {creator.name}
                       </h3>
                       <span className="text-xs font-mono text-stone-400 block mt-0.5">
                         {creator.handle}
                       </span>
                       <div className="flex flex-wrap items-center gap-2 mt-2">
-                        <span className="text-[11px] font-mono px-2.5 py-0.5 bg-[#e50914]/10 text-[#e50914] dark:bg-[#c5a059]/15 dark:text-[#e5c378] font-bold">
+                        <span className="text-[11px] font-mono px-2.5 py-0.5 bg-[#e50914]/10 text-[#e50914] dark:bg-[#e50914]/20 dark:text-[#ff4d4f] font-bold">
                           {creator.track}
                         </span>
                         <span
@@ -295,7 +295,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
 
                 {/* Tagline */}
                 {creator.tagline && (
-                  <div className="mt-5 text-base font-serif italic font-bold text-[#e50914] dark:text-[#e5c378] leading-snug">
+                  <div className="mt-5 text-base font-serif italic font-bold text-[#e50914] dark:text-[#ff4d4f] leading-snug">
                     “{creator.tagline}”
                   </div>
                 )}
@@ -320,7 +320,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
                 )}
               </div>
 
-              {/* Card Action */}
+              {/* Card Action: Authentic DailyArt Vermilion Outline Button */}
               <div className="mt-8 pt-5 border-t border-stone-200/80 dark:border-white/[0.06] flex items-center justify-between">
                 <span className="text-xs font-mono text-stone-500 dark:text-stone-400 font-bold">
                   收录 {creator.videos ? creator.videos.length : 3} 篇核心代表作拆解
@@ -330,7 +330,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
                     e.stopPropagation();
                     setSelectedCreator(creator);
                   }}
-                  className="inline-flex items-center space-x-2 px-5 py-2.5 bg-[#e50914] hover:bg-[#700f2d] text-white dark:bg-[#c5a059] dark:hover:bg-[#b88e39] dark:text-stone-950 text-xs font-serif font-bold uppercase tracking-wider transition-all shadow-xs group/btn"
+                  className="inline-flex items-center space-x-2 px-5 py-2.5 border-2 border-[#e50914] text-[#e50914] dark:border-[#ff4d4f] dark:text-[#ff4d4f] hover:bg-[#e50914] hover:text-white dark:hover:bg-[#ff4d4f] dark:hover:text-black text-xs font-serif font-bold uppercase tracking-wider transition-all duration-200 shadow-xs group/btn"
                 >
                   <BookOpen className="w-4 h-4" />
                   <span>查阅学术详析档案</span>
@@ -437,7 +437,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
               <div className="lg:col-span-5 overflow-y-auto p-6 sm:p-8 space-y-6 bg-[#fdfcf9] dark:bg-[#090b10]">
                 {/* Scholar Identity Crest */}
                 <div className="flex items-start space-x-4 border-b border-stone-200/80 dark:border-white/[0.06] pb-5">
-                  <div className="w-16 h-16 border-2 border-stone-800 dark:border-stone-400 bg-white dark:bg-[#12151e] flex items-center justify-center font-mono font-black text-2xl text-[#e50914] dark:text-[#e5c378] shadow-xs shrink-0">
+                  <div className="w-16 h-16 border-2 border-stone-800 dark:border-stone-400 bg-white dark:bg-[#12151e] flex items-center justify-center font-mono font-black text-2xl text-[#e50914] dark:text-[#ff4d4f] shadow-xs shrink-0">
                     {selectedCreator.name.slice(0, 2).toUpperCase()}
                   </div>
                   <div>
@@ -460,8 +460,8 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
 
                 {/* Oversized Tagline Callout */}
                 {selectedCreator.tagline && (
-                  <div className="p-5 bg-white dark:bg-[#12151e] border-l-4 border-[#e50914] dark:border-[#c5a059] shadow-xs">
-                    <p className="text-lg sm:text-xl font-serif italic font-bold text-[#e50914] dark:text-[#e5c378] leading-relaxed">
+                  <div className="p-5 bg-white dark:bg-[#12151e] border-l-4 border-[#e50914] dark:border-[#ff4d4f] shadow-xs">
+                    <p className="text-lg sm:text-xl font-serif italic font-bold text-[#e50914] dark:text-[#ff4d4f] leading-relaxed">
                       “{selectedCreator.tagline}”
                     </p>
                   </div>
@@ -469,7 +469,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
 
                 {/* Section 01: Academic Positioning & Bio */}
                 <div className="space-y-3">
-                  <div className="text-xs font-mono text-[#e50914] dark:text-[#f43f5e] uppercase font-bold tracking-wider">
+                  <div className="text-xs font-mono text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold tracking-wider">
                     01 // ACADEMIC POSITIONING &amp; BACKGROUND (学术定位与背景履历)
                   </div>
                   <div className="p-6 bg-white dark:bg-[#12151e] border border-stone-200/90 dark:border-white/[0.08] shadow-xs">
@@ -481,11 +481,11 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
 
                 {/* Section 05: Quantitative Trading Insight (High Contrast Placard) */}
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-xs font-mono text-[#e50914] dark:text-[#e5c378] uppercase font-bold tracking-wider">
+                  <div className="flex items-center space-x-2 text-xs font-mono text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold tracking-wider">
                     <CheckCircle2 className="w-4 h-4" />
                     <span>05 // QUANTITATIVE TRADING INSIGHT (量化投研启示与实盘交付法则)</span>
                   </div>
-                  <div className="p-6 bg-[#fbf9f5] dark:bg-[#080d18] border-2 border-[#e50914]/30 dark:border-[#c5a059]/30 shadow-xs space-y-4">
+                  <div className="p-6 bg-[#fbf9f5] dark:bg-[#080d18] border-2 border-[#e50914]/30 dark:border-[#ff4d4f]/30 shadow-xs space-y-4">
                     <div>
                       <span className="text-[11px] font-mono text-stone-400 uppercase block mb-1 font-bold">
                         FOR TRADING // 量化实盘指导
@@ -567,7 +567,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
               <div className="lg:col-span-7 overflow-y-auto p-6 sm:p-10 space-y-8 bg-white dark:bg-[#0e121c]">
                 {/* Section 02: Three Signature Masterpieces */}
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-2 text-xs font-mono text-[#e50914] dark:text-[#e5c378] uppercase font-bold tracking-wider border-b border-stone-200 dark:border-white/[0.08] pb-2">
+                  <div className="flex items-center space-x-2 text-xs font-mono text-[#e50914] dark:text-[#ff4d4f] uppercase font-bold tracking-wider border-b border-stone-200 dark:border-white/[0.08] pb-2">
                     <PlayCircle className="w-4 h-4" />
                     <span>02 // THREE SIGNATURE MASTERPIECES (三大代表作深度拆解)</span>
                   </div>
@@ -582,7 +582,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
                           <span className="text-xs font-mono font-bold px-2 py-0.5 bg-stone-200 dark:bg-white/[0.08] text-stone-800 dark:text-stone-200">
                             MASTERPIECE 0{idx + 1}
                           </span>
-                          <span className="text-xs font-serif italic text-[#e50914] dark:text-[#e5c378] font-bold">
+                          <span className="text-xs font-serif italic text-[#e50914] dark:text-[#ff4d4f] font-bold">
                             {vid.theme}
                           </span>
                         </div>
@@ -708,7 +708,7 @@ export function CreatorsDepartment({ onBackToCover }: Props) {
                 </button>
                 <button
                   onClick={handleNextCreator}
-                  className="px-3 py-1 bg-[#e50914] dark:bg-[#c5a059] text-white dark:text-stone-950 font-bold hover:opacity-90"
+                  className="px-3 py-1 bg-[#e50914] text-white font-bold hover:opacity-90"
                 >
                   下一位
                 </button>

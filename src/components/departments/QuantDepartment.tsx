@@ -25,7 +25,7 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
       <div className="flex items-center justify-between border-b border-white/[0.1] pb-4">
         <button
           onClick={onBackToCover}
-          className="inline-flex items-center space-x-2 text-sm font-serif text-[#e5c378] font-bold hover:underline"
+          className="inline-flex items-center space-x-2 text-sm font-serif text-[#ff4d4f] font-bold hover:underline"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>返回封面精选导读 (Back to Cover)</span>
@@ -36,8 +36,8 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
       </div>
 
       {/* Monumental Department Header */}
-      <div className="border-b-2 border-[#c5a059] pb-6 space-y-4">
-        <div className="text-xs font-mono tracking-widest text-[#e5c378] uppercase font-bold">
+      <div className="border-b-2 border-stone-700 pb-6 space-y-4">
+        <div className="text-xs font-mono tracking-widest text-[#ff4d4f] uppercase font-bold">
           DEPARTMENT III · QUANTITATIVE ALPHA GALLERY &amp; CODE AS ART // 量化 ALPHA 艺术展厅与装裱级因子
         </div>
         <h2 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-white leading-[1.08] uppercase">
@@ -71,7 +71,7 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
             {/* Museum Plate Inscription */}
             <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.08] pb-4">
               <div className="flex items-center space-x-3">
-                <span className="px-3 py-1 text-xs font-mono uppercase tracking-widest bg-[#c5a059] text-stone-950 font-bold">
+                <span className="px-3 py-1 text-xs font-mono uppercase tracking-widest bg-[#e50914] text-white font-bold">
                   {item.factorCategory}
                 </span>
                 {item.authors && (
@@ -80,7 +80,7 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
                   </span>
                 )}
               </div>
-              <span className="text-xs font-mono text-[#e5c378]">
+              <span className="text-xs font-mono text-[#ff4d4f] font-bold">
                 MUSEUM PLATE NO. {String(idx + 1).padStart(2, "0")} · PEER REVIEWED
               </span>
             </div>
@@ -97,8 +97,8 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
 
             {/* Mathematical Formulation Callout (High Design Taste) */}
             {item.mathFormula && (
-              <div className="p-5 sm:p-6 bg-[#0a0c12] border-l-4 border-[#c5a059] shadow-inner space-y-2">
-                <span className="text-xs font-mono uppercase tracking-widest text-[#e5c378] font-bold block">
+              <div className="p-5 sm:p-6 bg-[#0a0c12] border-l-4 border-[#e50914] shadow-inner space-y-2">
+                <span className="text-xs font-mono uppercase tracking-widest text-[#ff4d4f] font-bold block">
                   MATHEMATICAL FORMULATION // 数理公理与状态转移方程
                 </span>
                 <div className="font-mono text-base sm:text-lg text-emerald-400 dark:text-emerald-300 overflow-x-auto py-2">
@@ -114,7 +114,7 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 bg-[#0c0e14] border border-white/[0.08] font-mono">
               <div>
                 <div className="text-xs text-stone-400 uppercase font-bold">SHARPE RATIO</div>
-                <div className="text-2xl sm:text-3xl font-black text-[#e5c378] mt-1">
+                <div className="text-2xl sm:text-3xl font-black text-[#ff4d4f] mt-1">
                   {item.backtestSummary.sharpe || item.backtestSummary.sharpeRatio || "3.12 (ANN.)"}
                 </div>
               </div>
@@ -151,7 +151,7 @@ export function QuantDepartment({ research, onBackToCover }: Props) {
                 </div>
                 <button
                   onClick={() => handleCopy(item.id, item.sampleCode)}
-                  className="flex items-center space-x-1.5 px-3 py-1.5 rounded bg-white/[0.08] hover:bg-[#c5a059] hover:text-stone-950 text-xs font-mono text-stone-200 transition-colors"
+                  className="flex items-center space-x-1.5 px-3 py-1.5 rounded border border-[#e50914] bg-white/[0.04] hover:bg-[#e50914] hover:text-white text-xs font-mono text-stone-200 transition-colors"
                 >
                   {copiedId === item.id ? (
                     <>

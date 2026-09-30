@@ -26,83 +26,83 @@
 /* Per-Department Distinct Atmospheric Backgrounds & Styling     */
 /* ------------------------------------------------------------- */
 
-/* Department 01: Cover Dispatch (Warm Imperial Museum Parchment) */
+/* Department 01: Cover Dispatch (DailyArt Gallery Warm Paper) */
 .dept-cover {
-  --dept-bg: #faf7ee;
+  --dept-bg: #faf9f5;
   --dept-card-bg: #ffffff;
   --dept-border: rgba(0, 0, 0, 0.08);
-  --dept-accent: #9e2a2b;
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 .dark .dept-cover {
-  --dept-bg: #0c0e14;
+  --dept-bg: #0e1017;
   --dept-card-bg: #12151e;
   --dept-border: rgba(255, 255, 255, 0.08);
-  --dept-accent: #e55353;
+  --dept-accent: #ff4d4f;
   background-color: var(--dept-bg);
 }
 
-/* Department 02: AI Frontiers (Oxford Archive Blue / Slate) */
+/* Department 02: AI Frontiers (DailyArt Editorial White & Vermilion) */
 .dept-ai {
-  --dept-bg: #f4f7fb;
-  --dept-card-bg: #ffffff;
-  --dept-border: rgba(30, 58, 138, 0.1);
-  --dept-accent: #1e3a8a;
+  --dept-bg: #ffffff;
+  --dept-card-bg: #faf9f5;
+  --dept-border: rgba(0, 0, 0, 0.08);
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 .dark .dept-ai {
-  --dept-bg: #090d18;
-  --dept-card-bg: #0e1424;
-  --dept-border: rgba(96, 165, 250, 0.1);
-  --dept-accent: #60a5fa;
+  --dept-bg: #0e1017;
+  --dept-card-bg: #12151e;
+  --dept-border: rgba(255, 255, 255, 0.08);
+  --dept-accent: #ff4d4f;
   background-color: var(--dept-bg);
 }
 
-/* Department 03: Quant Alpha Gallery (Gilded Museum Exhibition Hall) */
+/* Department 03: Quant Alpha Gallery (DailyArt Dark Exhibition Room) */
 .dept-quant {
-  --dept-bg: #f5f2eb;
-  --dept-card-bg: #ffffff;
-  --dept-border: rgba(184, 142, 57, 0.15);
-  --dept-accent: #b88e39;
+  --dept-bg: #0e1017;
+  --dept-card-bg: #141722;
+  --dept-border: rgba(255, 255, 255, 0.1);
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 .dark .dept-quant {
-  --dept-bg: #08090c;
+  --dept-bg: #090b10;
   --dept-card-bg: #11141d;
-  --dept-border: rgba(229, 195, 120, 0.15);
-  --dept-accent: #e5c378;
+  --dept-border: rgba(255, 255, 255, 0.08);
+  --dept-accent: #ff4d4f;
   background-color: var(--dept-bg);
 }
 
-/* Department 04: 40 Creators Archive (Warm Venetian Travertine & Burgundy) */
+/* Department 04: 40 Creators Archive (DailyArt Monograph Gallery) */
 .dept-creators {
-  --dept-bg: #faf6f0;
+  --dept-bg: #faf9f5;
   --dept-card-bg: #ffffff;
-  --dept-border: rgba(136, 19, 55, 0.1);
-  --dept-accent: #881337;
+  --dept-border: rgba(0, 0, 0, 0.08);
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 .dark .dept-creators {
-  --dept-bg: #0d0f16;
-  --dept-card-bg: #131722;
+  --dept-bg: #0e1017;
+  --dept-card-bg: #12151e;
   --dept-border: rgba(255, 255, 255, 0.08);
-  --dept-accent: #f43f5e;
+  --dept-accent: #ff4d4f;
   background-color: var(--dept-bg);
 }
 
-/* Department 05: Viral Playbook (Technical Blueprint Indigo) */
+/* Department 05: Viral Playbook (DailyArt Editorial Framework) */
 .dept-playbook {
-  --dept-bg: #eef4f8;
-  --dept-card-bg: #ffffff;
-  --dept-border: rgba(67, 56, 202, 0.1);
-  --dept-accent: #4338ca;
+  --dept-bg: #ffffff;
+  --dept-card-bg: #faf9f5;
+  --dept-border: rgba(0, 0, 0, 0.08);
+  --dept-accent: #e50914;
   background-color: var(--dept-bg);
 }
 .dark .dept-playbook {
-  --dept-bg: #080f1e;
-  --dept-card-bg: #0d172b;
-  --dept-border: rgba(129, 140, 248, 0.1);
-  --dept-accent: #818cf8;
+  --dept-bg: #0e1017;
+  --dept-card-bg: #12151e;
+  --dept-border: rgba(255, 255, 255, 0.08);
+  --dept-accent: #ff4d4f;
   background-color: var(--dept-bg);
 }
 
