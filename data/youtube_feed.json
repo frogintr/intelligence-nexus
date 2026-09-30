@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-26T20:53:24.912242+00:00",
-  "totalCreatorsMonitored": 10,
-  "totalVideos": 100,
+  "updatedAt": "2026-09-30T11:41:55.011629+00:00",
+  "totalCreatorsMonitored": 15,
+  "totalVideos": 141,
   "feed": {
     "andrej-karpathy": {
       "creatorId": "andrej-karpathy",
@@ -106,7 +106,7 @@
           "title": "The last IMO problem AI could not solve",
           "published": "2026-09-18T17:12:53+00:00",
           "url": "https://www.youtube.com/watch?v=Nbwv5wHQoj0",
-          "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nGue"
+          "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nNot"
         },
         {
           "videoId": "rYyJm1tD3d0",
@@ -244,6 +244,13 @@
       "channelId": "UCsBjURrPoezykLs9EqgamOA",
       "latestVideos": [
         {
+          "videoId": "OuNKBjuV7A4",
+          "title": "DHH has gone completely off the rails...",
+          "published": "2026-09-28T19:27:59+00:00",
+          "url": "https://www.youtube.com/watch?v=OuNKBjuV7A4",
+          "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actually still worth having.\n\nWant more Fire"
+        },
+        {
           "videoId": "c1rPlzxSZ8E",
           "title": "Meta is pivoting again... everything you missed from Connect 2026",
           "published": "2026-09-25T19:22:32+00:00",
@@ -305,13 +312,6 @@
           "published": "2026-09-04T20:14:12+00:00",
           "url": "https://www.youtube.com/watch?v=FluKUJyeYD8",
           "description": "CodeRabbit Security protects your code from AI-driven exploits. Get 10 free code scans here: https://coderabbit.link/fireship-010\n\nOpenAI finally announced GPT-6 Astra which they're claiming is AGI... Let's see if that's true.\n\n#coding #programming\n\nWant more Fireship?\n\n🗞️ Newsle"
-        },
-        {
-          "videoId": "0Rp9KJCEIvg",
-          "title": "The most interesting hack in history just got weirder...",
-          "published": "2026-09-02T19:01:28+00:00",
-          "url": "https://www.youtube.com/watch?v=0Rp9KJCEIvg",
-          "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nOpenAI finally published the postmortem on the Hugging Face hack and it turns out it's way more interesting than we first though. Let's dive in.\n\n#c"
         }
       ]
     },
@@ -400,6 +400,27 @@
       "channelId": "UCawZsQWqfGSbCI5yjkdVkTA",
       "latestVideos": [
         {
+          "videoId": "Xc6ERvZM1NY",
+          "title": "OpenAI COOKED",
+          "published": "2026-09-30T01:26:37+00:00",
+          "url": "https://www.youtube.com/watch?v=Xc6ERvZM1NY",
+          "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
+        },
+        {
+          "videoId": "T-E7rmD6rh4",
+          "title": "Sonnet 5.5 Is Here. Look What It Can Build.",
+          "published": "2026-09-29T05:04:38+00:00",
+          "url": "https://www.youtube.com/watch?v=T-E7rmD6rh4",
+          "description": "Try CodeRabbit: https://coderabbit.link/matthew-berman-001\nUse code MATTHEWCR for a free CodeRabbit Pro Plus subscription, available to the first 50 first-time users.\n\nSonnet 5.5 projects\nCrownfall: https://saffron-flint-kkcm.here.now/\nBounce Lab: https://granite-intent-25rt.here"
+        },
+        {
+          "videoId": "0NhtHVPQwt8",
+          "title": "What We Built With Sonnet 5.5",
+          "published": "2026-09-29T00:01:18+00:00",
+          "url": "https://www.youtube.com/shorts/0NhtHVPQwt8",
+          "description": "Play Crownfall, the Age of Empires-style game: https://saffron-flint-kkcm.here.now/\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.ins"
+        },
+        {
           "videoId": "rgO5v8MFtFg",
           "title": "What People Are Building With Opus 5.5",
           "published": "2026-09-26T01:30:30+00:00",
@@ -447,27 +468,6 @@
           "published": "2026-09-22T18:38:33+00:00",
           "url": "https://www.youtube.com/watch?v=5MFORiebZks",
           "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
-        },
-        {
-          "videoId": "MJllZbpvrAc",
-          "title": "Did Elon catch up? (Grok 4.7 is here)",
-          "published": "2026-09-22T00:13:35+00:00",
-          "url": "https://www.youtube.com/watch?v=MJllZbpvrAc",
-          "description": "Check out Zapier! https://bit.ly/3TLc4tQ\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: htt"
-        },
-        {
-          "videoId": "6ov1JaMVT_U",
-          "title": "What People Are Building With Jev Is Incredible",
-          "published": "2026-09-21T16:46:24+00:00",
-          "url": "https://www.youtube.com/shorts/6ov1JaMVT_U",
-          "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
-        },
-        {
-          "videoId": "S4VUMFELhaQ",
-          "title": "Is This Simulated Fruit Fly Real?",
-          "published": "2026-09-21T06:18:26+00:00",
-          "url": "https://www.youtube.com/shorts/S4VUMFELhaQ",
-          "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/u7wTTGWhuJ\n👉🏻 Spotify: htt"
         }
       ]
     },
@@ -477,6 +477,13 @@
       "handle": "@statquest",
       "channelId": "UCtYLUTtgS3k1Fg4y5tAhLbw",
       "latestVideos": [
+        {
+          "videoId": "u_9OA3WRHgo",
+          "title": "Naive Bayes: Concepts and Code",
+          "published": "2026-09-29T13:29:57+00:00",
+          "url": "https://www.youtube.com/watch?v=u_9OA3WRHgo",
+          "description": "Sign up for FREE Concepts and Code Classes here: https://josh-starmer.mykajabi.com/\n\nYou can download the files associated with this concepts and code livestream here: https://github.com/StatQuest/concepts_and_code_naive_bayes\n\n\nIn this Concepts and Code Livestream, we go over th"
+        },
         {
           "videoId": "2FaI2Fen1mQ",
           "title": "The GELU, SiLU and SwiGLU activation functions, clearly explained!!!",
@@ -539,13 +546,6 @@
           "published": "2026-01-12T05:01:06+00:00",
           "url": "https://www.youtube.com/watch?v=q-BiW5srMFQ",
           "description": "In this StatQuest we explain how AI, like ChatGPT, works. However, instead of using lots of complicated math, we're going to use a super simple example and super simple terms. If math scares you, this StatQuest is for you! And even if math doesn't scare you, this StatQuest will g"
-        },
-        {
-          "videoId": "WRYk7oZiogg",
-          "title": "StatQuest: Career Advice from Tech Industry Leaders",
-          "published": "2025-09-04T04:00:42+00:00",
-          "url": "https://www.youtube.com/watch?v=WRYk7oZiogg",
-          "description": "This year, for my Pop's birthday, we're going to hear from current tech industry leaders that all started out working for my pop in the IT-Lab at the Medical University of South Carolina. These leaders have started all kinds of startups, pioneered Oscar award winning computer gra"
         }
       ]
     },
@@ -634,6 +634,13 @@
       "channelId": "UCqcbQf6yw5KzRoDDcZ_wBSw",
       "latestVideos": [
         {
+          "videoId": "qxOklTU2if4",
+          "title": "ASTRA 6.1 too dangerous to be released...",
+          "published": "2026-09-29T17:45:24+00:00",
+          "url": "https://www.youtube.com/watch?v=qxOklTU2if4",
+          "description": "Try Granola and get your first month free as a new user: https://www.granola.ai?via=wes-roth\nSponsored by Granola, the AI notepad for your meetings. \n\n@granola_so #ad\n\nAnthropic’s reported $42 billion net loss comes with a huge accounting twist—and a potential IPO valuation above"
+        },
+        {
           "videoId": "V3KeMw2nIDA",
           "title": "OpenAI paused all training runs... ALIGNMENT FAILURE",
           "published": "2026-09-26T15:22:31+00:00",
@@ -695,13 +702,6 @@
           "published": "2026-09-09T05:41:44+00:00",
           "url": "https://www.youtube.com/watch?v=lkujyxUdUIk",
           "description": "OpenAI says 10,000 AI agents produced a proposed solution to the Navier–Stokes Millennium Prize Problem in just 88 hours. But the announcement has sparked a dispute over credit, competing research, and the role of human mathematicians. We break down the math, Tristan Buckmaster a"
-        },
-        {
-          "videoId": "Vjh3YCnI3vo",
-          "title": "OpenAI’s chief scientist just issued a warning...",
-          "published": "2026-09-07T08:45:18+00:00",
-          "url": "https://www.youtube.com/watch?v=Vjh3YCnI3vo",
-          "description": "OpenAI’s chief scientist says AI is approaching recursive self-improvement—and our ability to keep it under control isn’t keeping pace. Jakub Pachocki’s new essay, “An Alien Mind,” lays out why this moment matters. We look at OpenAI’s internal research data, the limits of AI alig"
         }
       ]
     },
@@ -711,6 +711,13 @@
       "handle": "@deeplearningai_",
       "channelId": "UCcIXc5mJsHVYTZR1maL5l9w",
       "latestVideos": [
+        {
+          "videoId": "yUyfHQBXSzs",
+          "title": "The Data Engineering Professional Certificate is now on DeepLearning.AI",
+          "published": "2026-09-29T05:51:45+00:00",
+          "url": "https://www.youtube.com/watch?v=yUyfHQBXSzs",
+          "description": "Learn More: https://bit.ly/3ViOXHF\n\nData underlies all modern AI systems, and engineers who know how to build the systems that store and serve it are in high demand. Our Data Engineering Professional Certificate, a 4-course program, is now available on DeepLearning.AI, and it's b"
+        },
         {
           "videoId": "uRGHx-1CqBQ",
           "title": "Building AI Assistants with On-Device Memory",
@@ -773,13 +780,333 @@
           "published": "2026-08-20T13:46:53+00:00",
           "url": "https://www.youtube.com/shorts/tRz2bxfPJbE",
           "description": "The big brain for the big work, the little brain for the little work. Paul Everitt’s rule for splitting coding tasks between frontier and local models.\n\nBuild the full workflow in AI Coding Workflows: From Cloud to Local, a free short course built with JetBrains:\nhttps://www.deep"
+        }
+      ]
+    },
+    "cole-medin": {
+      "creatorId": "cole-medin",
+      "creatorName": "Cole Medin",
+      "handle": "@ColeMedin",
+      "channelId": "UCMwVTLZIRRUyyVrkjDpn4pA",
+      "latestVideos": [
+        {
+          "videoId": "oFPUUFLZJHQ",
+          "title": "Your Coding Agent Wastes SO MANY Tokens Just Finding Code - Here's the Fix",
+          "published": "2026-09-28T14:00:33+00:00",
+          "url": "https://www.youtube.com/shorts/oFPUUFLZJHQ",
+          "description": "Most of what you pay an AI coding agent for isn't writing code - it's looking for the right code to edit in the first place. The search itself is fast and cheap, but reading everything uses a ton of your context before it even edits anything.\n\nYour agent is really asking one ques"
         },
         {
-          "videoId": "xUXJuPC7gz0",
-          "title": "Take back control of your AI coding workflow",
-          "published": "2026-08-12T15:30:40+00:00",
-          "url": "https://www.youtube.com/watch?v=xUXJuPC7gz0",
-          "description": "Learn More: https://bit.ly/4q6zSEc\n\nAI coding agents like Claude Code and Codex give you a ready-made way to work. That convenience comes at the cost of control: over which models run, what you spend, and what leaves your machine.\n\nIn our new short course, AI Coding Workflows: Fr"
+          "videoId": "td52e2tQFIU",
+          "title": "The Biggest AI Coding Agent Upgrade Is Already on Your Machine?!",
+          "published": "2026-09-25T14:00:08+00:00",
+          "url": "https://www.youtube.com/watch?v=td52e2tQFIU",
+          "description": "Every conversation you have with your coding agent is saved as a file on your machine - every prompt, every tool call, every failure. It's a goldmine of data that almost nobody takes advantage of, and it's the best way I've found to make my coding agent better over time.\n\nSo in t"
+        },
+        {
+          "videoId": "NZq88JAJSag",
+          "title": "AI Coding Rate Limits are RIDICULOUS Now - Here's How You Keep Scaling Anyway",
+          "published": "2026-09-24T00:00:38+00:00",
+          "url": "https://www.youtube.com/watch?v=NZq88JAJSag",
+          "description": "I'm continuing to build out my AI Software Factory and scale up my coding agents, but I'm hitting my rate limits with Claude Code and Codex more and more. This week I hit my limits on the $200 Claude AND Codex plans with days to go before the reset! Very frustrating. The New Opus"
+        },
+        {
+          "videoId": "i2TQy33mYhE",
+          "title": "Bring Your MCP Server to Amazon's $190K Hackathon!",
+          "published": "2026-09-23T13:54:24+00:00",
+          "url": "https://www.youtube.com/shorts/i2TQy33mYhE",
+          "description": "If you've built an MCP server this year, you're already most of the way to building for Alexa+! Amazon made MCP the standard for how outside services plug into Alexa+, and their new global hackathon is built around exactly that.\n\nAlexa+ track: bring an MCP server or an Agent Skil"
+        },
+        {
+          "videoId": "bA8WeHYmJko",
+          "title": "Jev is the FIRST of a Whole New Class of AI Models (Here's How to Actually Use It)",
+          "published": "2026-09-21T13:45:16+00:00",
+          "url": "https://www.youtube.com/watch?v=bA8WeHYmJko",
+          "description": "I've gone pretty numb to model launches this year. Every one is hyped up as the best model ever made by far, then you use it for a week and it's just... fine. \n\nJev is different - it can't write a single sentence, yet it's the first model I've been genuinely excited about in mont"
+        },
+        {
+          "videoId": "mjQlZrteMIY",
+          "title": "You Built Your AI Second Brain. Now What? (Here's How to Evolve It)",
+          "published": "2026-09-17T00:00:25+00:00",
+          "url": "https://www.youtube.com/watch?v=mjQlZrteMIY",
+          "description": "An AI second brain works for one person. Once a whole team needs one, that stops being true. And you can't simply just build a \"bigger\" second brain. The team needs a different layer underneath, and this video is about that layer - the team brain.\n\nI show you how the team brain w"
+        },
+        {
+          "videoId": "SWEThyRHMgQ",
+          "title": "My NEW FAVORITE Skill - Claude Code Drives My Whole Computer (Better Computer Use)",
+          "published": "2026-09-15T00:00:10+00:00",
+          "url": "https://www.youtube.com/watch?v=SWEThyRHMgQ",
+          "description": "I'm obsessed with computer use right now. My coding agent drives my computer every single day, and I don't use any sort of tool for it! No Codex computer use, no GitHub repo, no harness. The LLMs are powerful enough to drive the screen entirely on their own now reliably, so all i"
+        },
+        {
+          "videoId": "joKb_QMmglM",
+          "title": "GPT-6 Astra Just Made AI Software Factories Real (Here's How to Run One)",
+          "published": "2026-09-12T13:27:24+00:00",
+          "url": "https://www.youtube.com/watch?v=joKb_QMmglM",
+          "description": "Hostinger (code colemedin for an additional 10% off yearly plans for new accounts):\nhttps://www.hostg.xyz/SHK1N\n\nGPT-6 Astra is not AGI, but it is the best LLM right now BY FAR, especially for AI coding.\n\nSo in this video I show you how to put Astra in charge of an AI Software Fa"
+        },
+        {
+          "videoId": "SGodxQHnVxc",
+          "title": "No One Talks Enough About Security for AI Coding. Here's How I Do It in My Workflows",
+          "published": "2026-09-10T00:00:20+00:00",
+          "url": "https://www.youtube.com/watch?v=SGodxQHnVxc",
+          "description": "AI has almost solved writing code - at least in many ways. But it certainly doesn't produce secure code! I see vulnerabilities turn up in AI generated code constantly, and almost nobody is building for it.\n\nSo this is the setup I actually use. The agent still does the work. The d"
+        },
+        {
+          "videoId": "PxQ_UJXDE1g",
+          "title": "The Safest Way I've Found to Let AI Coding Agents Run Real Infrastructure",
+          "published": "2026-09-08T17:00:09+00:00",
+          "url": "https://www.youtube.com/shorts/PxQ_UJXDE1g",
+          "description": "I've been using AI coding assistants to write all of my code this entire year! I still validate everything though, and what limits my trust isn't the model - it's what it can reach.\n\nThe second an agent touches real infrastructure you're handing it shell access, a database URL an"
+        }
+      ]
+    },
+    "ai-jason": {
+      "creatorId": "ai-jason",
+      "creatorName": "AI Jason",
+      "handle": "@AIJason",
+      "channelId": "UCPsOEI7VUdlJ1k8LtyUQ51Q",
+      "latestVideos": [
+        {
+          "videoId": "GAOqrfi-VX8",
+          "title": "Toxic Waste Blue Raspberry Energy Drink Taste Test Review",
+          "published": "2025-07-19T14:12:15+00:00",
+          "url": "https://www.youtube.com/watch?v=GAOqrfi-VX8",
+          "description": "Toxic Waste Blue Raspberry Energy Drink Taste Test Review"
+        }
+      ]
+    },
+    "david-ondrej": {
+      "creatorId": "david-ondrej",
+      "creatorName": "David Ondrej",
+      "handle": "@DavidOndrej",
+      "channelId": "UCPGrgwfbkjTIgPoOh2q1BAg",
+      "latestVideos": [
+        {
+          "videoId": "u9g9EBUAam8",
+          "title": "David's takes on OpenAI DevDay",
+          "published": "2026-09-29T23:25:56+00:00",
+          "url": "https://www.youtube.com/shorts/u9g9EBUAam8",
+          "description": "David's takes on OpenAI DevDay"
+        },
+        {
+          "videoId": "GwlqUZF52ug",
+          "title": "You're betting against AI if you're doing this...",
+          "published": "2026-09-28T18:47:26+00:00",
+          "url": "https://www.youtube.com/shorts/GwlqUZF52ug",
+          "description": "You're betting against AI if you're doing this..."
+        },
+        {
+          "videoId": "vI4mMEAV0O8",
+          "title": "Why every Agent needs it's own computer",
+          "published": "2026-09-28T09:02:34+00:00",
+          "url": "https://www.youtube.com/shorts/vI4mMEAV0O8",
+          "description": "Why every Agent needs it's own computer"
+        },
+        {
+          "videoId": "3yvmtO6bWY8",
+          "title": "Why you shouldn't buy a Mac mini for your AI Agents",
+          "published": "2026-09-28T02:33:58+00:00",
+          "url": "https://www.youtube.com/shorts/3yvmtO6bWY8",
+          "description": "Why you shouldn't buy a Mac mini for your AI Agents"
+        },
+        {
+          "videoId": "A-JBaNvv3Tk",
+          "title": "Ex-Apple dev reveals his Agentic Engineering Workflow",
+          "published": "2026-09-27T05:01:00+00:00",
+          "url": "https://www.youtube.com/watch?v=A-JBaNvv3Tk",
+          "description": "Try PostHog yourself: https://go.posthog.com/david\n\nDownload the Cloudroom GUI: https://cloudroom.dev/\n\nFollow Daniel: https://x.com/DanielMiessler\nDaniel's YouTube: https://www.youtube.com/@unsupervised-learning/videos\n\nFollow me on Instagram - https://www.instagram.com/davidond"
+        },
+        {
+          "videoId": "7d892sCIRNo",
+          "title": "The Best Agentic Engineering GUI",
+          "published": "2026-09-27T00:47:31+00:00",
+          "url": "https://www.youtube.com/shorts/7d892sCIRNo",
+          "description": "This might be the best GUI…\n\nTry it for free: https://cloudroom.dev"
+        },
+        {
+          "videoId": "dePdvvaNBAA",
+          "title": "Your app isn't secure... here's how to solve it",
+          "published": "2026-09-23T21:16:26+00:00",
+          "url": "https://www.youtube.com/shorts/dePdvvaNBAA",
+          "description": "Your app isn't secure... here's how to solve it\n\nTry Coderabbit: https://coderabbit.link/david-ondrej-007"
+        },
+        {
+          "videoId": "VeaaXWFQG0U",
+          "title": "Opus 5.5 is Here",
+          "published": "2026-09-22T17:05:57+00:00",
+          "url": "https://www.youtube.com/shorts/VeaaXWFQG0U",
+          "description": "Opus 5.5 is here"
+        },
+        {
+          "videoId": "_8Wod-K8bn0",
+          "title": "Grok 4.7 is out, here's how I use it",
+          "published": "2026-09-22T12:47:44+00:00",
+          "url": "https://www.youtube.com/shorts/_8Wod-K8bn0",
+          "description": "Grok 4.7 is out, here's how I use it\n\nhttps://cloudroom.dev"
+        },
+        {
+          "videoId": "40bjDoUIqmc",
+          "title": "Here's how this 35B competes with Frontier models",
+          "published": "2026-09-21T15:09:03+00:00",
+          "url": "https://www.youtube.com/shorts/40bjDoUIqmc",
+          "description": "Here's how this 35B competes with Frontier models\n\nhttps://github.com/ApodexAI/FrontierAgent - star FrontierAgent\nhttps://huggingface.co/collections/apodex/apodex-11 - download the model\nhttps://www.apodex.ai/ - try the hosted solution, new users get free credits"
+        }
+      ]
+    },
+    "indydevdan": {
+      "creatorId": "indydevdan",
+      "creatorName": "IndyDevDan",
+      "handle": "@indydevdan",
+      "channelId": "UC_x36zCEGilGpB1m-V4gmjg",
+      "latestVideos": [
+        {
+          "videoId": "_U-O5lYhJ7Q",
+          "title": "10 Levels of Jev For Agentic Engineers",
+          "published": "2026-09-28T13:00:27+00:00",
+          "url": "https://www.youtube.com/watch?v=_U-O5lYhJ7Q",
+          "description": "From SMART IFs to JEV IN AGENTS. Jev by TypeSafe is changing how I Agentic Engineer. How?\n\nKeep the coding agent for the hard work, and give narrow decisions to a system one model like Jev. These 10 levels show where that line is, from a smart if statement to a Pi agent that deci"
+        },
+        {
+          "videoId": "3b0U4_02bAE",
+          "title": "Self-Compact Pi Agent: ZERO HYPE Agentic Coding Devlog",
+          "published": "2026-09-21T13:00:08+00:00",
+          "url": "https://www.youtube.com/watch?v=3b0U4_02bAE",
+          "description": "Your agents are smart enough to know when their own context window is full. So why are you letting Claude Code and Codex decide when they compact? 🔥 Auto compaction at a fixed percentage is the DEFAULT. Defaults are for engineers who don't own their harness.\n\n🎥 VIDEO REFERENCES\n•"
+        },
+        {
+          "videoId": "9weiIHy9T_0",
+          "title": "Agentic Engineering Benchmarks: How I RANK Astra, Fable 5.1, and Open-Weights",
+          "published": "2026-09-14T13:00:39+00:00",
+          "url": "https://www.youtube.com/watch?v=9weiIHy9T_0",
+          "description": "The Artificial Analysis Index is lying to you. 😲 Not on purpose, but an index is a proxy of a proxy, and by the time ten benchmarks get mashed into one number, the only thing that actually matters (which model to run for YOUR work) is gone.\n\n🎥 VIDEO REFERENCES\n• Claude Fable & My"
+        },
+        {
+          "videoId": "S2sjyokoxeE",
+          "title": "Are Agent Swarms USEFUL? OpenAI’s GPT-6 Astra SWARM Takeaways",
+          "published": "2026-09-07T13:00:22+00:00",
+          "url": "https://www.youtube.com/watch?v=S2sjyokoxeE",
+          "description": "OpenAI got hacked by their OWN agents. That's the GPT-6-Astra swarm incident, and it proved agent swarms aren't hype anymore. They're dangerously viable.\n\n✅ PUSH YOUR AGENTIC ENGINEERING BEYOND\n• Tactical Agentic Coding (TAC): https://agenticengineer.com/tactical-agentic-coding?y"
+        },
+        {
+          "videoId": "rPWCYB62wvI",
+          "title": "Agentic Engineering Operating Level: WHERE to FOCUS your AGENTS?",
+          "published": "2026-08-31T13:00:29+00:00",
+          "url": "https://www.youtube.com/watch?v=rPWCYB62wvI",
+          "description": "Every engineer is racing UP the stack right now. More leverage, bigger agents, software factories. Here's what engineers are missing: higher is NOT always better, and the engineer who can only operate at the top is just as stuck as the one who can only operate at the bottom.\n\n⭐️ "
+        },
+        {
+          "videoId": "rqZHR-hRllI",
+          "title": "Intelligence EXPLOSION: Harness Engineering with Pi Agent, Deepseek, and Gemini",
+          "published": "2026-08-24T13:00:24+00:00",
+          "url": "https://www.youtube.com/watch?v=rqZHR-hRllI",
+          "description": "The Intelligence EXPLOSION is HERE. 🔥 Five plus model releases in five days, LLM pricing wars in full effect, and most engineers are still locked inside someone else's agent harness, running ONE model at a time. The most flexible system WINS. Stop selecting compute. Start COMBINI"
+        },
+        {
+          "videoId": "S_QdQ1G4GlU",
+          "title": "FIXING Opus 5: PROOF that Prompt Engineering IS NOT DEAD",
+          "published": "2026-08-17T13:00:35+00:00",
+          "url": "https://www.youtube.com/watch?v=S_QdQ1G4GlU",
+          "description": "Opus 5 is one of the BEST models ever released, and one of the WORST to talk to. Verbose, \"load-bearing\" everywhere, torching your output tokens. So we FIX it with the skill everyone said was dead: PROMPT ENGINEERING. 🔥\n\n🎥 VIDEO REFERENCES\n• Fix Opus 5 Codebase: https://github.co"
+        },
+        {
+          "videoId": "SEI_qIW4o2c",
+          "title": "Engineers… Your Software Factory NEEDS Agent Sandboxes to SCALE (exe.dev)",
+          "published": "2026-08-10T13:00:06+00:00",
+          "url": "https://www.youtube.com/watch?v=SEI_qIW4o2c",
+          "description": "Engineers... if you're IN the loop, you ARE the bottleneck. 🔥 And giving your agents a tiny corner of YOUR computer is why your software factory can't scale past one.\n\n🎥 VIDEO REFERENCES\n• Factory In A Box Codebase: https://github.com/disler/inkwell-agent-sandboxes-and-software-f"
+        },
+        {
+          "videoId": "haUfb1ievTE",
+          "title": "My Super Simple Software Factory (For Agentic Engineers)",
+          "published": "2026-08-03T13:00:25+00:00",
+          "url": "https://www.youtube.com/watch?v=haUfb1ievTE",
+          "description": "The next level of agentic engineering can be summarized in two words: Software Factory.\n\nBut this jump is larger... As agents and code commoditizes its important you realize your agents alone are NOT enough. Agents plus code beats agents alone, and engineers still throwing everyt"
+        },
+        {
+          "videoId": "qh4vLlit97I",
+          "title": "Is Anthropic STEALING Your Data? (While You PAY FOR IT)",
+          "published": "2026-07-27T13:00:10+00:00",
+          "url": "https://www.youtube.com/watch?v=qh4vLlit97I",
+          "description": "You are paying Anthropic TWICE. 🔥 Once with cash, and again with the intellectual property you hand over to make the intelligence useful. Almost nobody is tracking the second payment.\n\nIs Anthropic stealing my data? No. The real answer is far more uncomfortable than that.\n\n🎥 VIDE"
+        }
+      ]
+    },
+    "dave-ebbelaar": {
+      "creatorId": "dave-ebbelaar",
+      "creatorName": "Dave Ebbelaar",
+      "handle": "@daveebbelaar",
+      "channelId": "UCn8ujwUInbJkBhffxqAPBVQ",
+      "latestVideos": [
+        {
+          "videoId": "s4stoQM_LT8",
+          "title": "Run Your Coding Agents in the Cloud with Herdr",
+          "published": "2026-09-28T13:44:57+00:00",
+          "url": "https://www.youtube.com/watch?v=s4stoQM_LT8",
+          "description": "📑 Download the free proposal framework\nhttps://go.datalumina.com/yOGQ9sK\n\n📕 Follow-along guide\nhttps://learn.datalumina.com/docs/cloud-workspace\n\n🖥️ Hostinger VPS, 10% off with code DAVEVPS\nhttps://www.hostinger.com/davevps\n\n🎙️ The dictation tool I use, Glaido\nhttps://get.glaido."
+        },
+        {
+          "videoId": "DNuD3Ia8qHM",
+          "title": "Build Your Own Company Wiki with AI Search (Full Tutorial)",
+          "published": "2026-09-25T13:55:18+00:00",
+          "url": "https://www.youtube.com/watch?v=DNuD3Ia8qHM",
+          "description": "📑 Download the free proposal template\nhttps://go.datalumina.com/cEMaS6Y\n\n📕 Follow-along guide\nhttps://learn.datalumina.com/docs/company-knowledge-base\n\n🔗 Source code\nhttps://github.com/daveebbelaar/company-knowledge-base\n\nCreate your Sanity account\nhttps://www.sanity.io/dave\n\n🎙️ "
+        },
+        {
+          "videoId": "JpfLID19QnQ",
+          "title": "Jev Explained for Python Developers",
+          "published": "2026-09-21T14:09:00+00:00",
+          "url": "https://www.youtube.com/watch?v=JpfLID19QnQ",
+          "description": "Download my free proposal template and an anonymized client proposal\nhttps://go.datalumina.com/vcK3LFa\n\n🔗 Follow along with the Python examples\nhttps://github.com/daveebbelaar/ai-cookbook/tree/main/models/jev\n\n📚 TypeSafe documentation\nhttps://docs.typesafe.ai/introduction\n\n🎙️ The"
+        },
+        {
+          "videoId": "Shqtk_2Jd3c",
+          "title": "How to set up Herdr for multi-agent coding (full guide)",
+          "published": "2026-09-11T13:59:02+00:00",
+          "url": "https://www.youtube.com/watch?v=Shqtk_2Jd3c",
+          "description": "Learn how to start freelancing alongside your full-time job\nhttps://go.datalumina.com/6m9uXRx\n\n🔗 My full Herdr setup guide and configs\nhttps://learn.datalumina.com/docs/herdr\n\n🐏 Get Herdr\nhttps://herdr.dev\n\n🎙️ The dictation tool I use, Glaido\nhttps://get.glaido.com/dave\n\n⏱️ Times"
+        },
+        {
+          "videoId": "u6xlVRMfnyM",
+          "title": "How I Built One Backend to Run My Company",
+          "published": "2026-08-27T17:46:58+00:00",
+          "url": "https://www.youtube.com/watch?v=u6xlVRMfnyM",
+          "description": "Want to start freelancing? Let me help: https://go.datalumina.com/bsqKmbx\nWant to learn real AI Engineering? Go here: https://go.datalumina.com/7MkIu0k\n\n🔗 Read the full automation backend guide\nhttps://learn.datalumina.com/docs/automation-backend\n\nWriting AI prompts all day?\n🎙Try"
+        },
+        {
+          "videoId": "YYeZh6Hac9E",
+          "title": "Build a Document Review App in 3 Hours (Python, React, Azure)",
+          "published": "2026-07-23T18:38:09+00:00",
+          "url": "https://www.youtube.com/watch?v=YYeZh6Hac9E",
+          "description": "Want to start freelancing? Let me help: https://go.datalumina.com/UkBi5tn\nWant to learn real AI Engineering? Go here: https://go.datalumina.com/X4w5nLM\n\n🔗 Link to docs and GitHub repository\nhttps://learn.datalumina.com/docs/invoice-review\n\nWriting AI prompts all day?\n🎙Try Glaido,"
+        },
+        {
+          "videoId": "yAOzupIW87E",
+          "title": "Data Scientist to AI Engineer Roadmap for 2026",
+          "published": "2026-07-09T13:49:54+00:00",
+          "url": "https://www.youtube.com/watch?v=yAOzupIW87E",
+          "description": "Want to start freelancing? Let me help: https://go.datalumina.com/p7mxlp7\nWant to learn real AI Engineering? Go here: https://go.datalumina.com/pjWWw26\n\n🔗 GitHub Repository\nhttps://github.com/daveebbelaar/ai-cookbook/blob/main/roadmaps/ds-ml-to-ai-engineer-2026.md\n\nWriting AI pro"
+        },
+        {
+          "videoId": "omU3zR3K7-U",
+          "title": "The Best AI Automation Stack to Learn in 2026",
+          "published": "2026-06-19T13:28:15+00:00",
+          "url": "https://www.youtube.com/watch?v=omU3zR3K7-U",
+          "description": "Join me in Montenegro this summer: https://workless.ai\n\nWant to start freelancing? Let me help: https://go.datalumina.com/O82dbmB\nWant to learn real AI Engineering? Go here: https://go.datalumina.com/qjeP9LG\n\nDocument Copilot: https://youtu.be/qF5il_9IwME\n\nWriting AI prompts all "
+        },
+        {
+          "videoId": "qF5il_9IwME",
+          "title": "Build a Full-Stack GenAI Project in 4 Hours (FastAPI, React, Supabase)",
+          "published": "2026-06-06T12:44:23+00:00",
+          "url": "https://www.youtube.com/watch?v=qF5il_9IwME",
+          "description": "Want to start freelancing? Let me help: https://go.datalumina.com/rWzGBfV\nWant to learn real AI Engineering? Go here: https://go.datalumina.com/WIQKDxv\n\n🔗 GitHub Repository\nhttps://github.com/daveebbelaar/document-copilot\n\nWriting AI prompts all day?\n🎙Try Glaido, the #1 voice dic"
+        },
+        {
+          "videoId": "guzQVciWQck",
+          "title": "If I Wanted to Build an AI SaaS in 2026, I’d Do This",
+          "published": "2026-05-28T16:45:14+00:00",
+          "url": "https://www.youtube.com/watch?v=guzQVciWQck",
+          "description": "Want to start freelancing? Let me help: https://go.datalumina.com/P3ISUfG\nWant to learn real AI Engineering? Go here: https://go.datalumina.com/eLy3l9R\n\n🔗 Get started with Vanta: https://www.vanta.com/dave\n\nWriting AI prompts all day?\n🎙Try Glaido, the #1 voice dictation app for d"
         }
       ]
     }

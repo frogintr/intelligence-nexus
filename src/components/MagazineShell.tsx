@@ -62,7 +62,7 @@ export function MagazineShell({ dossier }: Props) {
 
   return (
     <div
-      className={`min-h-screen ${departmentClass} text-[var(--foreground)] flex flex-col justify-between selection:bg-[#9e2a2b]/20 selection:text-stone-900 dark:selection:text-white transition-colors duration-300`}
+      className={`min-h-screen ${departmentClass} text-[var(--foreground)] flex flex-col justify-between selection:bg-[#e50914]/20 selection:text-stone-900 dark:selection:text-white transition-colors duration-300`}
     >
       <div>
         {/* DailyArt Gazette Masthead with Interactive Department Switcher */}

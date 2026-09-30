@@ -102,7 +102,7 @@ export function CoverDepartment({ dossier, onSelectDepartment }: Props) {
 
           {/* Lead Narrative with Drop Cap */}
           <p className="drop-cap font-serif text-lg sm:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed my-8">
-            当 10 年期美债收益率在 4.18% 构筑起全球无风险贴现率的高悬走廊，美元指数徘徊于 103.85 震荡区间，跨国资本的风险溢价定价机制正在发生深刻裂变。一方面，以硅谷与华尔街为代表的算力资本开支（Capex）正在从单一大模型训练向生产级“长程多智能体自主决策流水线”全面迁移；另一方面，离岸人民币汇率与中国资产估值洼地的重估博弈，正催生出极度分化的跨市场统计套利与波动率交易机会。
+            当 10 年期美债收益率在 {macroAnchors.us10yYield} 构筑起全球无风险贴现率的高悬走廊，美元指数徘徊于 {macroAnchors.dxyIndex} 震荡区间，跨国资本的风险溢价定价机制正在发生深刻裂变。一方面，以硅谷与华尔街为代表的算力资本开支（Capex）正在从单一大模型训练向生产级“长程多智能体自主决策流水线”全面迁移；另一方面，离岸人民币汇率与中国资产估值洼地的重估博弈，正催生出极度分化的跨市场统计套利与波动率交易机会。
           </p>
 
           {/* Museum-Framed Copperplate Engraving / System Transmission Canvas */}

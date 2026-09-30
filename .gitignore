@@ -39,3 +39,6 @@ spark_*.txt
 
 .vercel
 .agents/
+
+__pycache__/
+*.pyc
